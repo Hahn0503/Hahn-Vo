@@ -2940,6 +2940,45 @@ window.PRODUCTS = [
   "shopifyId": "10278293766472"
  },
  {
+  "id": "p587",
+  "brand": "Omega",
+  "name": "Seamaster Aqua Terra 41 mm Stahl/Roségold Zifferblatt Grau Jahr 2020",
+  "ref": "220.20.41.21.06.001",
+  "price": 8790,
+  "listPrice": null,
+  "status": "anfrage",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Sehr gut",
+  "year": "2020",
+  "size": "41 mm",
+  "material": "Edelstahl/Roségold",
+  "dial": "Grau",
+  "strap": "Edelstahl/Roségold",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Regelbesteuerung",
+  "sku": null,
+  "code": "587-26",
+  "added": "2026-09-27T10:00:00Z",
+  "desc": "Hier präsentieren wir die Omega Seamaster Aqua Terra, Ref. 220.20.41.21.06.001, aus dem Jahr 2020 im Full Set. Graues Zifferblatt im Teak-Muster, Gehäuse und Band aus Edelstahl und Roségold, 41 mm Durchmesser, Manufakturkaliber mit Automatikaufzug und Sichtboden.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nGeliefert mit den originalen Omega-Papieren und der originalen Omega-Box. Zustand: sehr gut. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": null,
+  "images": [
+   "assets/products/p587/0.jpg",
+   "assets/products/p587/1.jpg",
+   "assets/products/p587/2.jpg",
+   "assets/products/p587/3.jpg",
+   "assets/products/p587/4.jpg",
+   "assets/products/p587/5.jpg",
+   "assets/products/p587/6.jpg",
+   "assets/products/p587/7.jpg",
+   "assets/products/p587/8.jpg"
+  ],
+  "shopifyId": "10306872869192"
+ },
+ {
   "id": "p1237",
   "brand": "Breitling",
   "name": "Superocean 44 Automatik",
@@ -4158,6 +4197,7 @@ window.SHOPIFY = {
   "p560": "10235514290504",
   "p577": "10274244886856",
   "p581": "10278293766472",
+  "p587": "10306872869192",
   "p1237": "10219858657608",
   "p454": "10219712250184",
   "p434": "10219712545096",
@@ -4185,7 +4225,6 @@ window.SHOPIFY = {
   "p576": "10277603672392",
   "p9177": "10219857510728",
   "p8001": "10227037208904",
-  "p8007": "10227041108296",
-  "p587": "10306872869192"
+  "p8007": "10227041108296"
  }
 };
