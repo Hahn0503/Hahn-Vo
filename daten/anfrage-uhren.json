@@ -507,6 +507,44 @@
     "assets/products/p581/10.jpg"
    ],
    "shopifyId": "10278293766472"
+  },
+  {
+   "id": "p587",
+   "brand": "Omega",
+   "name": "Seamaster Aqua Terra 41 mm Stahl/Roségold Zifferblatt Grau Jahr 2020",
+   "ref": "220.20.41.21.06.001",
+   "price": 8790,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Sehr gut",
+   "year": "2020",
+   "size": "41 mm",
+   "material": "Edelstahl/Roségold",
+   "dial": "Grau",
+   "strap": "Edelstahl/Roségold",
+   "movement": "Automatik",
+   "caliber": null,
+   "glass": null,
+   "gender": "Herren",
+   "tax": "Regelbesteuerung",
+   "sku": "HV-P587",
+   "code": "587-26",
+   "added": "2026-09-27T10:00:00Z",
+   "desc": "Hier präsentieren wir die Omega Seamaster Aqua Terra, Ref. 220.20.41.21.06.001, aus dem Jahr 2020 im Full Set. Graues Zifferblatt im Teak-Muster, Gehäuse und Band aus Edelstahl und Roségold, 41 mm Durchmesser, Manufakturkaliber mit Automatikaufzug und Sichtboden.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nGeliefert mit den originalen Omega-Papieren und der originalen Omega-Box. Zustand: sehr gut. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+   "images": [
+    "assets/products/p587/0.jpg",
+    "assets/products/p587/1.jpg",
+    "assets/products/p587/2.jpg",
+    "assets/products/p587/3.jpg",
+    "assets/products/p587/4.jpg",
+    "assets/products/p587/5.jpg",
+    "assets/products/p587/6.jpg",
+    "assets/products/p587/7.jpg",
+    "assets/products/p587/8.jpg"
+   ],
+   "shopifyId": "10306872869192"
   }
  ]
 }
