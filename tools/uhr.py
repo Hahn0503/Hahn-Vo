@@ -316,7 +316,7 @@ def gq(s):
     return json.dumps(str(s), ensure_ascii=False)
 
 
-def metafelder_literal(felder, code, besteuerung, hinweis=None):
+def metafelder_literal(felder, code, besteuerung, hinweis=None, garantie=None):
     teile = []
     for k, v in felder.items():
         if v in (None, ''):
@@ -330,6 +330,9 @@ def metafelder_literal(felder, code, besteuerung, hinweis=None):
     # sichtbar unter „Besonderheiten".
     if hinweis:
         teile.append('{namespace: "uhr", key: "hinweis", type: "multi_line_text_field", value: %s}' % gq(hinweis))
+    # Garantie in Monaten, nur wenn sie von den üblichen 12 abweicht (Metafeld uhr.garantie).
+    if garantie and int(garantie) != 12:
+        teile.append('{namespace: "uhr", key: "garantie", type: "number_integer", value: "%d"}' % int(garantie))
     return '[' + ', '.join(teile) + ']'
 
 
@@ -339,7 +342,7 @@ def m_product_create(u):
             'descriptionHtml: %s, metafields: %s }) { product { id title variants(first: 1) { nodes { id inventoryItem { id } } } } '
             'userErrors { field message } } }'
             % (gq(u['titel']), gq(u['marke']), gq(u['produkttyp']), tags, gq(u['beschreibung_html']),
-               metafelder_literal(u['felder'], u['code'], u['besteuerung'], u.get('hinweis'))))
+               metafelder_literal(u['felder'], u['code'], u['besteuerung'], u.get('hinweis'), u.get('garantie_monate'))))
 
 
 def m_einrichten(u, ids):

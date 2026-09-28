@@ -225,3 +225,11 @@ diese Datei erklärt, warum sie da sind. Lesen, bevor man etwas „vereinfacht".
 - **Symptom:** p349 (Omega Aqua Terra) stand als „Full Set (Box & Papiere)" auf der Seite. Das Inserat nannte aber nur „Omega Revisionspapiere aus dem 31. August 2026" und die Box — keine Originalpapiere.
 - **Gelöst:** neuer Auswahlwert **`Box & Revisionspapiere`** in der Shopify-Metafeld-Definition `uhr.lieferumfang` (`metafieldDefinitionUpdate`, Auswahlliste ergänzt), in `WAHL` in `tools/uhr.py` und in `LIEFERUMFANG` in `api/chrono24.js` (dort `original_papers: no`, `original_box: yes` — Chrono24 meint mit „Papiere" die Garantiekarte ab Werk).
 - **🚩 Regel:** „Full Set" nur mit **Original**papieren. Service- oder Revisionsbelege sind keine.
+
+### O. Garantie abweichend von 12 Monaten für eine einzelne Uhr (28.09.2026)
+
+- **Auftrag:** p564 (Cartier Santos Galbée 2319) mit 2 Jahren Garantie statt 12 Monaten, „überall".
+- **Wo die 12 standen:** Kachel „12 Monate" unter dem Kaufknopf (`produkt-vorlage.html`, jetzt `#pdGarantie`), erster Satz unter „Unser Versprechen" (`js/product.js` und `api/produkt.js`), Meta-Beschreibung (`beschreibungKurz` in `api/produkt.js`).
+- **Gelöst:** Metafeld **`uhr.garantie`** (`number_integer`, Monate) → Feld `warranty` in `/api/katalog.json` → alle drei Stellen nehmen die Zahl der Uhr, sonst 12. Rückfall `daten/garantie.json` wie bei den Hinweisen (neue Metafelder brauchen bis zu einer Stunde).
+- **Bewusst NICHT geändert:** die Firmenbeschreibung im schema.org-Block (`Organization`, „Jede Uhr … 12 Monate Garantie") und die Markenseiten — das sind Aussagen über den Laden, nicht über diese Uhr, und Regel 8 in `CLAUDE.md` bleibt 12 Monate.
+- Steht ein Versprechen-Satz wortgleich unter „Besonderheiten", wird er unten nicht wiederholt.

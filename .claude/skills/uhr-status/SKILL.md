@@ -19,6 +19,11 @@ Zweiter Absatz."                                # Besonderheiten oben auf der Pr
 python3 tools/uhr.py hinweis p567               # ohne Text: Besonderheiten wieder weg
 ```
 
+**„2 Jahre Garantie" / „24 Monate statt 12" für eine Uhr** = Metafeld `uhr.garantie` (Zahl, Monate) setzen
+und `daten/garantie.json` ergänzen (`"p564": 24`), pushen. Die Produktseite nimmt die Zahl dann in der
+Kachel unter dem Kaufknopf, im Versprechen-Satz und in der Google-Beschreibung. Ohne Eintrag gilt 12.
+Beim Anlegen geht es direkt über `"garantie_monate": 24` in `uhr.json`.
+
 **„Das noch als Zusatz dazu", „bitte hinzufügen", „das soll draufstehen"** = `hinweis`.
 Nicht in die Shopify-Beschreibung schreiben — die zeigt die Produktseite bewusst nicht.
 Der Befehl setzt das Metafeld, schreibt `daten/hinweise.json`, pusht und wartet, bis der
