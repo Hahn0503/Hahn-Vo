@@ -272,9 +272,15 @@
   var schnitt = roh.search(BILDSATZ);
   var intro = (schnitt >= 0 ? roh.slice(0, schnitt) : roh).replace(/\s+/g, ' ').trim();
 
+  /* Garantie dieser Uhr in Monaten — üblich 12, einzelne Uhren mehr
+     (Metafeld uhr.garantie). Steht in der Kachel oben und im Versprechen. */
+  var monate = parseInt(p.warranty, 10) || 12;
+  var kachel = document.getElementById('pdGarantie');
+  if (kachel) kachel.querySelector('b').textContent = monate + ' Monate';
+
   /* Unser Versprechen — gleicher Text unter jeder Uhr */
   var VERSPRECHEN = [
-    'Jeder Zeitmesser wird auf Echtheit, Funktion und Ganggenauigkeit überprüft. Sie bekommen also das Rundum-Sorglos-Paket und zusätzlich 12 Monate Garantie, wobei die Wasserdichtigkeit ausgeschlossen ist.',
+    'Jeder Zeitmesser wird auf Echtheit, Funktion und Ganggenauigkeit überprüft. Sie bekommen also das Rundum-Sorglos-Paket und zusätzlich ' + monate + ' Monate Garantie, wobei die Wasserdichtigkeit ausgeschlossen ist.',
     'Unsere Zeitmesser können auch in unserem Showroom nach Terminvereinbarung im Frankfurter Bankenviertel besichtigt werden.',
     'Falls Sie wider Erwarten unsicher sind, ob dieser Zeitmesser zu Ihnen passt, bieten wir ein 14-tägiges Rückgaberecht an.',
     'Der Versand innerhalb Deutschlands ist kostenlos. Innerhalb Europas berechnen wir pauschal 80 €, weltweit 150 € — versichert und mit Sendungsverfolgung.',
@@ -324,7 +330,9 @@
         }).join('') + '</ul>'
       : '') +
     '<h2 class="pd-promise">Unser Versprechen</h2>' +
-    VERSPRECHEN.map(function (t) { return '<p>' + t + '</p>'; }).join('');
+    /* Steht ein Satz schon oben unter „Besonderheiten", hier nicht doppelt. */
+    VERSPRECHEN.filter(function (t) { return String(p.note || '').indexOf(t) === -1; })
+      .map(function (t) { return '<p>' + t + '</p>'; }).join('');
 
   /* related: same brand first, then price neighbours */
   var related = (window.PRODUCTS || [])

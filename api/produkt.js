@@ -73,8 +73,13 @@ function zustandsliste(desc) {
     .split('\n').map(function (t) { return t.trim(); }).filter(Boolean);
 }
 
+/* Garantie in Monaten: üblich 12, einzelne Uhren mehr (Metafeld uhr.garantie). */
+function garantieMonate(p) { return parseInt(p.warranty, 10) || 12; }
+function garantieSatz(monate) {
+  return 'Jeder Zeitmesser wird auf Echtheit, Funktion und Ganggenauigkeit überprüft. Sie bekommen also das Rundum-Sorglos-Paket und zusätzlich ' + monate + ' Monate Garantie, wobei die Wasserdichtigkeit ausgeschlossen ist.';
+}
 var VERSPRECHEN = [
-  'Jeder Zeitmesser wird auf Echtheit, Funktion und Ganggenauigkeit überprüft. Sie bekommen also das Rundum-Sorglos-Paket und zusätzlich 12 Monate Garantie, wobei die Wasserdichtigkeit ausgeschlossen ist.',
+  garantieSatz(12),
   'Unsere Zeitmesser können auch in unserem Showroom nach Terminvereinbarung im Frankfurter Bankenviertel besichtigt werden.',
   'Falls Sie wider Erwarten unsicher sind, ob dieser Zeitmesser zu Ihnen passt, bieten wir ein 14-tägiges Rückgaberecht an.',
   'Der Versand innerhalb Deutschlands ist kostenlos. Innerhalb Europas berechnen wir pauschal 80 €, weltweit 150 € — versichert und mit Sendungsverfolgung.',
@@ -91,7 +96,7 @@ function beschreibungKurz(p) {
   var fakten = [p.year ? 'Baujahr ' + p.year : null, p.fullset, p.rating ? 'Zustand ' + p.rating : null, EUR.format(p.price)]
     .filter(Boolean).join(' · ');
   var basis = erster ? erster + ' ' + fakten + '.' : (p.brand + ' ' + p.name + ' · ' + fakten + '.');
-  return kuerzen(basis + ' Auf Echtheit geprüft, 12 Monate Garantie, Showroom Frankfurt.', 300);
+  return kuerzen(basis + ' Auf Echtheit geprüft, ' + garantieMonate(p) + ' Monate Garantie, Showroom Frankfurt.', 300);
 }
 
 function zustandSchema(rating) {
@@ -240,7 +245,13 @@ function rendern(p) {
       }).join('') + '</ul>'
     : '') +
     '<h2 class="pd-promise">Unser Versprechen</h2>' +
-    VERSPRECHEN.map(function (t) { return '<p>' + esc(t) + '</p>'; }).join('');
+    /* Garantiesatz mit den Monaten dieser Uhr; steht ein Satz schon oben
+       unter „Besonderheiten", hier nicht doppelt. */
+    [garantieSatz(garantieMonate(p))].concat(VERSPRECHEN.slice(1))
+      .filter(function (t) { return String(p.note || '').indexOf(t) === -1; })
+      .map(function (t) { return '<p>' + esc(t) + '</p>'; }).join('');
+  html = html.replace('<div id="pdGarantie"><b>12 Monate</b>',
+    '<div id="pdGarantie"><b>' + garantieMonate(p) + ' Monate</b>');
   html = html.replace('<div class="pd-desc" id="pdDesc"></div>', '<div class="pd-desc" id="pdDesc">' + descHtml + '</div>');
 
   /* Besonderheiten dieser Uhr (Metafeld uhr.hinweis) — eigener Block oben,

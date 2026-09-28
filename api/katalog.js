@@ -23,13 +23,20 @@ function hinweisRueckfall() {
   try { return require('../daten/hinweise.json'); } catch (e) { return {}; }
 }
 
+/* Garantie in Monaten je Uhr (Metafeld uhr.garantie), wenn sie von den
+ * üblichen 12 Monaten abweicht. Rückfall daten/garantie.json aus demselben
+ * Grund wie bei den Hinweisen. Shopify gewinnt. */
+function garantieRueckfall() {
+  try { return require('../daten/garantie.json'); } catch (e) { return {}; }
+}
+
 /* Aus einer Shopify-Kennung eine dauerhafte Uhren-Kennung bilden, falls die
  * Uhr noch nicht in js/data.js steht. „s" plus Kennung bleibt stabil. */
 function ersatzKennung(shopifyId) {
   return 's' + String(shopifyId).slice(-7);
 }
 
-function nachWebsiteForm(p, kennungen, rueckfall) {
+function nachWebsiteForm(p, kennungen, rueckfall, garantien) {
   var f = p.f;
   if (f.code && AUSSCHLUSS.indexOf(f.code) !== -1) return null;
   if (!p.preis) return null;
@@ -74,6 +81,8 @@ function nachWebsiteForm(p, kennungen, rueckfall) {
      * sichtbar unter der Beschreibung gezeigt. Der Fliesstext aus Shopify wird
      * dort absichtlich nicht angezeigt, deshalb dieses eigene Feld. */
     note: f.hinweis || (rueckfall || {})[kennung] || null,
+    /* Garantie in Monaten; null = die üblichen 12 Monate. */
+    warranty: parseInt(f.garantie, 10) || parseInt((garantien || {})[kennung], 10) || null,
     images: p.bilder,
     shopifyId: p.shopifyId,
     shopifyVariantId: p.variantId,
@@ -84,10 +93,11 @@ async function baueKatalog(basis) {
   var bestand = await shop.holeBestand();
   var kennungen = await shop.holeKennungen(basis);
   var rueckfall = hinweisRueckfall();
+  var garantien = garantieRueckfall();
   var uhren = [];
   var zuordnung = {};
   bestand.forEach(function (p) {
-    var u = nachWebsiteForm(p, kennungen, rueckfall);
+    var u = nachWebsiteForm(p, kennungen, rueckfall, garantien);
     if (!u) return;
     uhren.push(u);
     zuordnung[u.id] = u.shopifyId;
