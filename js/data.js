@@ -2981,7 +2981,7 @@ window.PRODUCTS = [
   "brand": "Vacheron Constantin",
   "name": "Patrimony 40 Automatik Roségold Zifferblatt Blau Jahr 2022",
   "ref": "85180/000R-B515",
-  "price": 21990,
+  "price": 19990,
   "listPrice": null,
   "status": "anfrage",
   "category": "uhren",
