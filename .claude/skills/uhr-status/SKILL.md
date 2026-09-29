@@ -38,7 +38,12 @@ unverändert als JSON in `arbeit/_<aktion>-p567/antwort.json` schreiben, dann
 python3 tools/uhr.py ergebnis arbeit/_<aktion>-p567 --datei arbeit/_<aktion>-p567/antwort.json
 ```
 
-bis „Alle Schritte erledigt". Das Skript prüft vorher, dass der Shopify-Titel zur
+bis „Alle Schritte erledigt". Bei Uhren „Per Überweisung" (über 8.500 €) zieht das Skript
+`daten/anfrage-uhren.json` selbst nach und wartet aufs Deployment — dieselben Befehle, nichts
+von Hand. Soll eine Kassen-Uhr über 8.500 € steigen, stoppt `preis` mit Erklärung (Umzug auf
+„Per Überweisung" siehe `docs/SYSTEM.md`).
+
+Das Skript prüft vorher, dass der Shopify-Titel zur
 Marke passt (Sicherheitsstopp), prüft danach live — erst ohne, dann mit dem
 Besucher-Zwischenspeicher — baut die Rückfalldatei und committet.
 

@@ -14,6 +14,7 @@ einmal eine falsche Uhr, ein falsches Bild oder eine falsche Steuer produziert.
 
 - **Der Auftrag ist ein Satz** („<Link> hochladen für 3.250"). Entscheidungen zu Bildern, Besteuerung, Feldern triffst du nach den Regeln hier und begründest sie im Bericht (siehe CLAUDE.md). Eine Frage stellst du nur, wenn Preis oder interner Code fehlen oder das Inserat nicht zum Link passt.
 - **Preis:** Steht im Auftrag ein Preis? Sonst gilt 1:1 der Inseratspreis. „VB" ist ein Hinweis, kein Preis — dann nachfragen.
+- **Über 8.500 € → „Per Überweisung".** Macht das Skript von selbst: Shopify-Entwurf ohne Verkaufskanäle, Eintrag in `daten/anfrage-uhren.json`, auf der Website Kaufknopf „Per Überweisung kaufen" statt Warenkorb. Grund: Shopify Payments verarbeitet keine Ware über 10.000 USD. Nichts von Hand anlegen. Nur wenn Hannes es ausdrücklich anders will: `"ueberweisung": false` bzw. `true` in `uhr.json`.
 - **Sonderwünsche:** „das Set als zweites Bild", „dieses Bild als Hover" — merken, das entscheidet Phase 3.
 - Mehrere Links? Jede Uhr einzeln, vollständig, nacheinander.
 
@@ -80,7 +81,9 @@ Das Skript arbeitet, bis Shopify dran ist, und druckt dann einen GraphQL-Aufruf.
 3. `python3 tools/uhr.py ergebnis arbeit/<name> --datei arbeit/<name>/antwort.json`
 
 Wiederholen, bis „Alle Schritte erledigt" erscheint. Das Skript prüft jede Antwort,
-merkt sich IDs, wartet auf Vercel, baut die Rückfalldatei, committet und pusht.
+merkt sich IDs, wartet auf Vercel, baut die Rückfalldatei, committet und pusht —
+auch die Zuordnung in `js/data.js`, bevor es live prüft (Stand 29.09.2026; vorher
+meldete die Live-Prüfung bei jeder neuen Uhr „Uhr fehlt").
 Meldet es einen FEHLER: Meldung lesen, Ursache in `uhr.json` beheben, dann
 `python3 tools/uhr.py weiter arbeit/<name>` — der Ablauf setzt dort fort, wo er stand.
 
