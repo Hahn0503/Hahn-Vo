@@ -89,7 +89,7 @@
     <div class="meta">
       <div><b>Für</b>Hannes Hahn</div>
       <div><b>Von</b>Valentin Püschel</div>
-      <div><b>Stand</b>4. September 2026 · Fassung 1</div>
+      <div><b>Stand</b>29. September 2026 · Fassung 2</div>
     </div>
   </div>
 
@@ -103,7 +103,7 @@
         <li>GitHub-Konto</li>
         <li>Claude-Konto mit Abo</li>
         <li>Shopify mit Claude verbinden</li>
-        <li>Vercel-Einladung annehmen</li>
+        <li>Eigenes Vercel-Team anlegen</li>
         <li>Resend-Login prüfen</li>
         <li>Claude-App auf dem Mac</li>
       </ul>
@@ -115,7 +115,7 @@
       <ul>
         <li>Projekt auf deinen Mac</li>
         <li>Probelauf: du legst eine Uhr an</li>
-        <li>Vercel-Team wird deins</li>
+        <li>Website zieht in dein Vercel-Team</li>
         <li>Code-Ablage auf dein GitHub</li>
         <li>Mail-Schlüssel erneuern</li>
       </ul>
@@ -135,7 +135,7 @@
   <h2>Wie das System zusammenhängt</h2>
   <div class="diagramm">
     <div class="box"><b>Shopify</b>Jede Uhr als Produkt, Bestand, Kasse. <br>Gehört dir schon. Bleibt die einzige Wahrheit über den Bestand.</div>
-    <div class="box"><b>Website auf Vercel</b>hahn-vo.de liest den Bestand live aus Shopify. <br>Liegt im Team „Hahn und Vo", das bald dir gehört.</div>
+    <div class="box"><b>Website auf Vercel</b>hahn-vo.de liest den Bestand live aus Shopify. <br>Zieht bei der Übergabe in dein eigenes Vercel-Team um.</div>
     <div class="box"><b>Code auf GitHub</b>Alle Dateien der Website plus die Werkzeuge und Regeln für Claude. <br>Zieht bald in dein GitHub-Konto um.</div>
   </div>
   <div class="pfeil">▲ &nbsp; Claude Code auf deinem Mac spricht mit allen dreien. Jede Änderung am Code wird automatisch in etwa 40 Sekunden live.</div>
@@ -163,7 +163,7 @@
       <table>
         <tr><td class="k">☐</td><td>GitHub-Benutzername</td></tr>
         <tr><td class="k">☐</td><td>„Shopify verbunden"</td></tr>
-        <tr><td class="k">☐</td><td>„Vercel-Einladung angenommen"</td></tr>
+        <tr><td class="k">☐</td><td>„Vercel-Team steht" + Name des Teams</td></tr>
         <tr><td class="k">☐</td><td>„Resend-Login klappt"</td></tr>
       </table>
       <h3>Das hast du parat</h3>
@@ -228,11 +228,11 @@
   <div class="schritt">
     <div class="nr">4</div>
     <div>
-      <div class="kopf"><h3>Vercel-Einladung annehmen</h3><span class="wer h">Hannes</span><span class="zeit">5 Minuten</span></div>
-      <p>Vercel liefert die Website aus. Die Website liegt bereits in einem eigenen Team <b>„Hahn und Vo"</b> (Pro-Tarif, vorerst auf Valentins Karte), und in deinem Postfach <b>info@hahntime.com</b> liegt eine Einladung von Vercel. Link in der Mail öffnen → Konto anlegen oder anmelden — <b>mit derselben E-Mail info@hahntime.com</b> (bei „Continue with GitHub" muss dein GitHub-Konto diese Adresse haben, sonst passt die Einladung nicht). Danach: <span class="pfad">vercel.com/hahn-vo</span> → Projekt <b>hahn-vo-df1c</b> → Reiter <b>Analytics</b>.</p>
-      <div class="hinweis"><b>Warum Pro und nicht kostenlos:</b> Vercel erlaubt den Gratis-Tarif nur für private, nicht-kommerzielle Seiten, und man kann niemanden ins Team holen. Ein laufender Uhrenshop gehört auf Pro (20 $/Monat).</div>
-      <div class="fertig"><b>Fertig, wenn:</b> du die Besucherzahlen unter Analytics siehst. Du bist vorerst „Viewer" (lesen); in Teil B wirst du Owner.</div>
-      <div class="senden"><b>An Valentin schicken:</b> „Vercel-Einladung angenommen".</div>
+      <div class="kopf"><h3>Eigenes Vercel-Team anlegen</h3><span class="wer h">Hannes</span><span class="zeit">10 Minuten</span></div>
+      <p>Vercel liefert die Website aus. Sie liegt im Moment noch in Valentins Konto — zusammen mit seinen anderen Kundenprojekten. Deshalb bekommt sie ein <b>eigenes Team unter deinem Namen</b>, in das wir sie in Teil B umziehen. <span class="pfad">vercel.com</span> → Sign up → <b>mit info@hahntime.com</b> (oder „Continue with GitHub", wenn dein GitHub-Konto diese Adresse hat). Dann oben links auf deinen Namen → <b>Create Team</b> → Name zum Beispiel <b>„Hahn und Vo OHG"</b> (ein „&amp;" nimmt Vercel nicht an) → Tarif <b>Pro</b> → deine Karte hinterlegen.</p>
+      <div class="hinweis"><b>Warum Pro und nicht kostenlos:</b> Vercel erlaubt den Gratis-Tarif nur für private, nicht-kommerzielle Seiten, und man kann niemanden ins Team holen. Wird ein Kontingent überschritten, schaltet Vercel die Seite im Gratis-Tarif ab, statt es zu berechnen. Ein laufender Uhrenshop gehört auf Pro (20 $/Monat). Konto, Rechnung und Vertrag laufen damit auf dich — nicht mehr auf Valentin.</div>
+      <div class="fertig"><b>Fertig, wenn:</b> dein Team unter Settings → Billing „Pro" zeigt. Es ist noch leer — die Website kommt in Teil B.</div>
+      <div class="senden"><b>An Valentin schicken:</b> „Vercel-Team steht" und den Namen des Teams.</div>
     </div>
   </div>
 
@@ -257,7 +257,7 @@
   </div>
 
   <h2 style="margin-top:6mm">Was wir in Teil B <u>nicht</u> mehr tun müssen</h2>
-  <p>Das steckt schon im Projekt und wandert mit dem Repo mit: die fünf Skills (Uhr anlegen, Status setzen, löschen, Bilder ändern, Website ändern), die Werkzeuge dahinter, die Regeln (z. B. Besteuerung, Bildreihenfolge, interne Codes), und eine Liste aller Fehler aus dem Aufbau mit ihrer Lösung. Nichts davon hängt an Valentins Konto.</p>
+  <p>Das steckt schon im Projekt und wandert mit dem Repo mit: die fünf Skills (Uhr anlegen, Status setzen, löschen, Bilder ändern, Website ändern), die Werkzeuge dahinter — inklusive der Uhren über 8.500 €, die „per Überweisung" laufen —, die Regeln (z. B. Besteuerung, Bildreihenfolge, interne Codes), und eine Liste aller Fehler aus dem Aufbau mit ihrer Lösung. Nichts davon hängt an Valentins Konto.</p>
   <div class="hinweis"><b>Kurz gesagt:</b> Teil A sind Konten. Teil B ist Verbinden und Üben. Danach machst du im Alltag nur noch eins: Claude sagen, was passieren soll.</div>
 </section>
 
@@ -305,9 +305,9 @@ Reservierung bei p… wieder raus</pre>
   <div class="schritt">
     <div class="nr">4</div>
     <div>
-      <div class="kopf"><h3>Vercel-Team an Hannes übergeben</h3><span class="wer b">Beide</span><span class="zeit">10 Minuten</span></div>
-      <p>Das Team „Hahn und Vo" enthält nur die Website; Hannes ist bereits Viewer. Jetzt wechselt die Eigentümerschaft — ohne Übertragung, ohne Ausfall: Valentin setzt unter <span class="pfad">Team → Settings → Members</span> Hannes' Rolle auf <b>Owner</b>. Hannes hinterlegt unter <span class="pfad">Settings → Billing</span> seine Karte und entfernt Valentins. Dann stuft Hannes Valentin auf <b>Viewer</b> zurück (kostenlos).</p>
-      <div class="fertig"><b>Fertig, wenn:</b> Hannes als einziger Owner steht, seine Karte hinterlegt ist, Valentin Viewer ist, hahn-vo.de weiterhin lädt und unter <span class="pfad">Settings → Environment Variables</span> die zwei Einträge <code>RESEND_API_KEY</code> und <code>ANFRAGE_AN</code> da sind.</div>
+      <div class="kopf"><h3>Website in dein Vercel-Team umziehen</h3><span class="wer b">Beide</span><span class="zeit">15 Minuten</span></div>
+      <p>Nur das eine Projekt zieht um, Valentins andere Projekte bleiben, wo sie sind. Valentin erzeugt für das Projekt <b>hahn-vo-df1c</b> einen Übertragungs-Link und schickt ihn dir. Du öffnest ihn, angemeldet bei Vercel, wählst <b>dein Team</b> und bestätigst. Die Domain hahn-vo.de, die Einstellungen und die Mail-Zugangsdaten ziehen mit — die Website bleibt dabei online. Danach lädst du Valentin als <b>Viewer</b> in dein Team ein (kostenlos), damit er bei Bedarf mitschauen kann.</p>
+      <div class="fertig"><b>Fertig, wenn:</b> hahn-vo-df1c in deinem Team steht, hahn-vo.de weiterhin lädt, unter <span class="pfad">Settings → Domains</span> hahn-vo.de und www.hahn-vo.de grün sind und unter <span class="pfad">Settings → Environment Variables</span> die zwei Einträge <code>RESEND_API_KEY</code> und <code>ANFRAGE_AN</code> da sind.</div>
     </div>
   </div>
 
@@ -367,7 +367,7 @@ git remote set-url origin https://github.com/&lt;hannes&gt;/Hahn-Vo.git</pre>
     <tr><td class="k">☐</td><td>Altes, unbenutztes Vercel-Projekt <code>hahn-vo</code> (Stand 22. Juli) löschen</td><td>Valentins Vercel-Team</td></tr>
     <tr><td class="k">☐</td><td>Lokale Schlüsseldateien löschen (<code>~/.hv-tokens</code>, <code>.shopify-token</code>)</td><td>Valentins Mac</td></tr>
     <tr><td class="k">☐</td><td>Testbestellung #1002 (1 €, erstattet) archivieren</td><td>Shopify → Bestellungen</td></tr>
-    <tr><td class="k">☐</td><td>Cloud-Auftrag „p567 auf verkauft" läuft am 8. September 09:00 über Valentins Konto; danach Rückfalldatei nachziehen</td><td>Claude</td></tr>
+    <tr><td class="k">☐</td><td>Vercel-Team „Hahn und Vo" in Valentins Konto umbenennen — es enthält nach dem Umzug nur noch seine eigenen Projekte</td><td>Valentins Vercel-Konto</td></tr>
   </table>
 
   <h2>Danach: dein Alltag</h2>
@@ -380,8 +380,11 @@ git remote set-url origin https://github.com/&lt;hannes&gt;/Hahn-Vo.git</pre>
     <tr><td>„p567 Preis auf 3.250" · „p567 auf Sale: 9.190 statt 9.990"</td><td>ändert Preis bzw. Streichpreis — Kasse sofort, Website binnen 5 Minuten</td></tr>
     <tr><td>„p567 komplett löschen"</td><td>prüft Bestellungen, löscht in Shopify und im Projekt; fragt nach, wenn „rausnehmen" nicht eindeutig ist</td></tr>
     <tr><td>„Bei p567 das Set-Foto als zweites Bild" · angehängtes Bild „als Hover"</td><td>ordnet die Bilder um, zeigt dir das Ergebnis</td></tr>
+    <tr><td>„Bei p567 noch als Zusatz: <i>Revision bei Omega 2026, Garantie bis 2028</i>"</td><td>setzt den Text als <b>„Besonderheiten"</b> oben auf die Produktseite, direkt unter den Preis — und prüft, dass er live sichtbar ist</td></tr>
+    <tr><td>„p567 mit 24 Monaten Garantie"</td><td>ändert die Garantie nur für diese Uhr: Kachel unter dem Kaufknopf, Versprechen-Text, Google-Beschreibung. Alle anderen bleiben bei 12</td></tr>
     <tr><td>„Ändere den Text auf Über uns: …" · Screenshot mit Markierung</td><td>Website-Änderung, lokal geprüft, live gestellt</td></tr>
   </table>
+  <div class="hinweis"><b>Uhren über 8.500 €</b> stellt Claude von selbst auf <b>„Per Überweisung"</b>: Der Kaufknopf öffnet dann WhatsApp statt des Warenkorbs, der Kunde zahlt auf Rechnung — Shopify Payments nimmt keine Zahlungen über 10.000 US-Dollar an. Dieselben Sätze wie oben gelten auch für diese Uhren.</div>
   <div class="hinweis"><b>Was Claude nie von allein tut:</b> andere Uhren anfassen, ohne Auftrag löschen, Preise oder Baujahre erfinden, Texte mit fremden Marken übernehmen, Garantie- oder Versandzusagen umformulieren.</div>
 
   <h3 style="margin-top:4mm">Zwei Dinge, die du pflegst</h3>
@@ -401,8 +404,8 @@ git remote set-url origin https://github.com/&lt;hannes&gt;/Hahn-Vo.git</pre>
   <h3 style="margin-top:4mm">Noch offen, unabhängig von der Übergabe</h3>
   <ul>
     <li>Kleinanzeigen-Inserat der Omega Seamaster 166.001 beginnt mit einem Rolex-Text (kopierte Vorlage) — dort korrigieren.</li>
-    <li>Link-Vorschau beim Teilen einer Produktseite zeigt das Gründerfoto statt der Uhr — technisch lösbar, halber Tag.</li>
-    <li>Der eBay- und der Chrono24-Leser sind gebaut, aber noch an keinem echten Inserat erprobt. Beim ersten Mal Valentin dazuholen.</li>
+    <li><b>Interne Codes durchsehen:</b> 552-26 war doppelt vergeben. Deshalb passen bei p585, p586 und p5860 Kennung und Code nicht zusammen. Codes nie doppelt vergeben — sie sind Überweisungszweck und Chrono24-Nummer.</li>
+    <li>Der eBay-Leser ist noch an keinem echten Inserat erprobt (Chrono24 schon) — beim ersten Mal Valentin dazuholen.</li>
   </ul>
 </section>
 
