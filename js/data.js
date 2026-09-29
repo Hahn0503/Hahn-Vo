@@ -2904,7 +2904,7 @@ window.PRODUCTS = [
   "brand": "Rolex",
   "name": "Datejust 41 Jubilee Zifferblatt Silber Jahr 2026",
   "ref": "126334",
-  "price": 13390,
+  "price": 12990,
   "listPrice": null,
   "status": "anfrage",
   "category": "uhren",
