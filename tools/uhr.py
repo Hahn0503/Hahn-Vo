@@ -37,6 +37,11 @@ IMGDIR = os.path.join(ROOT, 'assets', 'products')
 ARBEIT = os.path.join(ROOT, 'arbeit')
 DIFF_CSV = os.path.join(ROOT, 'daten', 'differenzbesteuerung.csv')
 HINWEISE_JSON = os.path.join(ROOT, 'daten', 'hinweise.json')
+ANFRAGE_JSON = os.path.join(ROOT, 'daten', 'anfrage-uhren.json')
+# Shopify Payments verarbeitet keine Ware über 10.000 USD. Uhren darüber liegen
+# in Shopify als Entwurf und stehen auf der Website „Per Überweisung" (aus
+# daten/anfrage-uhren.json). Seit 06.09.2026, siehe docs/SYSTEM.md.
+GRENZE_UEBERWEISUNG = 8500
 SHOP_JS = os.path.join(ROOT, 'api', '_shop.js')
 KATALOG_JS = os.path.join(ROOT, 'api', 'katalog.js')
 
@@ -216,6 +221,55 @@ def fallback_bauen():
     datajs_syntax()
 
 
+def anfrage_laden():
+    return lies_json(ANFRAGE_JSON)
+
+
+def anfrage_schreiben(d):
+    # Gleiche Formatierung wie die Datei selbst (indent=1), damit Diffs klein bleiben.
+    with io.open(ANFRAGE_JSON, 'w', encoding='utf-8') as f:
+        f.write(json.dumps(d, ensure_ascii=False, indent=1) + '\n')
+
+
+def anfrage_eintrag(kennung):
+    """Eintrag einer Uhr „per Überweisung" oder None."""
+    for e in anfrage_laden().get('produkte', []):
+        if e.get('id') == kennung:
+            return e
+    return None
+
+
+def anfrage_aendern(kennung, **felder):
+    d = anfrage_laden()
+    for e in d['produkte']:
+        if e.get('id') == kennung:
+            e.update(felder)
+            anfrage_schreiben(d)
+            return e
+    fehler('%s steht nicht in daten/anfrage-uhren.json' % kennung)
+
+
+def bild_version(pfade):
+    """Höchste ?v=-Nummer in einer Bildliste (0, wenn keine)."""
+    v = 0
+    for p in pfade or []:
+        m = re.search(r'\?v=(\d+)', p)
+        if m:
+            v = max(v, int(m.group(1)))
+    return v
+
+
+def warte_frisch(kennung, ok, sekunden=300):
+    """Nach einem Push: warten, bis das Deployment den neuen Stand ausliefert."""
+    start = time.time()
+    while time.time() - start < sekunden:
+        p, _ = produkt_live(kennung, frisch=True)
+        if ok(p):
+            return True
+        time.sleep(15)
+    return False
+
+
 def diff_tabelle():
     codes, refs = set(), set()
     if os.path.exists(DIFF_CSV):
@@ -338,9 +392,12 @@ def metafelder_literal(felder, code, besteuerung, hinweis=None, garantie=None):
 
 def m_product_create(u):
     tags = '[' + ', '.join(gq(t) for t in u['tags']) + ']'
-    return ('mutation { productCreate(product: { title: %s, vendor: %s, productType: %s, status: ACTIVE, tags: %s, '
-            'descriptionHtml: %s, metafields: %s }) { product { id title variants(first: 1) { nodes { id inventoryItem { id } } } } '
-            'userErrors { field message } } }'
+    # Uhren „per Überweisung" als Entwurf: nicht in Storefront und Kasse (Shopify Trust & Safety).
+    status = 'DRAFT' if u.get('ueberweisung') else 'ACTIVE'
+    vorlage = ('mutation { productCreate(product: { title: %s, vendor: %s, productType: %s, status: ' + status + ', tags: %s, '
+               'descriptionHtml: %s, metafields: %s }) { product { id title variants(first: 1) { nodes { id inventoryItem { id } } } } '
+               'userErrors { field message } } }')
+    return (vorlage
             % (gq(u['titel']), gq(u['marke']), gq(u['produkttyp']), tags, gq(u['beschreibung_html']),
                metafelder_literal(u['felder'], u['code'], u['besteuerung'], u.get('hinweis'), u.get('garantie_monate'))))
 
@@ -352,10 +409,13 @@ def m_einrichten(u, ids):
             '  h: productUpdate(product: {id: "%s", handle: %s}) { product { handle } userErrors { message } }\n'
             '  v: productVariantsBulkUpdate(productId: "%s", variants: [{id: "%s", price: "%.2f"%s, taxable: %s, '
             'inventoryItem: {sku: %s, tracked: true}, inventoryPolicy: DENY}]) { productVariants { sku price taxable } userErrors { message } }\n'
-            '  p: publishablePublish(id: "%s", input: [%s]) { userErrors { message } }\n'
+            '%s'
             '  i: %s\n}'
             % (ids['product'], gq(u['handle']), ids['product'], ids['variant'], u['preis'], listen,
-               'true' if u['taxable'] else 'false', gq(u['sku']), ids['product'], pubs,
+               'true' if u['taxable'] else 'false', gq(u['sku']),
+               # Uhren „per Überweisung" bleiben Entwurf: in keinen Verkaufskanal (Shopify Trust & Safety)
+               '' if u.get('ueberweisung') else
+               '  p: publishablePublish(id: "%s", input: [%s]) { userErrors { message } }\n' % (ids['product'], pubs),
                m_inventory(ids['inventoryItem'], 1)[len('mutation { '):-2]))
 
 
@@ -687,6 +747,13 @@ def uhr_laden_und_pruefen(ordner):
     u['tags'] = [t for t in tags if t]
     alts = b.get('alt') or {}
     kurz = ' '.join(titel.split()[:4])
+    # Über der Grenze: Entwurf in Shopify, Website „Per Überweisung".
+    # In uhr.json überschreibbar mit "ueberweisung": true/false.
+    if 'ueberweisung' in u:
+        u['ueberweisung'] = bool(u['ueberweisung'])
+    else:
+        u['ueberweisung'] = bool(u.get('preis')) and u['preis'] > GRENZE_UEBERWEISUNG
+
     u['alt_texte'] = []
     for neu, alt_pos in enumerate(reihe):
         if str(neu) in alts:
@@ -797,6 +864,33 @@ def a_medien_pruefen(ordner, z, s, d):
     return False
 
 
+def anfrage_eintrag_bauen(u, z):
+    """Website-Eintrag einer Uhr „per Überweisung" — dieselbe Form wie die
+    übrigen Einträge in daten/anfrage-uhren.json."""
+    f = u['felder']
+    absaetze = re.findall(r'<p>(.*?)</p>', u['beschreibung_html'], re.S)
+    absaetze = [re.sub(r'<[^>]+>', '', a).strip() for a in absaetze]
+    absaetze = [a for a in absaetze if a and 'Verwendungszweck' not in a]
+    # Der Bildsatz steht in den übrigen Einträgen als eigener Absatz.
+    text = '\n\n'.join(absaetze).replace(' ' + BILDSATZ, '\n\n' + BILDSATZ + '\n\n').replace('\n\n\n\n', '\n\n')
+    return {
+        'id': u['id'], 'brand': u['marke'], 'name': u['modell'], 'ref': f.get('referenz'),
+        'price': u['preis'], 'listPrice': u.get('listenpreis'), 'status': 'anfrage',
+        'category': 'uhren' if f.get('aufzug') else 'zubehoer',
+        'fullset': f.get('lieferumfang'), 'rating': f.get('zustand'),
+        'year': str(f['baujahr']) if f.get('baujahr') else None,
+        'size': f.get('durchmesser'), 'material': f.get('gehaeuse'), 'dial': f.get('zifferblatt'),
+        'strap': f.get('band'), 'movement': f.get('aufzug'), 'caliber': f.get('kaliber'), 'glass': f.get('glas'),
+        'gender': f.get('geschlecht'), 'tax': u['besteuerung'], 'sku': u['sku'], 'code': u['code'],
+        'added': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
+        'desc': text.strip(),
+        'note': u.get('hinweis') or None,
+        'warranty': int(u['garantie_monate']) if u.get('garantie_monate') else None,
+        'images': ['assets/products/%s/%d.jpg' % (u['id'], i) for i in range(len(z['bild_urls']))],
+        'shopifyId': u['shopifyId'],
+    }
+
+
 def s_kennung(ordner, z, s):
     u = z['uhr']
     karte = shopify_map()
@@ -804,7 +898,18 @@ def s_kennung(ordner, z, s):
     shopify_map_schreiben(karte)
     datajs_syntax()
     sag('  %s → %s in js/data.js eingetragen' % (u['id'], u['shopifyId']))
+    pfade = ['js/data.js']
+    if u.get('ueberweisung'):
+        d = anfrage_laden()
+        d['produkte'] = [e for e in d['produkte'] if e.get('id') != u['id']] + [anfrage_eintrag_bauen(u, z)]
+        anfrage_schreiben(d)
+        pfade.append('daten/anfrage-uhren.json')
+        sag('  „Per Überweisung": Eintrag in daten/anfrage-uhren.json (Shopify bleibt Entwurf)')
     fallback_bauen()
+    # Sofort pushen: Die Live-Prüfung liest die Zuordnung vom DEPLOYTEN Stand.
+    # Früher fehlte die Uhr dort jedes Mal („Uhr fehlt") und musste von Hand nachgeschoben werden.
+    rev = commit_und_push(pfade, 'Zuordnung %s (%s)' % (u['id'], u['titel'][:50]))
+    sag('  gepusht (%s), warte auf das Deployment …' % (rev or '—'))
 
 
 def live_pruefung(erwartet_id, pruef, max_sekunden=420):
@@ -827,8 +932,10 @@ def live_pruefung(erwartet_id, pruef, max_sekunden=420):
 
 def s_live(ordner, z, s):
     u = z['uhr']
+    erwartet = 'anfrage' if u.get('ueberweisung') else 'available'
     def ok(p):
-        return bool(p) and p['status'] == 'available' and p['price'] == u['preis'] and len(p.get('images') or []) == len(z['bild_urls'])
+        return bool(p) and p['status'] == erwartet and p['price'] == u['preis'] and len(p.get('images') or []) == len(z['bild_urls'])
+    warte_frisch(u['id'], ok)
     p = live_pruefung(u['id'], ok)
     # Marke im Filter?
     _, kat = produkt_live(u['id'], frisch=True)
@@ -840,10 +947,11 @@ def s_live(ordner, z, s):
 
 def s_abschluss(ordner, z, s):
     u = z['uhr']
-    rev = commit_und_push(['js/data.js'], 'Neu: %s (%s), %d EUR' % (u['titel'][:60], u['id'], u['preis']))
-    z['abschluss'] = ('%s ist live: %s/produkt?id=%s · %d € · %s · Commit %s. '
-                      'Hover-Bild und Cover jetzt auf der Live-Seite ansehen (python3 tools/uhr.py pruefen %s).'
-                      % (u['titel'], SITE, u['id'], u['preis'], u['besteuerung'], rev or '—', u['id']))
+    rev = commit_und_push(['js/data.js', 'daten/anfrage-uhren.json'], 'Neu: %s (%s), %d EUR' % (u['titel'][:60], u['id'], u['preis']))
+    z['abschluss'] = ('%s ist live: %s/produkt?id=%s · %d € · %s' % (u['titel'], SITE, u['id'], u['preis'], u['besteuerung']) +
+                      (' · PER ÜBERWEISUNG (über %d €: Shopify-Entwurf, kein Warenkorb)' % GRENZE_UEBERWEISUNG if u.get('ueberweisung') else '') +
+                      ' · Commit %s. Hover-Bild und Cover jetzt auf der Live-Seite ansehen (python3 tools/uhr.py pruefen %s).'
+                      % (rev or '—', u['id']))
 
 
 # ---------------------------------------------------------------- Schritte: Status / Preis / Löschen / Bilder
@@ -854,7 +962,20 @@ def s_ids(ordner, z, s):
         fehler('%s nicht im Live-Katalog gefunden (Kennung p567 oder Code 567-26 angeben).' % z['ziel'])
     z['produkt'] = {k: p.get(k) for k in ('id', 'brand', 'name', 'status', 'price', 'code', 'shopifyId', 'shopifyVariantId', 'images')}
     z['ids'] = {'product': 'gid://shopify/Product/' + str(p['shopifyId']), 'variant': p.get('shopifyVariantId')}
-    sag('  %s · %s %s · %s · %d €' % (p['id'], p['brand'], p['name'], p['status'], p['price']))
+    # Uhr „per Überweisung"? Dann liest die Website Status, Preis und Bilder aus
+    # daten/anfrage-uhren.json — Shopify (Entwurf) wird trotzdem mitgeführt.
+    z['ueberweisung'] = anfrage_eintrag(p['id']) is not None
+    sag('  %s · %s %s · %s · %d €%s' % (p['id'], p['brand'], p['name'], p['status'], p['price'],
+                                        ' · per Überweisung' if z['ueberweisung'] else ''))
+    if z.get('aktion') == 'preis' and z.get('preis'):
+        if not z['ueberweisung'] and z['preis'] > GRENZE_UEBERWEISUNG:
+            fehler('Neuer Preis %d € liegt über %d € — Shopify Payments verarbeitet das nicht, die Uhr müsste '
+                   'auf „Per Überweisung" umziehen (Shopify-Entwurf + Eintrag in daten/anfrage-uhren.json). '
+                   'Das macht dieses Skript nicht automatisch; Ablauf in docs/SYSTEM.md, Abschnitt „Per Überweisung".'
+                   % (z['preis'], GRENZE_UEBERWEISUNG))
+        if z['ueberweisung'] and z['preis'] <= GRENZE_UEBERWEISUNG:
+            sag('  HINWEIS: %d € liegt unter %d € — die Uhr könnte wieder in den Warenkorb (Rückweg in docs/SYSTEM.md). '
+                'Sie bleibt vorerst „Per Überweisung".' % (z['preis'], GRENZE_UEBERWEISUNG))
 
 
 def s_lager(ordner, z, s):
@@ -906,15 +1027,35 @@ def a_status_setzen(ordner, z, s, d):
     sag('  gesetzt')
 
 
+def s_ueberweisung_lokal(ordner, z, s):
+    """Bei Uhren „per Überweisung" zeigt die Website den Stand aus
+    daten/anfrage-uhren.json — den hier nachziehen und sofort pushen."""
+    if not z.get('ueberweisung'):
+        return
+    kennung, ziel = z['produkt']['id'], z['aktion']
+    if ziel == 'preis':
+        e = anfrage_aendern(kennung, price=z['preis'], listPrice=z.get('listenpreis'))
+    else:
+        e = anfrage_aendern(kennung, status={'verkauft': 'sold', 'reserviert': 'reserved', 'erhaeltlich': 'anfrage'}[ziel])
+    sag('  daten/anfrage-uhren.json: %s → %s · %s €' % (kennung, e['status'], e['price']))
+    rev = commit_und_push(['daten/anfrage-uhren.json'], '%s (%s %s): %s' % (
+        'Preis' if ziel == 'preis' else 'Bestand', kennung, z['produkt']['brand'],
+        '%d EUR' % z['preis'] if ziel == 'preis' else ziel))
+    sag('  gepusht (%s), warte auf das Deployment …' % (rev or '—'))
+
+
 def s_status_live(ordner, z, s):
     ziel = z['aktion']
-    erwartet = {'verkauft': 'sold', 'reserviert': 'reserved', 'erhaeltlich': 'available'}.get(ziel)
+    erwartet = {'verkauft': 'sold', 'reserviert': 'reserved',
+                'erhaeltlich': 'anfrage' if z.get('ueberweisung') else 'available'}.get(ziel)
     def ok(p):
         if not p:
             return False
         if ziel == 'preis':
             return p['price'] == z['preis']
         return p['status'] == erwartet
+    if z.get('ueberweisung'):
+        warte_frisch(z['produkt']['id'], ok)
     p = live_pruefung(z['produkt']['id'], ok)
     sag('  live: %s · %s · %d €' % (p['id'], p['status'], p['price']))
 
@@ -1025,6 +1166,13 @@ def s_loeschen_lokal(ordner, z, s):
         del karte['products'][p['id']]
         shopify_map_schreiben(karte)
         datajs_syntax()
+    if anfrage_eintrag(p['id']):
+        d = anfrage_laden()
+        d['produkte'] = [e for e in d['produkte'] if e.get('id') != p['id']]
+        anfrage_schreiben(d)
+        sag('  aus daten/anfrage-uhren.json entfernt')
+        commit_und_push(['daten/anfrage-uhren.json', 'js/data.js', 'assets/products/' + p['id']],
+                        'Bestand: %s (%s %s) geloescht' % (p['id'], p['brand'], p['name'][:40]))
     fallback_bauen()
     # Live: weg?
     start = time.time()
@@ -1145,8 +1293,19 @@ def s_bilder_lokal(ordner, z, s):
                 os.rename(os.path.join(ordner_bilder, 'tmp-%d.jpg' % i), os.path.join(ordner_bilder, '%d.jpg' % i))
         else:
             sag('  lokale Bilder passen nicht zur Shopify-Anzahl — Reservebilder nicht angefasst')
+    pfade = ['js/data.js', 'assets/products/' + p['id']]
+    e = anfrage_eintrag(p['id'])
+    if e is not None and os.path.isdir(ordner_bilder):
+        # Uhren „per Überweisung" zeigen die Bilder aus dem Projekt. Gleiche
+        # Dateinamen, neuer Inhalt → neue ?v=-Nummer, sonst sehen Kunden bis zu
+        # zwei Tage die alten Fotos (Browser-Zwischenspeicher, siehe PROBLEME L).
+        anzahl = len([f for f in os.listdir(ordner_bilder) if re.match(r'^\d+\.jpg$', f)])
+        v = bild_version(e.get('images')) + 1
+        anfrage_aendern(p['id'], images=['assets/products/%s/%d.jpg?v=%d' % (p['id'], i, v) for i in range(anzahl)])
+        pfade.append('daten/anfrage-uhren.json')
+        sag('  daten/anfrage-uhren.json: %d Bilder, ?v=%d' % (anzahl, v))
     fallback_bauen()
-    rev = commit_und_push(['js/data.js', 'assets/products/' + p['id']], 'Bilder: %s (%s %s) neu geordnet' % (p['id'], p['brand'], p['name'][:40]))
+    rev = commit_und_push(pfade, 'Bilder: %s (%s %s) neu geordnet' % (p['id'], p['brand'], p['name'][:40]))
     z['abschluss'] = ('Bilder von %s geändert · Commit %s. JETZT PFLICHT: python3 tools/uhr.py pruefen %s und den Live-Kontaktbogen ANSEHEN — '
                       'nicht nur IDs vergleichen (Fehler vom 31.08.).' % (p['id'], rev or '—', p['id']))
 
@@ -1160,6 +1319,7 @@ SCHRITTE = {
     'loeschen_lokal': s_loeschen_lokal, 'medien_abfragen': s_medien_abfragen, 'bild_hochladen': s_bilder_hochladen_lokal,
     'medien_hinzufuegen': s_medien_hinzufuegen, 'medien_aendern': s_medien_aendern, 'bilder_lokal': s_bilder_lokal,
     'hinweis_setzen': s_hinweis_setzen, 'hinweis_lokal': s_hinweis_lokal,
+    'ueberweisung_lokal': s_ueberweisung_lokal,
 }
 ANTWORTEN = {
     'productCreate': a_product_create, 'einrichten': a_einrichten, 'productCreateMedia': a_medien,
@@ -1202,6 +1362,7 @@ def plan_status(ziel, aktion, preis=None, listenpreis=None):
         schritt_anlegen('ids_aufloesen', 'skript'),
         schritt_anlegen('lager_abfragen', 'query', 'Sicherheitsprüfung: Titel muss zur Marke passen, sonst Stopp.'),
         schritt_anlegen('status_setzen', 'mutation'),
+        schritt_anlegen('ueberweisung_lokal', 'skript'),
         schritt_anlegen('status_live', 'skript'),
         schritt_anlegen('status_abschluss', 'skript'),
     ]}

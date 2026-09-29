@@ -47,7 +47,8 @@ function nachWebsiteForm(p, kennungen, rueckfall, garantien) {
   /* Verkauft schlägt reserviert: Was weg ist, ist weg. „anfrage" = zu haben,
    * aber nicht über die Kasse (siehe anfrageUhren in _shop.js). */
   var reserviert = /^(ja|yes|1|true)$/i.test(String(f.reserviert || '').trim());
-  var status = !p.verfuegbar ? 'sold' : (p.anfrage ? 'anfrage' : (reserviert ? 'reserved' : 'available'));
+  /* Reserviert schlägt „per Überweisung": Auch eine teure Uhr kann reserviert sein. */
+  var status = !p.verfuegbar ? 'sold' : (reserviert ? 'reserved' : (p.anfrage ? 'anfrage' : 'available'));
 
   var kennung = kennungen[p.shopifyId] || ersatzKennung(p.shopifyId);
 

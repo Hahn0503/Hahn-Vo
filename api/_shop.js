@@ -176,6 +176,8 @@ function anfrageUhren(shopify) {
       referenz: u.ref, baujahr: u.year, durchmesser: u.size, gehaeuse: u.material, zifferblatt: u.dial,
       band: u.strap, aufzug: u.movement, kaliber: u.caliber, zustand: u.rating, lieferumfang: u.fullset,
       geschlecht: u.gender, code: u.code, besteuerung: u.tax, glas: u.glass,
+      /* Besonderheiten, abweichende Garantie und „reserviert" gibt es auch hier. */
+      hinweis: u.note, garantie: u.warranty, reserviert: u.status === 'reserved' ? 'Ja' : null,
     };
     Object.keys(f).forEach(function (k) { if (f[k] == null || f[k] === '') delete f[k]; else f[k] = String(f[k]); });
     return {
