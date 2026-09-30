@@ -624,8 +624,9 @@ def uhr_laden_und_pruefen(ordner):
 
     # Kennung, Code
     kennung_pruefen(u.get('id', ''))
-    if not re.match(r'^\d{3,4}(-\d{2})?$', str(u.get('code', ''))):
-        probleme.append('code muss Hannes\' Artikelnummer sein: „427" oder „567-26", nicht %r' % u.get('code'))
+    # Formate: „427", „567-26", seit 30.09.2026 auch „K-600" (von Hannes so vergeben)
+    if not re.match(r'^(\d{3,4}(-\d{2})?|[A-Z]-\d{3,4})$', str(u.get('code', ''))):
+        probleme.append('code muss Hannes\' Artikelnummer sein: „427", „567-26" oder „K-600", nicht %r' % u.get('code'))
     gruende = kennung_frei(u['id'])
     if gruende:
         probleme.append('Kennung %s ist nicht frei: %s' % (u['id'], '; '.join(gruende)))
@@ -709,7 +710,10 @@ def uhr_laden_und_pruefen(ordner):
         probleme.append('Den Satz „Unsere Bilder sind unbearbeitet …" nicht selbst schreiben — das Skript hängt ihn an')
     if 'Verwendungszweck' in ganz:
         probleme.append('Die Überweisungszeile nicht selbst schreiben — das Skript hängt sie an')
-    if abs_:
+    # "herstellerbild": true — das Inserat hat nur ein Werbebild des Herstellers.
+    # Dann wären „Unsere Bilder sind unbearbeitet …" und „Lieferumfang auf den
+    # Bildern" falsch; beide Sätze entfallen (30.09.2026, Tudor/Rolex K-600/601).
+    if abs_ and not u.get('herstellerbild'):
         abs_[0] = abs_[0].rstrip() + ' ' + BILDSATZ
         if 'Lieferumfang' not in abs_[-1]:
             abs_[-1] = abs_[-1].rstrip() + ' ' + LIEFERSATZ
@@ -729,7 +733,9 @@ def uhr_laden_und_pruefen(ordner):
             probleme.append('bilder.reihenfolge enthält eine Position doppelt')
         if len(reihe) < 2:
             sag('  WARNUNG: nur ein Bild — kein Hover-Bild auf der Shop-Karte')
-    if b.get('zweites') not in ('set', 'front'):
+    if reihe and len(reihe) == 1:
+        pass   # nur ein Bild: kein zweites, also nichts zu prüfen
+    elif b.get('zweites') not in ('set', 'front'):
         probleme.append('bilder.zweites muss "set" oder "front" sein — die Regel: zweites Bild ist das Set-Foto oder ein weiteres Frontbild')
     if not b.get('cover_ist_front', False):
         probleme.append('bilder.cover_ist_front muss true sein — bestätige nach Blick auf den Kontaktbogen, dass Position %s eine frontale Zifferblattansicht ist' % (reihe[0] if reihe else '?'))
@@ -906,6 +912,14 @@ def s_kennung(ordner, z, s):
         pfade.append('daten/anfrage-uhren.json')
         sag('  „Per Überweisung": Eintrag in daten/anfrage-uhren.json (Shopify bleibt Entwurf)')
     fallback_bauen()
+    # fallback_bauen() baut js/data.js aus dem DEPLOYTEN Katalog neu. Der kennt
+    # eine Überweisungs-Uhr erst nach dem Push — ihre Zuordnung fiele sonst
+    # wieder heraus (gesehen 30.09.2026 bei p601). Deshalb danach erneut setzen.
+    karte = shopify_map()
+    if karte.get('products', {}).get(u['id']) != u['shopifyId']:
+        karte.setdefault('products', {})[u['id']] = u['shopifyId']
+        shopify_map_schreiben(karte)
+        datajs_syntax()
     # Sofort pushen: Die Live-Prüfung liest die Zuordnung vom DEPLOYTEN Stand.
     # Früher fehlte die Uhr dort jedes Mal („Uhr fehlt") und musste von Hand nachgeschoben werden.
     rev = commit_und_push(pfade, 'Zuordnung %s (%s)' % (u['id'], u['titel'][:50]))
