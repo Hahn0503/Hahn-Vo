@@ -545,6 +545,38 @@
     "assets/products/p587/8.jpg"
    ],
    "shopifyId": "10306872869192"
+  },
+  {
+   "id": "p601",
+   "brand": "Rolex",
+   "name": "Datejust 36 Zifferblatt Grün Ombré Jahr 2026",
+   "ref": "126200",
+   "price": 9690,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Ungetragen",
+   "year": "2026",
+   "size": "36 mm",
+   "material": "Edelstahl",
+   "dial": "Grün (Ombré)",
+   "strap": "Edelstahl",
+   "movement": "Automatik",
+   "caliber": null,
+   "glass": null,
+   "gender": "Unisex",
+   "tax": "Differenzbesteuerung",
+   "sku": "HV-P601",
+   "code": "K-601",
+   "added": "2026-09-30T14:38:30Z",
+   "desc": "Hier präsentieren wir die Rolex Datejust 36, Ref. 126200, neu und ungetragen aus September 2026. Grünes Ombré-Zifferblatt, glatte Lünette, Gehäuse und Oyster-Band aus Edelstahl, 36 mm Durchmesser, Automatikwerk.\n\nGeliefert im Full Set mit originaler Rolex-Box, Garantiekarte und Booklets.",
+   "note": "Neu und ungetragen, im Full Set aus September 2026 mit originaler Rolex-Garantiekarte.\n\nDie Abbildung zeigt das Modell — Fotos dieser Uhr folgen.",
+   "warranty": null,
+   "images": [
+    "assets/products/p601/0.jpg"
+   ],
+   "shopifyId": "10312792637768"
   }
  ]
 }
