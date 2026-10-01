@@ -1592,7 +1592,7 @@ window.PRODUCTS = [
   "ref": "16014",
   "price": 6290,
   "listPrice": null,
-  "status": "available",
+  "status": "sold",
   "category": "uhren",
   "fullset": "Full Set (Box & Papiere)",
   "rating": null,
