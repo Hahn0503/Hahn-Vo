@@ -579,6 +579,48 @@
     "assets/products/p581/10.jpg"
    ],
    "shopifyId": "10313216819528"
+  },
+  {
+   "id": "p583",
+   "brand": "Vacheron Constantin",
+   "name": "Patrimony 40 Automatik Roségold Zifferblatt Blau Jahr 2024",
+   "ref": "85180/000R-B515",
+   "price": 22222,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Nur Box",
+   "rating": "Sehr gut",
+   "year": "2024",
+   "size": "40 mm",
+   "material": "Roségold",
+   "dial": "Blau",
+   "strap": "Leder (Dunkelblau)",
+   "movement": "Automatik",
+   "caliber": "2450 Q6/3",
+   "glass": null,
+   "gender": "Herren",
+   "tax": "Regelbesteuerung",
+   "sku": "HV-P583",
+   "code": "581-26",
+   "added": "2026-10-01T02:41:46Z",
+   "desc": "Hier präsentieren wir die Vacheron Constantin Patrimony 40, Ref. 85180/000R-B515, aus dem Jahr 2024. Blaues Zifferblatt, Gehäuse aus Roségold mit 40 mm Durchmesser, dunkelblaues Lederband, Manufakturkaliber 2450 Q6/3 mit Automatikaufzug.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nDie Herstellergarantie von Vacheron Constantin läuft bis 2030, im Februar 2026 erhielt die Uhr zuletzt einen Service bei Vacheron Constantin. Zum Lieferumfang gehören die originale Box mit Travel Pouch sowie die Booklets. Die originale Garantiekarte ist nicht vorhanden, jedoch liegt uns ein Foto der Garantiekarte vor. Der aktuelle Listenpreis beträgt 37.300 €. Ab dem 28. September 2026 verfügbar.",
+   "note": null,
+   "warranty": null,
+   "images": [
+    "assets/products/p583/0.jpg",
+    "assets/products/p583/1.jpg",
+    "assets/products/p583/2.jpg",
+    "assets/products/p583/3.jpg",
+    "assets/products/p583/4.jpg",
+    "assets/products/p583/5.jpg",
+    "assets/products/p583/6.jpg",
+    "assets/products/p583/7.jpg",
+    "assets/products/p583/8.jpg",
+    "assets/products/p583/9.jpg",
+    "assets/products/p583/10.jpg"
+   ],
+   "shopifyId": "10313217507656"
   }
  ]
 }
