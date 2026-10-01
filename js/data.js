@@ -2938,7 +2938,7 @@ window.PRODUCTS = [
   "ref": "126334",
   "price": 12990,
   "listPrice": null,
-  "status": "anfrage",
+  "status": "reserved",
   "category": "uhren",
   "fullset": "Full Set (Box & Papiere)",
   "rating": "Neu",
