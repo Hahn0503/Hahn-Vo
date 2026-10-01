@@ -108,7 +108,7 @@ Interner Status heißt im Code weiterhin `anfrage` — nur die Beschriftung ist 
 | Dienst | Konto | Aufgabe |
 |---|---|---|
 | Shopify | Hahn & Vo (info@hahntime.com) | Produkte, Bestand, Kasse, Zahlungen |
-| GitHub | `valentinpueschel-ui/Hahn-Vo` (öffentlich) — Übertragung an Hannes geplant | Code, Bilder |
+| GitHub | `Hahn0503/Hahn-Vo` (öffentlich), Hannes' Konto — seit 01.10.2026, vorher `valentinpueschel-ui/Hahn-Vo` | Code, Bilder |
 | Vercel | Projekt `hahn-vo-df1c`, Team von Valentin (Hobby) — eigenes Team geplant | Hosting, Analytics, Env-Vars `RESEND_API_KEY`, `ANFRAGE_AN` |
 | GoDaddy | Hahn & Vo | Domain hahn-vo.de, DNS (A → Vercel, `www` → Vercel, `shop` → Shopify) |
 | Resend | Konto auf info@hahntime.com | Mailversand der Formulare |

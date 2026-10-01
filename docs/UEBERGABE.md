@@ -12,7 +12,7 @@ das GitHub-Repo, das Vercel-Projekt und Valentins Claude-Umfeld.
 | Shopify-Store `tami1g-0j` | Hannes ist Store-Inhaber (info@hahntime.com, bestätigt 04.09.) | nichts; Valentins Mitarbeiterzugang nach der Übergabe einschränken oder entfernen |
 | Shopify ↔ Claude (Connector) | Valentins claude.ai | Hannes: claude.ai → Connectors → Shopify, mit seinem Login |
 | Shopify Admin-Zugang für den Direktmodus | existiert nicht | optional: App im Dev-Dashboard des Shop-Inhabers, Client-ID/Secret in `~/.hv-tokens` |
-| GitHub-Repo `valentinpueschel-ui/Hahn-Vo` (öffentlich) | Valentin | Settings → Transfer ownership → Hannes' GitHub-Konto (kostenlos). Danach Vercel neu verbinden (unten) |
+| GitHub-Repo `Hahn0503/Hahn-Vo` (öffentlich) | **Hannes, seit 01.10.2026** (vorher `valentinpueschel-ui/Hahn-Vo`) | erledigt: Vercel baut aus dem neuen Repo, Test-Push `49ece90` am 01.10. → Production „Ready" |
 | GitHub ↔ Claude | `gh` auf Valentins Mac | Hannes: `gh auth login` oder SSH-Schlüssel |
 | Vercel-Projekt `hahn-vo-df1c` + Env-Vars (`RESEND_API_KEY`, `ANFRAGE_AN`) | Team **„Hahn und Vo"** (vercel.com/hahn-vo), Owner Valentin. **Seit 22.09.2026 Hobby** — Valentin hat Pro gekündigt; beim Downgrade wurde sein Team `valentin-pueschel-projekte` in „Hahn und Vo" hineinverschmolzen und gelöscht. Im Team liegen jetzt auch Valentins andere Projekte (cana, goxida-site, kelida-site, ambiente-korea, marit, deshi, gakago, gakago-9jkg) und das verwaiste alte `hahn-vo`. Hannes' Viewer-Platz ist mit dem Downgrade weggefallen | **Stand 29.09.: nur das Projekt `hahn-vo-df1c` umziehen** — in ein eigenes Pro-Team, das Hannes selbst anlegt (seine Karte, 20 $/Monat). Übertragungs-Link: `POST /v1/projects/hahn-vo-df1c/transfer-request?teamId=…` → `vercel.com/claim-deployment?code=…`, Hannes wählt sein Team. Domain, Env-Vars, Analytics ziehen mit. Valentins Projekte bleiben in seinem Team; danach Team umbenennen. Hannes lädt Valentin als Viewer ein |
 | Domain hahn-vo.de, DNS | Hahn & Vo (GoDaddy) | nichts; Valentins Personal Access Token widerrufen |
@@ -37,7 +37,7 @@ das GitHub-Repo, das Vercel-Projekt und Valentins Claude-Umfeld.
 ## Reihenfolge
 
 1. **Hannes' Konten:** GitHub-Konto, Claude-Abo, Shopify-Connector verbinden.
-2. **Repo übertragen** (GitHub → Settings → Danger Zone → Transfer). Valentin bleibt Mitarbeiter.
+2. ~~**Repo übertragen**~~ — erledigt 01.10.2026: `Hahn0503/Hahn-Vo`, Vercel mit dem neuen Repo verbunden, Test-Push hat deployt.
 3. **Vercel:** Hannes legt ein eigenes Pro-Team an; Valentin schickt ihm einen Übertragungs-Link für `hahn-vo-df1c`, Hannes wählt sein Team. Danach Valentin als Viewer einladen. Bei der Übergabe: Rolle → Owner, seine Karte unter Billing, Valentin → Viewer. Nach dem Repo-Transfer: Project Settings → Git → mit dem Repo unter Hannes' Konto verbinden (Vercel-GitHub-App auf seinem Konto installieren). Ein Test-Push muss deployen.
 4. **Hannes' Mac:** `git clone`, `bash tools/einrichten.sh`, Playwright-Chromium installieren.
 5. **Probelauf zu zweit (90 Minuten):** Hannes legt eine echte Uhr mit dem Skill an, setzt eine auf reserviert, ändert ein Bild — Valentin sieht zu.

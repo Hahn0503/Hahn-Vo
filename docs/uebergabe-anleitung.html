@@ -281,9 +281,9 @@
     <div>
       <div class="kopf"><h3>Projekt auf den Mac, Claude richtet den Rest ein</h3><span class="wer b">Beide</span><span class="zeit">30 Minuten, meist Wartezeit</span></div>
       <p>Hannes legt auf dem Schreibtisch einen leeren Ordner <b>hahn-vo</b> an und öffnet ihn in der Claude-App als Projekt. Dann sagt er Claude — Wort für Wort reicht:</p>
-      <pre>Hol das Projekt von github.com/valentinpueschel-ui/Hahn-Vo in diesen Ordner und richte meinen Mac dafür ein. Ich bin Hannes Hahn, info@hahntime.com.</pre>
+      <pre>Hol das Projekt von github.com/Hahn0503/Hahn-Vo in diesen Ordner und richte meinen Mac dafür ein. Ich bin Hannes Hahn, info@hahntime.com.</pre>
       <p>Claude klont das Repo, startet <code>tools/einrichten.sh</code> und installiert, was fehlt: Apples Werkzeuge (ein Dialog, einmal bestätigen, ~10 Minuten), die Python-Pakete, den Browser fürs Inseratlesen, und hinterlegt Name und E-Mail für Commits. Für das spätere Pushen meldet Claude dich bei GitHub an (<code>gh auth login</code> öffnet den Browser — du klickst „Authorize"). Zum Schluss <code>/mcp</code> ins Claude-Fenster tippen: Shopify muss als verbunden erscheinen.</p>
-      <p class="klein">Terminal-Variante, falls jemand sie braucht: <code>git clone https://github.com/valentinpueschel-ui/Hahn-Vo.git ~/Desktop/hahn-vo</code>, dann darin <code>bash tools/einrichten.sh</code> und die genannten Befehle.</p>
+      <p class="klein">Terminal-Variante, falls jemand sie braucht: <code>git clone https://github.com/Hahn0503/Hahn-Vo.git ~/Desktop/hahn-vo</code>, dann darin <code>bash tools/einrichten.sh</code> und die genannten Befehle.</p>
       <div class="fertig"><b>Fertig, wenn:</b> Claude „<code>tools/einrichten.sh</code> meldet 0 fehlen" sagt, Shopify unter <code>/mcp</code> verbunden ist, und ein Probe-Push funktioniert (Claude: „mach einen leeren Test-Commit und pushe ihn").</div>
     </div>
   </div>
