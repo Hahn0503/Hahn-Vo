@@ -88,6 +88,11 @@ def schrift(name, groesse):
             os.makedirs(ORDNER, exist_ok=True)
             quelle = {"marcellus": "/vendor/fonts/marcellus.woff2", "inter": "/vendor/fonts/inter-var.woff2"}[name]
             try:
+                try:
+                    import brotli  # noqa: F401  (WOFF2 entpacken)
+                except ImportError:
+                    import subprocess, sys
+                    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "brotli"], capture_output=True)
                 from fontTools.ttLib import TTFont
                 roh = requests.get(BASIS + quelle, timeout=30).content
                 f = TTFont(io.BytesIO(roh)); f.flavor = None; f.save(pfad)
@@ -198,7 +203,7 @@ def render(uhr, art):
     f = schrift("marcellus", 64)
     for z in umbrechen(d, modell, f, 920)[:2]:
         text_mittig(d, y, z, f, WEISS)
-        y += 78
+        y += 90
     if blatt:
         text_mittig(d, y, blatt, schrift("inter", 32), GRAU)
         y += 56
