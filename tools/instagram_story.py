@@ -126,7 +126,9 @@ def text_mittig(d, y, text, f, farbe, sperren=0):
 def zeilen(uhr):
     """Name in Modell und Zifferblatt teilen, „Jahr 2026" herausnehmen."""
     name = re.sub(r"\s*Jahr\s+\d{4}\s*$", "", uhr.get("name") or "").strip()
-    m = re.search(r"\s+Zifferblatt\s+", name)
+    if uhr.get("ref"):  # Referenz steht in der Detailzeile, nicht doppelt im Titel
+        name = re.sub(r"\s*Ref\.?\s*" + re.escape(uhr["ref"]) + r"\b", "", name).strip()
+    m =re.search(r"\s+Zifferblatt\s+", name)
     if m:
         return name[:m.start()].strip(), "Zifferblatt " + name[m.end():].strip()
     return name, ""
