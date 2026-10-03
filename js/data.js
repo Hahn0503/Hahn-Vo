@@ -2511,7 +2511,8 @@ window.PRODUCTS = [
   "warranty": null,
   "images": [
    "assets/products/p600/0.jpg",
-   "assets/products/p600/1.jpg"
+   "assets/products/p600/1.jpg",
+   "assets/products/p600/2.jpg"
   ],
   "shopifyId": "10312790737224"
  },
