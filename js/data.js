@@ -2516,7 +2516,8 @@ window.PRODUCTS = [
    "assets/products/p600/3.jpg",
    "assets/products/p600/4.jpg",
    "assets/products/p600/5.jpg",
-   "assets/products/p600/6.jpg"
+   "assets/products/p600/6.jpg",
+   "assets/products/p600/7.jpg"
   ],
   "shopifyId": "10312790737224"
  },
