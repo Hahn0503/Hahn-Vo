@@ -2510,7 +2510,8 @@ window.PRODUCTS = [
   "note": "Neu und ungetragen, im Full Set aus September 2026 mit originaler Tudor-Garantiekarte.\n\nDie Abbildung zeigt das Modell — Fotos dieser Uhr folgen.",
   "warranty": null,
   "images": [
-   "assets/products/p600/0.jpg"
+   "assets/products/p600/0.jpg",
+   "assets/products/p600/1.jpg"
   ],
   "shopifyId": "10312790737224"
  },
