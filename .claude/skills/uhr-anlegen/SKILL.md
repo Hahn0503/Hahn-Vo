@@ -60,7 +60,7 @@ Zweiter Absatz."     # ohne Text = Hinweis entfernen
 Öffne `arbeit/<name>/kontaktbogen.jpg` mit dem Read-Werkzeug und sieh jedes Bild an.
 
 - **Cover (Position 0):** frontale Zifferblattansicht. Nicht die schönste Aufnahme — die frontale.
-- **Zweites Bild (Position 1) = Hover-Bild auf der Shop-Karte:** das **Set-Foto** (Box, Papiere), sonst ein **weiteres Frontbild** (Uhr in der Hand oder am Handgelenk, Zifferblatt frontal). Entweder oder — Regel von Valentin.
+- **Zweites Bild (Position 1) = Hover-Bild auf der Shop-Karte:** die **Uhr frontal in der Hand** (Handschuh/Hand, Zifferblatt gerade, Band oben und unten sichtbar) — `zweites: "front"`, `zweites_ist_front: true`. Nur wenn es kein solches Bild gibt: das Set-Foto. Das Set-Foto kommt sonst direkt danach (Position 2). Regel von Hannes, 07.10.2026 (vorher: Set zuerst).
 - **Steile Schrägaufnahmen** (Gehäuse dominiert, Zifferblatt verzerrt) sind KEIN Frontbild. Das ist am 04.09. bei drei Uhren schiefgegangen, weil die kleinen Vorschauen frontal wirkten. Im Zweifel die Einzeldatei `bilder/NN.jpg` öffnen.
 - **Fremde Uhren** (Nachbaranzeigen, andere Referenz, andere Farbe) und Duplikate weglassen. Der Kleinanzeigen-Leser filtert schon, aber sieh trotzdem hin.
 - Reihenfolge danach: Details, Band, Boden — wie ein Kunde die Uhr in die Hand nimmt.

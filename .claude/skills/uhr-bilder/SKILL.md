@@ -7,7 +7,7 @@ description: Bilder einer Uhr ändern — Reihenfolge, Cover/Hover-Bild, Bild en
 
 Auf der Website gilt: **Bild 0 = Cover der Shop-Karte und erstes Galeriebild. Bild 1 = Hover-Bild
 der Karte** (erscheint beim Überfahren mit der Maus). Regel von Valentin für Bild 1:
-Set-Foto, sonst ein weiteres Frontbild — entweder oder.
+Uhr frontal in der Hand (Hannes, 07.10.2026); nur wenn es so ein Bild nicht gibt, das Set-Foto.
 
 ## Erst sehen, dann ändern
 

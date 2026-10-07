@@ -34,7 +34,7 @@ unverändert zurückgeben. Keine Mutationen freihändig, nie „nebenbei" an and
 
 1. **Beschreibungen lesen.** Im Inserat stehen alle Angaben. Nichts erfinden, nichts schätzen — Baujahr, Kaliber, Glas nur, wenn sie dastehen.
 2. **Jede Uhr unter „Marken" auffindbar.** Titel beginnt mit der Marke; mehrwortige Marken stehen in `api/_shop.js` (MARKEN). Neue Marke → dort eintragen.
-3. **Zweites Bild = Set-Foto, sonst ein weiteres Frontbild.** Entweder oder. Steile Schrägaufnahmen sind kein Frontbild. Immer den Kontaktbogen ansehen, nie nach IDs urteilen.
+3. **Zweites Bild = Uhr frontal in der Hand** (Handschuh/Hand, Zifferblatt gerade; Hannes, 07.10.2026). Nur wenn es so ein Bild nicht gibt: Set-Foto. Steile Schrägaufnahmen sind kein Frontbild. Immer den Kontaktbogen ansehen, nie nach IDs urteilen.
 4. **Besteuerung, Dreistufenregel:** § 25a im Inseratstext → Differenzbesteuerung; sonst Code/Referenz in `daten/differenzbesteuerung.csv` → Differenzbesteuerung; sonst Regelbesteuerung. Es gibt beides — keine Pauschale. **Fehlt der Passus, ist das Absicht** — Hannes schreibt ihn immer hinein, wenn differenzbesteuert wird (bestätigt 13.09.2026). Also nicht nachfragen, nicht als Unsicherheit melden.
 5. **Preise 1:1 aus dem Inserat**, außer der Auftrag nennt einen anderen.
 6. **Interner Code = Hannes' Artikelnummer** (`427`, `567-26`), ohne Präfix. Er ist Überweisungszweck und Chrono24-Artikelnummer — nie erfinden, nie doppelt vergeben.

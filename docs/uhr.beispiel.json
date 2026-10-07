@@ -58,7 +58,7 @@
   "felder.geschlecht": "Herren | Damen | Unisex — unter 34 mm eher Damen, wenn das Inserat nichts sagt",
   "felder.glas": "Saphirglas | Mineralglas | Plexiglas | Kunststoff — nur wenn es im Inserat steht",
   "felder.baujahr": "Ganze Jahreszahl. Bei „ca.“, „n.b.“ oder Servicejahr im Titel: weglassen.",
-  "bilder.reihenfolge": "Positionen vom Kontaktbogen, Cover zuerst. Cover = frontale Zifferblattansicht. Zweites = Set-Foto, sonst ein weiteres Frontbild (Uhr in der Hand / am Handgelenk, Zifferblatt frontal). Steile Schrägaufnahmen sind kein Frontbild.",
-  "bilder.zweites": "set oder front — Regel von Valentin: entweder oder."
+  "bilder.reihenfolge": "Positionen vom Kontaktbogen, Cover zuerst. Cover = frontale Zifferblattansicht. Zweites = Uhr frontal in der Hand (Zifferblatt gerade); nur ohne solches Bild das Set-Foto, sonst Set an dritter Stelle. Steile Schrägaufnahmen sind kein Frontbild.",
+  "bilder.zweites": "front (Uhr in der Hand) — Regel von Hannes 07.10.2026; set nur, wenn kein Hand-Frontbild da ist."
  }
 }
