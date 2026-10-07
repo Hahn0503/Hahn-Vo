@@ -2752,6 +2752,45 @@ window.PRODUCTS = [
   "shopifyId": "10313216819528"
  },
  {
+  "id": "p602",
+  "brand": "Audemars Piguet",
+  "name": "Royal Oak 41 mm Zifferblatt Schwarz Jahr 2018",
+  "ref": "15400ST.OO.1220ST.01",
+  "price": 35900,
+  "listPrice": null,
+  "status": "anfrage",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Sehr gut",
+  "year": "2018",
+  "size": "41 mm",
+  "material": "Edelstahl",
+  "dial": "Schwarz",
+  "strap": "Edelstahl",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "K-1",
+  "added": "2026-10-07T05:15:31Z",
+  "desc": "Hier präsentieren wir die Audemars Piguet Royal Oak, Ref. 15400ST.OO.1220ST.01, aus dem Jahr 2018 im Full Set. Im Jahr 2021 wurde bei Audemars Piguet eine vollständige Revision der Uhr durchgeführt.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n41 mm Edelstahlgehäuse, schwarzes Zifferblatt, Edelstahlband für Handgelenke bis 16 cm, Automatikwerk. Geliefert mit originaler AP Box, originalen AP Papieren und originalem AP Reiseetui. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p602/0.jpg",
+   "assets/products/p602/1.jpg",
+   "assets/products/p602/2.jpg",
+   "assets/products/p602/3.jpg",
+   "assets/products/p602/4.jpg",
+   "assets/products/p602/5.jpg",
+   "assets/products/p602/6.jpg",
+   "assets/products/p602/7.jpg"
+  ],
+  "shopifyId": "10328464326984"
+ },
+ {
   "id": "p1237",
   "brand": "Breitling",
   "name": "Superocean 44 Automatik",
@@ -3482,6 +3521,7 @@ window.SHOPIFY = {
   "p560": "10235514290504",
   "p587": "10306872869192",
   "p581": "10313216819528",
+  "p602": "10328464326984",
   "p1237": "10219858657608",
   "p435": "10219712741704",
   "p384": "10219712872776",
@@ -3495,7 +3535,6 @@ window.SHOPIFY = {
   "p3734": "10219858428232",
   "p8007": "10227041108296",
   "p577": "10274244886856",
-  "p601": "10312792637768",
-  "p602": "10328464326984"
+  "p601": "10312792637768"
  }
 };
