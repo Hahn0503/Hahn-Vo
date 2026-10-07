@@ -2831,6 +2831,46 @@ window.PRODUCTS = [
   "shopifyId": "10328464326984"
  },
  {
+  "id": "p604",
+  "brand": "Rolex",
+  "name": "Datejust 36 Jubilee Zifferblatt Silber Jahr 2016",
+  "ref": "116234",
+  "price": 9390,
+  "listPrice": null,
+  "status": "anfrage",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Sehr gut",
+  "year": "2016",
+  "size": "36 mm",
+  "material": "Edelstahl",
+  "dial": "Silber",
+  "strap": "Edelstahl",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "K-3",
+  "added": "2026-10-07T05:30:07Z",
+  "desc": "Hier präsentieren wir die Rolex Datejust 36, Ref. 116234, aus dem Jahr 2016 im Full Set.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n36 mm Edelstahlgehäuse, silbernes Zifferblatt, Jubilee-Band aus Edelstahl, Automatikwerk. Geliefert mit originaler Rolex Box und originalen Rolex Papieren. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p604/0.jpg",
+   "assets/products/p604/1.jpg",
+   "assets/products/p604/2.jpg",
+   "assets/products/p604/3.jpg",
+   "assets/products/p604/4.jpg",
+   "assets/products/p604/5.jpg",
+   "assets/products/p604/6.jpg",
+   "assets/products/p604/7.jpg",
+   "assets/products/p604/8.jpg"
+  ],
+  "shopifyId": "10328467472712"
+ },
+ {
   "id": "p1237",
   "brand": "Breitling",
   "name": "Superocean 44 Automatik",
@@ -3563,6 +3603,7 @@ window.SHOPIFY = {
   "p587": "10306872869192",
   "p581": "10313216819528",
   "p602": "10328464326984",
+  "p604": "10328467472712",
   "p1237": "10219858657608",
   "p435": "10219712741704",
   "p384": "10219712872776",
@@ -3577,6 +3618,6 @@ window.SHOPIFY = {
   "p8007": "10227041108296",
   "p577": "10274244886856",
   "p601": "10312792637768",
-  "p604": "10328467472712"
+  "p605": "10328467767624"
  }
 };
