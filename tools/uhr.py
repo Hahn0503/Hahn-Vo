@@ -624,8 +624,8 @@ def uhr_laden_und_pruefen(ordner):
 
     # Kennung, Code
     kennung_pruefen(u.get('id', ''))
-    # Formate: „427", „567-26", seit 30.09.2026 auch „K-600" (von Hannes so vergeben)
-    if not re.match(r'^(\d{3,4}(-\d{2})?|[A-Z]-\d{3,4})$', str(u.get('code', ''))):
+    # Formate: „427", „567-26", seit 30.09.2026 auch „K-600", seit 07.10.2026 „K-1" (von Hannes so vergeben)
+    if not re.match(r'^(\d{3,4}(-\d{2})?|[A-Z]-\d{1,4})$', str(u.get('code', ''))):
         probleme.append('code muss Hannes\' Artikelnummer sein: „427", „567-26" oder „K-600", nicht %r' % u.get('code'))
     gruende = kennung_frei(u['id'])
     if gruende:
