@@ -508,6 +508,45 @@
     "assets/products/p581/10.jpg"
    ],
    "shopifyId": "10313216819528"
+  },
+  {
+   "id": "p602",
+   "brand": "Audemars Piguet",
+   "name": "Royal Oak 41 mm Zifferblatt Schwarz Jahr 2018",
+   "ref": "15400ST.OO.1220ST.01",
+   "price": 35900,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Sehr gut",
+   "year": "2018",
+   "size": "41 mm",
+   "material": "Edelstahl",
+   "dial": "Schwarz",
+   "strap": "Edelstahl",
+   "movement": "Automatik",
+   "caliber": null,
+   "glass": null,
+   "gender": "Herren",
+   "tax": "Differenzbesteuerung",
+   "sku": "HV-P602",
+   "code": "K-1",
+   "added": "2026-10-07T05:15:31Z",
+   "desc": "Hier präsentieren wir die Audemars Piguet Royal Oak, Ref. 15400ST.OO.1220ST.01, aus dem Jahr 2018 im Full Set. Im Jahr 2021 wurde bei Audemars Piguet eine vollständige Revision der Uhr durchgeführt.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n41 mm Edelstahlgehäuse, schwarzes Zifferblatt, Edelstahlband für Handgelenke bis 16 cm, Automatikwerk. Geliefert mit originaler AP Box, originalen AP Papieren und originalem AP Reiseetui. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+   "note": null,
+   "warranty": null,
+   "images": [
+    "assets/products/p602/0.jpg",
+    "assets/products/p602/1.jpg",
+    "assets/products/p602/2.jpg",
+    "assets/products/p602/3.jpg",
+    "assets/products/p602/4.jpg",
+    "assets/products/p602/5.jpg",
+    "assets/products/p602/6.jpg",
+    "assets/products/p602/7.jpg"
+   ],
+   "shopifyId": "10328464326984"
   }
  ]
 }
