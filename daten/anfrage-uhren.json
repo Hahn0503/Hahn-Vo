@@ -627,6 +627,46 @@
     "assets/products/p605/8.jpg"
    ],
    "shopifyId": "10328467767624"
+  },
+  {
+   "id": "p606",
+   "brand": "IWC",
+   "name": "Portugieser Ewiger Kalender 44 mm Zifferblatt Blau Jahr 2016",
+   "ref": "IW503401",
+   "price": 21490,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Sehr gut",
+   "year": "2016",
+   "size": "44 mm",
+   "material": "Weißgold",
+   "dial": "Blau",
+   "strap": "Leder",
+   "movement": "Automatik",
+   "caliber": null,
+   "glass": null,
+   "gender": "Herren",
+   "tax": "Regelbesteuerung",
+   "sku": "HV-P606",
+   "code": "605-26",
+   "added": "2026-10-10T06:16:37Z",
+   "desc": "Hier präsentieren wir den IWC Portugieser Ewiger Kalender, Ref. IW503401, im Full Set aus dem Jahr 2016. Die Uhr befindet sich in einem sehr guten Zustand.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n44 mm Weißgoldgehäuse, blaues Zifferblatt, dunkles Lederarmband (XL, bis zu 22 cm Handgelenksumfang), Automatikwerk mit sieben Tagen Gangreserve und Ewigem Kalender. Geliefert mit originaler IWC Box samt Jahresschieber und originalen IWC Papieren. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+   "note": null,
+   "warranty": null,
+   "images": [
+    "assets/products/p606/0.jpg",
+    "assets/products/p606/1.jpg",
+    "assets/products/p606/2.jpg",
+    "assets/products/p606/3.jpg",
+    "assets/products/p606/4.jpg",
+    "assets/products/p606/5.jpg",
+    "assets/products/p606/6.jpg",
+    "assets/products/p606/7.jpg",
+    "assets/products/p606/8.jpg"
+   ],
+   "shopifyId": "10335503974728"
   }
  ]
 }
