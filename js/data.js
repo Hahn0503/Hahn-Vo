@@ -2428,7 +2428,7 @@ window.PRODUCTS = [
   "movement": "Automatik",
   "caliber": null,
   "glass": null,
-  "gender": "Herren",
+  "gender": "Unisex",
   "tax": "Regelbesteuerung",
   "sku": null,
   "code": "603-26",
