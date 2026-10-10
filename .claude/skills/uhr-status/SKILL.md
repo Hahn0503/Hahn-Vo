@@ -47,6 +47,12 @@ Das Skript prüft vorher, dass der Shopify-Titel zur
 Marke passt (Sicherheitsstopp), prüft danach live — erst ohne, dann mit dem
 Besucher-Zwischenspeicher — baut die Rückfalldatei und committet.
 
+## Danach: Instagram-Story
+
+Bei **verkauft** und **reserviert** nach „Alle Schritte erledigt" automatisch die Story posten —
+Skill `instagram-story` lesen und ausführen, ohne Rückfrage (außer „ohne Instagram"). Gilt für jede
+Uhr im Auftrag, auch wenn Instagram nicht erwähnt wird. Bei erhältlich/Preis/Hinweis keine Story.
+
 ## Wörter, die Missverständnisse erzeugen
 
 - **„rausnehmen"** kann dreierlei heißen. Nicht nachfragen — als *verkauft* ausführen und im Bericht die beiden anderen Wege in einem Satz nennen:

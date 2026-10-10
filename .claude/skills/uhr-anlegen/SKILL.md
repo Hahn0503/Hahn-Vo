@@ -101,6 +101,11 @@ Nicht nach IDs urteilen — das war der Fehler vom 31.08. (Gehäuseboden stand a
 
 Bericht in drei bis fünf Sätzen, mehr nicht: Link, Preis, Besteuerung mit Grund, was Cover und zweites Bild zeigen, und jede Unsicherheit (fehlendes Baujahr, Geschlecht geschätzt, Fehler im Inseratstext, Kennung abweichend vom Code). Keine Schrittliste, keine Erklärung des Ablaufs.
 
+## Phase 6 — Instagram-Story
+
+Danach **automatisch** die Story „Neu eingetroffen" posten — Skill `instagram-story` lesen und
+ausführen, ohne Rückfrage (außer der Auftrag sagt „ohne Instagram"). Medien-ID in den Bericht.
+
 ## Was du NIE tust
 
 - Mutationen freihändig tippen oder an anderen Produkten „nebenbei" etwas ändern.

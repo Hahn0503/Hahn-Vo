@@ -25,6 +25,7 @@ ersten Aufruf mit „Immer erlauben" — danach läuft alles ohne Nachfrage, das
 | komplett löschen | `uhr-loeschen` |
 | Bildreihenfolge, Cover, Hover, Bild raus/rein | `uhr-bilder` |
 | Gestaltung, Texte, Rezensionen, Seiten | `website-aendern` |
+| nach hochladen / reserviert / verkauft (automatisch) | `instagram-story` |
 
 Die Skripte `tools/inserat.py` und `tools/uhr.py` führen; du liest, entscheidest und siehst hin.
 Shopify-Aufrufe, die `tools/uhr.py` druckt, **wörtlich** ausführen und die Antwort
