@@ -675,6 +675,46 @@
     "assets/products/p623/7.jpg"
    ],
    "shopifyId": "10358782001480"
+  },
+  {
+   "id": "p625",
+   "brand": "Rolex",
+   "name": "GMT-Master II 116719BLRO Pepsi Weißgold Jahr 2016",
+   "ref": "116719BLRO",
+   "price": 32490,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Sehr gut",
+   "year": "2016",
+   "size": "40 mm",
+   "material": "Weißgold",
+   "dial": "Schwarz",
+   "strap": "Weißgold",
+   "movement": "Automatik",
+   "caliber": null,
+   "glass": null,
+   "gender": "Herren",
+   "tax": "Differenzbesteuerung",
+   "sku": "HV-P625",
+   "code": "K-5",
+   "added": "2026-10-21T15:16:29Z",
+   "desc": "Hier präsentieren wir die Rolex GMT-Master II, Ref. 116719BLRO, aus dem Jahr 2016 im Full Set. Gehäuse und Oyster-Band aus massivem 18 Karat Weißgold, dazu die blau-rote Keramiklünette („Pepsi“) und die zweite Zeitzone über den 24-Stunden-Zeiger.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n40 mm Durchmesser, schwarzes Zifferblatt, Automatikwerk. Geliefert mit originaler Rolex Box und originalen Rolex Papieren, die Uhr ist unpoliert. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+   "note": "Unpoliert. Full Set mit allen Elementen, teils noch verklebt. Eine leichte Aufarbeitung ist auf Wunsch möglich. LC100.",
+   "warranty": null,
+   "images": [
+    "assets/products/p625/0.jpg",
+    "assets/products/p625/1.jpg",
+    "assets/products/p625/2.jpg",
+    "assets/products/p625/3.jpg",
+    "assets/products/p625/4.jpg",
+    "assets/products/p625/5.jpg",
+    "assets/products/p625/6.jpg",
+    "assets/products/p625/7.jpg",
+    "assets/products/p625/8.jpg"
+   ],
+   "shopifyId": "10359909876040"
   }
  ]
 }

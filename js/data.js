@@ -3192,6 +3192,45 @@ window.PRODUCTS = [
   "shopifyId": "10356833681736"
  },
  {
+  "id": "p623",
+  "brand": "Jaeger-LeCoultre",
+  "name": "Master Grande Ultra Thin Roségold 40 mm 174.2.90.S Jahr 2014",
+  "ref": "174.2.90.S",
+  "price": 9950,
+  "listPrice": null,
+  "status": "anfrage",
+  "category": "uhren",
+  "fullset": "Nur Papiere",
+  "rating": "Gut",
+  "year": "2014",
+  "size": "40 mm",
+  "material": "Roségold",
+  "dial": "Weiß",
+  "strap": "Leder",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Regelbesteuerung",
+  "sku": null,
+  "code": "623-26",
+  "added": "2026-10-21T10:25:38Z",
+  "desc": "Hier präsentieren wir die Jaeger-LeCoultre Master Grande Ultra Thin in Roségold, Ref. 174.2.90.S, aus dem Jahr 2014.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n40 mm Roségoldgehäuse, weißes Zifferblatt mit kleiner Sekunde und Automatik-Manufakturwerk, am dunklen Lederband. Geliefert mit originalen JLC-Papieren. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p623/0.jpg",
+   "assets/products/p623/1.jpg",
+   "assets/products/p623/2.jpg",
+   "assets/products/p623/3.jpg",
+   "assets/products/p623/4.jpg",
+   "assets/products/p623/5.jpg",
+   "assets/products/p623/6.jpg",
+   "assets/products/p623/7.jpg"
+  ],
+  "shopifyId": "10358782001480"
+ },
+ {
   "id": "p1237",
   "brand": "Breitling",
   "name": "Superocean 44 Automatik",
@@ -4209,6 +4248,7 @@ window.SHOPIFY = {
   "p605": "10328467767624",
   "p606": "10335503974728",
   "p630": "10356833681736",
+  "p623": "10358782001480",
   "p1237": "10219858657608",
   "p384": "10219712872776",
   "p550": "10232659771720",
@@ -4230,6 +4270,6 @@ window.SHOPIFY = {
   "p8007": "10227041108296",
   "p577": "10274244886856",
   "p601": "10312792637768",
-  "p623": "10358782001480"
+  "p625": "10359909876040"
  }
 };
