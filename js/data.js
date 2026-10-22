@@ -2877,8 +2877,8 @@ window.PRODUCTS = [
   "brand": "Rolex",
   "name": "Submariner Date Stahl/Gold Zifferblatt Blau",
   "ref": "16613",
-  "price": 8990,
-  "listPrice": null,
+  "price": 8350,
+  "listPrice": 8990,
   "status": "anfrage",
   "category": "uhren",
   "fullset": "Nur Box",
@@ -3266,8 +3266,7 @@ window.PRODUCTS = [
    "assets/products/p625/5.jpg",
    "assets/products/p625/6.jpg",
    "assets/products/p625/7.jpg",
-   "assets/products/p625/8.jpg",
-   "assets/products/p625/9.jpg"
+   "assets/products/p625/8.jpg"
   ],
   "shopifyId": "10359909876040"
  },
