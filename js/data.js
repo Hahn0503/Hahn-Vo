@@ -2997,45 +2997,6 @@ window.PRODUCTS = [
   "shopifyId": "10335503974728"
  },
  {
-  "id": "p630",
-  "brand": "Rolex",
-  "name": "GMT-Master II Pepsi 16710BLRO Oysterband Jahr 2005",
-  "ref": "16710BLRO",
-  "price": 10490,
-  "listPrice": null,
-  "status": "anfrage",
-  "category": "uhren",
-  "fullset": "Nur Uhr",
-  "rating": "Sehr gut",
-  "year": "2005",
-  "size": "40 mm",
-  "material": "Edelstahl",
-  "dial": "Schwarz",
-  "strap": "Edelstahl (Oysterband)",
-  "movement": "Automatik",
-  "caliber": null,
-  "glass": null,
-  "gender": "Herren",
-  "tax": "Regelbesteuerung",
-  "sku": null,
-  "code": "630-26",
-  "added": "2026-10-20T20:58:18Z",
-  "desc": "Hier präsentieren wir die Rolex GMT-Master II „Pepsi“ Ref. 16710BLRO aus dem Jahr 2005 am Oysterband.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n40 mm Edelstahlgehäuse mit blau-roter Lünette, schwarzes Zifferblatt und Automatikwerk. Gesamtzustand sehr gut, geliefert wird die Uhr ohne Box und Papiere. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
-  "note": null,
-  "warranty": null,
-  "images": [
-   "assets/products/p630/0.jpg",
-   "assets/products/p630/1.jpg",
-   "assets/products/p630/2.jpg",
-   "assets/products/p630/3.jpg",
-   "assets/products/p630/4.jpg",
-   "assets/products/p630/5.jpg",
-   "assets/products/p630/6.jpg",
-   "assets/products/p630/7.jpg"
-  ],
-  "shopifyId": "10356833681736"
- },
- {
   "id": "p623",
   "brand": "Jaeger-LeCoultre",
   "name": "Master Grande Ultra Thin Roségold 40 mm 174.2.90.S Jahr 2014",
@@ -3617,6 +3578,45 @@ window.PRODUCTS = [
    "assets/products/p605/8.jpg"
   ],
   "shopifyId": "10328467767624"
+ },
+ {
+  "id": "p630",
+  "brand": "Rolex",
+  "name": "GMT-Master II Pepsi 16710BLRO Oysterband Jahr 2005",
+  "ref": "16710BLRO",
+  "price": 10490,
+  "listPrice": null,
+  "status": "sold",
+  "category": "uhren",
+  "fullset": "Nur Uhr",
+  "rating": "Sehr gut",
+  "year": "2005",
+  "size": "40 mm",
+  "material": "Edelstahl",
+  "dial": "Schwarz",
+  "strap": "Edelstahl (Oysterband)",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Regelbesteuerung",
+  "sku": null,
+  "code": "630-26",
+  "added": "2026-10-20T20:58:18Z",
+  "desc": "Hier präsentieren wir die Rolex GMT-Master II „Pepsi“ Ref. 16710BLRO aus dem Jahr 2005 am Oysterband.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n40 mm Edelstahlgehäuse mit blau-roter Lünette, schwarzes Zifferblatt und Automatikwerk. Gesamtzustand sehr gut, geliefert wird die Uhr ohne Box und Papiere. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p630/0.jpg",
+   "assets/products/p630/1.jpg",
+   "assets/products/p630/2.jpg",
+   "assets/products/p630/3.jpg",
+   "assets/products/p630/4.jpg",
+   "assets/products/p630/5.jpg",
+   "assets/products/p630/6.jpg",
+   "assets/products/p630/7.jpg"
+  ],
+  "shopifyId": "10356833681736"
  }
 ];
 
@@ -3819,7 +3819,6 @@ window.SHOPIFY = {
   "p602": "10328464326984",
   "p604": "10328467472712",
   "p606": "10335503974728",
-  "p630": "10356833681736",
   "p623": "10358782001480",
   "p625": "10359909876040",
   "p384": "10219712872776",
@@ -3834,6 +3833,7 @@ window.SHOPIFY = {
   "p609": "10335681708360",
   "p577": "10274244886856",
   "p601": "10312792637768",
-  "p605": "10328467767624"
+  "p605": "10328467767624",
+  "p630": "10356833681736"
  }
 };
