@@ -3231,6 +3231,47 @@ window.PRODUCTS = [
   "shopifyId": "10358782001480"
  },
  {
+  "id": "p625",
+  "brand": "Rolex",
+  "name": "GMT-Master II 116719BLRO Pepsi Weißgold Jahr 2016",
+  "ref": "116719BLRO",
+  "price": 32490,
+  "listPrice": null,
+  "status": "anfrage",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Sehr gut",
+  "year": "2016",
+  "size": "40 mm",
+  "material": "Weißgold",
+  "dial": "Schwarz",
+  "strap": "Weißgold",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "K-5",
+  "added": "2026-10-21T15:16:29Z",
+  "desc": "Hier präsentieren wir die Rolex GMT-Master II, Ref. 116719BLRO, aus dem Jahr 2016 im Full Set. Gehäuse und Oyster-Band aus massivem 18 Karat Weißgold, dazu die blau-rote Keramiklünette („Pepsi“) und die zweite Zeitzone über den 24-Stunden-Zeiger.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n40 mm Durchmesser, schwarzes Zifferblatt, Automatikwerk. Geliefert mit originaler Rolex Box und originalen Rolex Papieren, die Uhr ist unpoliert. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": "Unpoliert. Full Set mit allen Elementen, teils noch verklebt. Eine leichte Aufarbeitung ist auf Wunsch möglich. LC100.",
+  "warranty": null,
+  "images": [
+   "assets/products/p625/0.jpg",
+   "assets/products/p625/1.jpg",
+   "assets/products/p625/2.jpg",
+   "assets/products/p625/3.jpg",
+   "assets/products/p625/4.jpg",
+   "assets/products/p625/5.jpg",
+   "assets/products/p625/6.jpg",
+   "assets/products/p625/7.jpg",
+   "assets/products/p625/8.jpg",
+   "assets/products/p625/9.jpg"
+  ],
+  "shopifyId": "10359909876040"
+ },
+ {
   "id": "p1237",
   "brand": "Breitling",
   "name": "Superocean 44 Automatik",
@@ -4249,6 +4290,7 @@ window.SHOPIFY = {
   "p606": "10335503974728",
   "p630": "10356833681736",
   "p623": "10358782001480",
+  "p625": "10359909876040",
   "p1237": "10219858657608",
   "p384": "10219712872776",
   "p550": "10232659771720",
@@ -4269,7 +4311,6 @@ window.SHOPIFY = {
   "p3734": "10219858428232",
   "p8007": "10227041108296",
   "p577": "10274244886856",
-  "p601": "10312792637768",
-  "p625": "10359909876040"
+  "p601": "10312792637768"
  }
 };
