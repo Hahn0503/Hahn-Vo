@@ -3073,46 +3073,6 @@ window.PRODUCTS = [
   "shopifyId": "10328467472712"
  },
  {
-  "id": "p605",
-  "brand": "Rolex",
-  "name": "GMT-Master II 40 mm Zifferblatt Schwarz Jahr 2018",
-  "ref": "116710LN",
-  "price": 13100,
-  "listPrice": null,
-  "status": "anfrage",
-  "category": "uhren",
-  "fullset": "Full Set (Box & Papiere)",
-  "rating": "Ungetragen",
-  "year": "2018",
-  "size": "40 mm",
-  "material": "Edelstahl",
-  "dial": "Schwarz",
-  "strap": "Edelstahl",
-  "movement": "Automatik",
-  "caliber": null,
-  "glass": null,
-  "gender": "Herren",
-  "tax": "Differenzbesteuerung",
-  "sku": null,
-  "code": "K-4",
-  "added": "2026-10-07T05:31:48Z",
-  "desc": "Hier präsentieren wir die Rolex GMT-Master II, Ref. 116710LN, aus dem Jahr 2018 im Full Set. Die Uhr befindet sich in einem neuwertigen, ungetragenen Zustand und wurde seit dem Kauf nicht getragen.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n40 mm Edelstahlgehäuse, schwarzes Zifferblatt, Edelstahlband, Automatikwerk. Geliefert mit originaler Rolex Box und originalen Rolex Papieren. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
-  "note": null,
-  "warranty": null,
-  "images": [
-   "assets/products/p605/0.jpg",
-   "assets/products/p605/1.jpg",
-   "assets/products/p605/2.jpg",
-   "assets/products/p605/3.jpg",
-   "assets/products/p605/4.jpg",
-   "assets/products/p605/5.jpg",
-   "assets/products/p605/6.jpg",
-   "assets/products/p605/7.jpg",
-   "assets/products/p605/8.jpg"
-  ],
-  "shopifyId": "10328467767624"
- },
- {
   "id": "p606",
   "brand": "IWC",
   "name": "Portugieser Ewiger Kalender 44 mm Zifferblatt Blau Jahr 2016",
@@ -4081,6 +4041,46 @@ window.PRODUCTS = [
    "assets/products/p601/0.jpg"
   ],
   "shopifyId": "10312792637768"
+ },
+ {
+  "id": "p605",
+  "brand": "Rolex",
+  "name": "GMT-Master II 40 mm Zifferblatt Schwarz Jahr 2018",
+  "ref": "116710LN",
+  "price": 13100,
+  "listPrice": null,
+  "status": "sold",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Ungetragen",
+  "year": "2018",
+  "size": "40 mm",
+  "material": "Edelstahl",
+  "dial": "Schwarz",
+  "strap": "Edelstahl",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "K-4",
+  "added": "2026-10-07T05:31:48Z",
+  "desc": "Hier präsentieren wir die Rolex GMT-Master II, Ref. 116710LN, aus dem Jahr 2018 im Full Set. Die Uhr befindet sich in einem neuwertigen, ungetragenen Zustand und wurde seit dem Kauf nicht getragen.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n40 mm Edelstahlgehäuse, schwarzes Zifferblatt, Edelstahlband, Automatikwerk. Geliefert mit originaler Rolex Box und originalen Rolex Papieren. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p605/0.jpg",
+   "assets/products/p605/1.jpg",
+   "assets/products/p605/2.jpg",
+   "assets/products/p605/3.jpg",
+   "assets/products/p605/4.jpg",
+   "assets/products/p605/5.jpg",
+   "assets/products/p605/6.jpg",
+   "assets/products/p605/7.jpg",
+   "assets/products/p605/8.jpg"
+  ],
+  "shopifyId": "10328467767624"
  }
 ];
 
@@ -4285,7 +4285,6 @@ window.SHOPIFY = {
   "p581": "10313216819528",
   "p602": "10328464326984",
   "p604": "10328467472712",
-  "p605": "10328467767624",
   "p606": "10335503974728",
   "p630": "10356833681736",
   "p623": "10358782001480",
@@ -4310,6 +4309,7 @@ window.SHOPIFY = {
   "p3734": "10219858428232",
   "p8007": "10227041108296",
   "p577": "10274244886856",
-  "p601": "10312792637768"
+  "p601": "10312792637768",
+  "p605": "10328467767624"
  }
 };
