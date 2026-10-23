@@ -3254,7 +3254,7 @@ window.PRODUCTS = [
   "code": "K-7",
   "added": "2026-10-23T19:03:54Z",
   "desc": "Hier präsentieren wir den A. Lange & Söhne 1815 Jahreskalender, Ref. 238.026, in 40 mm Weißgold — massives Silberzifferblatt mit arabischen Ziffern, Jahreskalender mit Monat, Wochentag und Datum, Mondphase und kleiner Sekunde.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nIm Inneren arbeitet das Handaufzugskaliber L051.3 mit rund 72 Stunden Gangreserve, sichtbar durch den Glasboden. Die Uhr zeigt leichte Gebrauchsspuren, darunter ein tieferer Kratzer an der Gehäuseflanke zwischen 6 und 7 Uhr; Glas, Zifferblatt und Zeiger sind einwandfrei. Geliefert mit Originalbox und Garantiekarte von 05/2022. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
-  "note": null,
+  "note": "Lieferzeit: 10 Werktage.",
   "warranty": null,
   "images": [
    "assets/products/p620/0.jpg",
