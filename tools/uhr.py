@@ -416,7 +416,7 @@ def m_einrichten(u, ids):
                # Uhren „per Überweisung" bleiben Entwurf: in keinen Verkaufskanal (Shopify Trust & Safety)
                '' if u.get('ueberweisung') else
                '  p: publishablePublish(id: "%s", input: [%s]) { userErrors { message } }\n' % (ids['product'], pubs),
-               m_inventory(ids['inventoryItem'], 1)[len('mutation { '):-2]))
+               m_inventory(ids['inventoryItem'], 1, 0)[len('mutation { '):-2]))
 
 
 def m_create_media(product_id, eintraege):
@@ -441,14 +441,19 @@ def q_bestellungen():
     return ('{ orders(first: 50, sortKey: CREATED_AT, reverse: true) { nodes { name lineItems(first: 10) { nodes { product { id } } } } } }')
 
 
-def m_inventory(inventory_item_id, delta):
-    """Bestand um delta verändern (nicht absolut setzen): inventoryAdjustQuantities
-    ist über alle API-Versionen stabil, inventorySetQuantities hat seine
-    Vergleichsfelder mehrfach umbenannt."""
+def m_inventory(inventory_item_id, delta, von):
+    """Bestand um delta verändern (nicht absolut setzen): inventoryAdjustQuantities.
+    Seit Oktober 2026 verlangt Shopify changeFromQuantity (bisheriger Bestand,
+    Vergleichsprüfung) und die Direktive @idempotent(key) — ohne beides lehnt es
+    den Aufruf ab. Schlüssel: Artikel + Ausgangs- und Zielmenge, damit eine
+    Wiederholung desselben Aufrufs nicht doppelt bucht; dazu die Stunde, damit
+    ein späteres Verkauft/Erhältlich desselben Artikels nicht verschluckt wird."""
+    key = 'hv-%s-%d-%d-%s' % (inventory_item_id.rsplit('/', 1)[-1], von, von + delta,
+                              time.strftime('%Y%m%d%H'))
     return ('mutation { inventoryAdjustQuantities(input: {name: "available", reason: "correction", '
-            'changes: [{inventoryItemId: "%s", locationId: "%s", delta: %d}]}) '
-            '{ inventoryAdjustmentGroup { changes { name delta quantityAfterChange } } userErrors { field message } } }'
-            % (inventory_item_id, LOCATION, delta))
+            'changes: [{inventoryItemId: "%s", locationId: "%s", delta: %d, changeFromQuantity: %d}]}) '
+            '@idempotent(key: "%s") { inventoryAdjustmentGroup { changes { name delta quantityAfterChange } } userErrors { field message } } }'
+            % (inventory_item_id, LOCATION, delta, von, key))
 
 
 def m_reserviert_setzen(product_id):
@@ -1015,7 +1020,7 @@ def s_status_setzen(ordner, z, s):
     teile = []
     if ziel == 'verkauft':
         if menge != 0:
-            teile.append('a: ' + m_inventory(inv, 0 - menge)[len('mutation { '):-2])
+            teile.append('a: ' + m_inventory(inv, 0 - menge, menge)[len('mutation { '):-2])
         if z['lager'].get('reserviert'):
             teile.append('b: ' + m_reserviert_loeschen(pid)[len('mutation { '):-2])
     elif ziel == 'reserviert':
@@ -1027,7 +1032,7 @@ def s_status_setzen(ordner, z, s):
         if z['lager'].get('reserviert'):
             teile.append('a: ' + m_reserviert_loeschen(pid)[len('mutation { '):-2])
         if menge < 1:
-            teile.append('b: ' + m_inventory(inv, 1 - menge)[len('mutation { '):-2])
+            teile.append('b: ' + m_inventory(inv, 1 - menge, menge)[len('mutation { '):-2])
     elif ziel == 'preis':
         teile.append('a: ' + m_preis(pid, z['ids']['variant'], z['preis'], z.get('listenpreis'))[len('mutation { '):-2])
     if not teile:
