@@ -65,6 +65,14 @@ Bestand live von `hahn-vo.de/api/katalog.json`. Steht dort noch der alte Status,
 Die Shopify-Produkt-ID steht in der Ausgabe von `tools/uhr.py` (Schritt `lager_abfragen`)
 oder in `js/data.js` (`window.SHOPIFY.products`).
 
+## Gestaltung — abgenommen, nicht ändern (Hannes, 23.10.2026)
+
+- Abzeichen oben groß und je Anlass farbig (`ABZEICHEN` in `tools/instagram_story.py`):
+  neu = hellblau, reserviert = gedämpftes Gold, verkauft = dunkelrot.
+- Bei „neu“ **keine** untere Zeile „— Neu eingetroffen —“; unten nur Preis und hahn-vo.de.
+
+„So soll es immer sein.“ Nicht vereinfachen oder zurückbauen; neue Wünsche nur zusätzlich umsetzen.
+
 ## Bericht
 
 Ein Satz je Story, angehängt an den Website-Bericht: „Story veröffentlicht, Medien-ID …".
