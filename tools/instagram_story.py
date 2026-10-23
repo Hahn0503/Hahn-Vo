@@ -48,6 +48,12 @@ TEXT = {
     "verkauft": ("VERKAUFT", "Verkauft"),
 }
 
+ABZEICHEN = {            # (Grundfarbe, Schriftfarbe) — gedämpft, passend zum Navy
+    "neu": ((214, 230, 244), NAVY_OBEN),
+    "reserviert": ((214, 178, 104), NAVY_UNTEN),
+    "verkauft": ((168, 58, 64), WEISS),
+}
+
 
 # ---------------------------------------------------------------- Bestand
 
@@ -170,16 +176,20 @@ def render(uhr, art):
 
     # Kopf
     text_mittig(d, 150, "HAHN & VO", schrift("marcellus", 50), WEISS, sperren=10)
+    # Abzeichen: größer und je Anlass eigene Farbe, damit man auf einen Blick
+    # sieht, ob neu, reserviert oder verkauft (Hannes, 23.10.2026)
     gross, klein = TEXT[art]
-    f = schrift("inter", 26)
-    breite = sum(d.textlength(c, font=f) for c in gross) + 6 * (len(gross) - 1) + 80
+    grund, schriftfarbe = ABZEICHEN[art]
+    f = schrift("inter", 34)
+    try:
+        f.set_variation_by_axes([650])
+    except Exception:
+        pass
+    breite = sum(d.textlength(c, font=f) for c in gross) + 7 * (len(gross) - 1) + 104
     x0 = (W - breite) / 2
-    if art == "neu":
-        d.rounded_rectangle([x0, 240, x0 + breite, 300], radius=30, fill=HELLBLAU)
-        text_mittig(d, 255, gross, f, NAVY_OBEN, sperren=6)
-    else:
-        d.rounded_rectangle([x0, 240, x0 + breite, 300], radius=30, outline=HELLBLAU, width=2)
-        text_mittig(d, 255, gross, f, HELLBLAU, sperren=6)
+    d.rounded_rectangle([x0, 230, x0 + breite, 308], radius=39, fill=grund)
+    b = d.textbbox((0, 0), gross, font=f)
+    text_mittig(d, 269 - (b[1] + b[3]) / 2, gross, f, schriftfarbe, sperren=7)
 
     # Foto 900 × 890, abgerundet
     fw, fh, fx, fy = 900, 890, 90, 355
