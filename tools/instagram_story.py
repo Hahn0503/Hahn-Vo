@@ -43,7 +43,7 @@ ORDNER = "/tmp/hahnvo-story"
 NEU_TAGE = 3          # „neu eingetroffen" nur für Uhren, die höchstens so alt sind
 
 TEXT = {
-    "neu": ("NEU EINGETROFFEN", "Neu eingetroffen"),
+    "neu": ("NEU EINGETROFFEN", None),   # unten keine Wiederholung (Hannes, 23.10.2026)
     "reserviert": ("RESERVIERT", "Reserviert"),
     "verkauft": ("VERKAUFT", "Verkauft"),
 }
@@ -225,14 +225,15 @@ def render(uhr, art):
         y += 64
 
     # Abschluss
-    y = max(y + 30, 1560)
-    f = schrift("marcellus", 36)
-    b = d.textbbox((0, 0), klein, font=f)
-    tw = b[2] - b[0]
-    text_mittig(d, y, klein, f, WEISS)
-    mitte = y + (b[3] + b[1]) / 2
-    d.line([(W / 2 - tw / 2 - 90, mitte), (W / 2 - tw / 2 - 24, mitte)], fill=HELLBLAU, width=2)
-    d.line([(W / 2 + tw / 2 + 24, mitte), (W / 2 + tw / 2 + 90, mitte)], fill=HELLBLAU, width=2)
+    if klein:
+        y = max(y + 30, 1560)
+        f = schrift("marcellus", 36)
+        b = d.textbbox((0, 0), klein, font=f)
+        tw = b[2] - b[0]
+        text_mittig(d, y, klein, f, WEISS)
+        mitte = y + (b[3] + b[1]) / 2
+        d.line([(W / 2 - tw / 2 - 90, mitte), (W / 2 - tw / 2 - 24, mitte)], fill=HELLBLAU, width=2)
+        d.line([(W / 2 + tw / 2 + 24, mitte), (W / 2 + tw / 2 + 90, mitte)], fill=HELLBLAU, width=2)
     text_mittig(d, 1790, "hahn-vo.de", schrift("inter", 28), GRAU, sperren=3)
 
     pfad = os.path.join(ORDNER, "%s-%s.jpg" % (uhr["id"], art))
