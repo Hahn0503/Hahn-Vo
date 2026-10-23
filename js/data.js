@@ -2655,7 +2655,7 @@ window.PRODUCTS = [
   "status": "available",
   "category": "uhren",
   "fullset": "Nur Uhr",
-  "rating": "Sehr gut",
+  "rating": "Gut",
   "year": "2002",
   "size": "34 mm",
   "material": "Edelstahl",
