@@ -3041,7 +3041,7 @@ window.PRODUCTS = [
  {
   "id": "p639",
   "brand": "Breitling",
-  "name": "Super Chronomat 44 Four-Year Calendar U19320 Stahl/Rosegold Jahr 2021",
+  "name": "Super Chronomat 44 Jahreskalender U19320 Jahr 2021",
   "ref": "U19320",
   "price": 9490,
   "listPrice": null,
