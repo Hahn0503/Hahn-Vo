@@ -642,6 +642,46 @@
     "assets/products/p625/8.jpg?v=2"
    ],
    "shopifyId": "10359909876040"
+  },
+  {
+   "id": "p639",
+   "brand": "Breitling",
+   "name": "Super Chronomat 44 Four-Year Calendar U19320 Stahl/Rosegold Jahr 2021",
+   "ref": "U19320",
+   "price": 9490,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Sehr gut",
+   "year": "2021",
+   "size": "44 mm",
+   "material": "Edelstahl/Rosegold",
+   "dial": "Blau",
+   "strap": "Edelstahl/Rosegold, zusätzlich Kautschuk blau",
+   "movement": "Automatik",
+   "caliber": null,
+   "glass": null,
+   "gender": "Herren",
+   "tax": "Differenzbesteuerung",
+   "sku": "HV-P639",
+   "code": "639-26",
+   "added": "2026-11-02T10:47:14Z",
+   "desc": "Hier präsentieren wir den Breitling Super Chronomat 44 Four-Year Calendar in Edelstahl/Rosegold, Ref. U19320, aus dem Jahr 2021 im Full Set.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nDer Chronograph mit blauem Zifferblatt zeigt Wochentag, Datum, Monat und Mondphase an und ist als Chronometer zertifiziert. Er wird am originalen Rouleaux-Armband in Edelstahl/Rosegold geliefert; zusätzlich gehört ein originales blaues Breitling-Kautschukband im Wert von ca. 400 € dazu. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+   "note": "Zusätzlich erhalten Sie ein originales blaues Breitling-Kautschukband im Wert von ca. 400 €.",
+   "warranty": null,
+   "images": [
+    "assets/products/p639/0.jpg",
+    "assets/products/p639/1.jpg",
+    "assets/products/p639/2.jpg",
+    "assets/products/p639/3.jpg",
+    "assets/products/p639/4.jpg",
+    "assets/products/p639/5.jpg",
+    "assets/products/p639/6.jpg",
+    "assets/products/p639/7.jpg",
+    "assets/products/p639/8.jpg"
+   ],
+   "shopifyId": "10397271982408"
   }
  ]
 }
