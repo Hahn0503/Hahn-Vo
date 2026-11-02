@@ -3039,6 +3039,45 @@ window.PRODUCTS = [
   "shopifyId": "10359909876040"
  },
  {
+  "id": "p639",
+  "brand": "Breitling",
+  "name": "Super Chronomat 44 Four-Year Calendar U19320 Stahl/Rosegold Jahr 2021",
+  "ref": "U19320",
+  "price": 9490,
+  "listPrice": null,
+  "status": "anfrage",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Sehr gut",
+  "year": "2021",
+  "size": "44 mm",
+  "material": "Edelstahl/Rosegold",
+  "dial": "Blau",
+  "strap": "Edelstahl/Rosegold, zusätzlich Kautschuk blau",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "639-26",
+  "added": "2026-11-02T10:47:14Z",
+  "desc": "Hier präsentieren wir den Breitling Super Chronomat 44 Four-Year Calendar in Edelstahl/Rosegold, Ref. U19320, aus dem Jahr 2021 im Full Set.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nDer Chronograph mit blauem Zifferblatt zeigt Wochentag, Datum, Monat und Mondphase an und ist als Chronometer zertifiziert. Er wird am originalen Rouleaux-Armband in Edelstahl/Rosegold geliefert; zusätzlich gehört ein originales blaues Breitling-Kautschukband im Wert von ca. 400 € dazu. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": "Zusätzlich erhalten Sie ein originales blaues Breitling-Kautschukband im Wert von ca. 400 €.",
+  "warranty": null,
+  "images": [
+   "assets/products/p639/0.jpg",
+   "assets/products/p639/1.jpg",
+   "assets/products/p639/2.jpg",
+   "assets/products/p639/3.jpg",
+   "assets/products/p639/4.jpg",
+   "assets/products/p639/5.jpg",
+   "assets/products/p639/6.jpg",
+   "assets/products/p639/7.jpg"
+  ],
+  "shopifyId": "10397271982408"
+ },
+ {
   "id": "p384",
   "brand": "Omega",
   "name": "Planet Ocean",
@@ -4088,6 +4127,7 @@ window.SHOPIFY = {
   "p606": "10335503974728",
   "p623": "10358782001480",
   "p625": "10359909876040",
+  "p639": "10397271982408",
   "p384": "10219712872776",
   "p7474": "10219857314120",
   "p5085": "10219857740104",
@@ -4109,7 +4149,6 @@ window.SHOPIFY = {
   "p577": "10274244886856",
   "p601": "10312792637768",
   "p605": "10328467767624",
-  "p630": "10356833681736",
-  "p639": "10397271982408"
+  "p630": "10356833681736"
  }
 };
