@@ -3073,7 +3073,8 @@ window.PRODUCTS = [
    "assets/products/p639/4.jpg",
    "assets/products/p639/5.jpg",
    "assets/products/p639/6.jpg",
-   "assets/products/p639/7.jpg"
+   "assets/products/p639/7.jpg",
+   "assets/products/p639/8.jpg"
   ],
   "shopifyId": "10397271982408"
  },
