@@ -726,6 +726,51 @@
     "assets/products/p626/12.jpg"
    ],
    "shopifyId": "10411438014792"
+  },
+  {
+   "id": "p627",
+   "brand": "Rolex",
+   "name": "Datejust II 41 mm Zifferblatt Schwarz Stahl/Gelbgold Jahr 2013",
+   "ref": "116333",
+   "price": 9990,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Sehr gut",
+   "year": "2013",
+   "size": "41 mm",
+   "material": "Edelstahl/Gelbgold",
+   "dial": "Schwarz",
+   "strap": "Edelstahl/Gelbgold",
+   "movement": "Automatik",
+   "caliber": null,
+   "glass": null,
+   "gender": "Herren",
+   "tax": "Differenzbesteuerung",
+   "sku": "HV-P627",
+   "code": "K-7",
+   "added": "2026-11-06T10:40:02Z",
+   "desc": "Hier präsentieren wir die Rolex Datejust II, Ref. 116333, aus dem Jahr 2013 im Full Set. Gehäuse aus Edelstahl mit geriffelter Lünette aus Gelbgold, schwarzes Zifferblatt mit arabischen Ziffern und Oysterband in Stahl/Gold.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n41 mm Durchmesser, Automatikwerk. Die Uhr ist in einem sehr guten Zustand: Das Gehäuse ist unaufbereitet und zeigt leichte Mikrokratzer an den Flanken, das Armband wurde frisch aufbereitet, Glas und Lünette sind kratzerfrei. Geliefert mit originaler Rolex Box samt Umkarton, Garantiekarte und Handbuch. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+   "note": null,
+   "warranty": null,
+   "images": [
+    "assets/products/p627/0.jpg",
+    "assets/products/p627/1.jpg",
+    "assets/products/p627/2.jpg",
+    "assets/products/p627/3.jpg",
+    "assets/products/p627/4.jpg",
+    "assets/products/p627/5.jpg",
+    "assets/products/p627/6.jpg",
+    "assets/products/p627/7.jpg",
+    "assets/products/p627/8.jpg",
+    "assets/products/p627/9.jpg",
+    "assets/products/p627/10.jpg",
+    "assets/products/p627/11.jpg",
+    "assets/products/p627/12.jpg",
+    "assets/products/p627/13.jpg"
+   ],
+   "shopifyId": "10411439292744"
   }
  ]
 }

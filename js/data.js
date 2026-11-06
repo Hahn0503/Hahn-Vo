@@ -2887,6 +2887,50 @@ window.PRODUCTS = [
   "shopifyId": "10359909876040"
  },
  {
+  "id": "p626",
+  "brand": "Rolex",
+  "name": "Yacht-Master 40 Zifferblatt Blau Platin-Lünette Jahr 2021",
+  "ref": "126622",
+  "price": 11990,
+  "listPrice": null,
+  "status": "anfrage",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Sehr gut",
+  "year": "2021",
+  "size": "40 mm",
+  "material": "Edelstahl/Platin",
+  "dial": "Blau",
+  "strap": "Edelstahl",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "K-6",
+  "added": "2026-11-06T10:34:46Z",
+  "desc": "Hier präsentieren wir die Rolex Yacht-Master 40, Ref. 126622, aus dem Jahr 2021 im Full Set. Das Gehäuse aus Oystersteel trägt eine beidseitig drehbare Lünette aus Platin, dazu das blaue Zifferblatt mit rotem Sekundenzeiger.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n40 mm Durchmesser, Oyster-Band aus Oystersteel, Automatikwerk. Die Uhr ist in einem sehr guten Zustand: Gehäuse und Band sehr gut, die Lünette zeigt leichte Mikrokratzer, das Glas ist kratzerfrei. Geliefert mit originaler Rolex Box samt Umkarton, Garantiekarte, Handbuch und Hang-Tag. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p626/0.jpg",
+   "assets/products/p626/1.jpg",
+   "assets/products/p626/2.jpg",
+   "assets/products/p626/3.jpg",
+   "assets/products/p626/4.jpg",
+   "assets/products/p626/5.jpg",
+   "assets/products/p626/6.jpg",
+   "assets/products/p626/7.jpg",
+   "assets/products/p626/8.jpg",
+   "assets/products/p626/9.jpg",
+   "assets/products/p626/10.jpg",
+   "assets/products/p626/11.jpg",
+   "assets/products/p626/12.jpg"
+  ],
+  "shopifyId": "10411438014792"
+ },
+ {
   "id": "p3771",
   "brand": "IWC",
   "name": "Portofino Automatic 40 Zifferblatt silber",
@@ -4198,6 +4242,7 @@ window.SHOPIFY = {
   "p606": "10335503974728",
   "p623": "10358782001480",
   "p625": "10359909876040",
+  "p626": "10411438014792",
   "p3771": "10219856789832",
   "p384": "10219712872776",
   "p4808": "10219856724296",
@@ -4227,6 +4272,6 @@ window.SHOPIFY = {
   "p601": "10312792637768",
   "p605": "10328467767624",
   "p630": "10356833681736",
-  "p626": "10411438014792"
+  "p627": "10411439292744"
  }
 };
