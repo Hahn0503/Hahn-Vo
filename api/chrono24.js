@@ -19,6 +19,14 @@ var EINSTELLUNGEN = {
   /* Auf volle 10 € aufrunden, damit keine krummen Preise entstehen. */
   rundenAuf: 10,
 
+  /* Eigener Chrono24-Preis für einzelne Uhren, nach internem Code.
+   * Gilt statt Website-Preis und Aufschlag. Beispiel: { '642-26': 11890 }.
+   * Wird die Uhr verkauft, kann der Eintrag stehen bleiben — sie fällt
+   * ohnehin aus dem Feed. */
+  preise: {
+    '642-26': 11890,   // Rolex Datejust 41 126334, Website 11.250 € (Hannes, 06.11.2026)
+  },
+
   /* Uhren ohne Bestand gar nicht erst ausliefern. Dadurch verschwindet eine
    * verkaufte Uhr beim nächsten Abruf von selbst aus Chrono24. */
   nurVerfuegbare: true,
@@ -177,7 +185,8 @@ function baueArtikel(p, kennungen, basis) {
   if (EINSTELLUNGEN.nurUhren && !f.aufzug) return null;
   if (EINSTELLUNGEN.nurVerfuegbare && !p.verfuegbar) return null;
 
-  var preis = preisFuerChrono24(p.preis);
+  var eigener = Number(EINSTELLUNGEN.preise[code]);
+  var preis = eigener > 0 ? Math.round(eigener) : preisFuerChrono24(p.preis);
   if (!preis) return null;
 
   var lieferumfang = LIEFERUMFANG[String(f.lieferumfang || '').toLowerCase()] || null;

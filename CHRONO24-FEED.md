@@ -62,6 +62,7 @@ Alles Einstellbare steht ganz oben in `api/chrono24.js` im Block
 | `rundenAuf` | auf volle x € runden | `10` |
 | `nurVerfuegbare` | ausverkaufte Uhren weglassen | `true` |
 | `ausschluss` | Liste interner Codes, die nie gemeldet werden | leer |
+| `preise` | eigener Chrono24-Preis je internem Code, statt Website-Preis + Aufschlag | `642-26` → 11.890 € |
 | `nurUhren` | Zubehör weglassen (erkannt am fehlenden Aufzug) | `true` |
 
 **Zum Preis:** Aktuell geht der Website-Preis unverändert an Chrono24. Von 46
