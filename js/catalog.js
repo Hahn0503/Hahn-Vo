@@ -9,12 +9,11 @@
 
   HV.statusLabel = { available: 'Erhältlich', anfrage: 'Per Überweisung', reserved: 'Reserviert', sold: 'Verkauft' };
 
-  /* Rabatt in ganzen Prozent, kaufmännisch gerundet (7,3 % → 7, 7,5 % → 8).
+  /* Ersparnis in Euro (Streichpreis minus Preis), z. B. „ −1.240 €“.
      Leer, wenn die Uhr nicht reduziert ist. */
   HV.rabattText = function (p) {
     if (!(p.status !== 'sold' && p.listPrice && p.listPrice > p.price)) return '';
-    var pr = Math.round((p.listPrice - p.price) / p.listPrice * 100);
-    return pr >= 1 ? ' \u2212' + pr + '\u202f%' : '';
+    return ' \u2212' + HV.fmtEUR(p.listPrice - p.price);
   };
 
   HV.renderCard = function (p) {
@@ -27,13 +26,14 @@
     var priceHtml = p.status === 'sold'
       ? '<span class="sold-label num">' + HV.fmtEUR(p.price) + '</span>'
       : '<span class="num">' + HV.fmtEUR(p.price) + '</span>' +
-        (reduziert ? '<span class="was num">' + HV.fmtEUR(p.listPrice) + '</span>' : '');
+        (reduziert ? '<span class="was num">' + HV.fmtEUR(p.listPrice) + '</span>' +
+          '<span class="spar num">' + HV.rabattText(p).trim() + '</span>' : '');
     var spec = [p.ref ? 'Ref. ' + p.ref : null, p.year, p.fullset, p.rating ? 'Zustand: ' + p.rating : null]
       .filter(Boolean).join(' · ');
     return '<article class="product-card' + soldCls + '" data-id="' + p.id + '">' +
       '<div class="pc-media">' +
         '<span class="pc-status status status-' + p.status + '">' + HV.statusLabel[p.status] + '</span>' +
-        (reduziert ? '<span class="pc-sale">Reduziert' + HV.rabattText(p) + '</span>' : '') +
+        (reduziert ? '<span class="pc-sale">Reduziert</span>' : '') +
         '<img class="img-a" src="' + imgA + '" alt="' + p.brand + ' ' + p.name + '" loading="lazy">' +
         '<img class="img-b" src="' + imgB + '" alt="" loading="lazy" aria-hidden="true">' +
       '</div>' +

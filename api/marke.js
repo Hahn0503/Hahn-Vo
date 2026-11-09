@@ -42,16 +42,16 @@ function karte(p) {
   var imgB = (p.images || [])[1] || imgA;
   var soldCls = p.status === 'sold' ? ' is-sold' : '';
   var reduziert = p.status !== 'sold' && p.listPrice && p.listPrice > p.price;
-  /* Rabatt in ganzen Prozent, kaufmännisch gerundet — wie HV.rabattText in js/catalog.js */
-  var prozent = reduziert ? Math.round((p.listPrice - p.price) / p.listPrice * 100) : 0;
   var preis = p.status === 'sold'
     ? '<span class="sold-label num">' + EUR.format(p.price) + '</span>'
-    : '<span class="num">' + EUR.format(p.price) + '</span>' + (reduziert ? '<span class="was num">' + EUR.format(p.listPrice) + '</span>' : '');
+    : '<span class="num">' + EUR.format(p.price) + '</span>' + (reduziert ? '<span class="was num">' + EUR.format(p.listPrice) + '</span>' +
+      /* Ersparnis in Euro hinter dem Streichpreis, wie js/catalog.js */
+      '<span class="spar num">\u2212' + EUR.format(p.listPrice - p.price) + '</span>' : '');
   var spec = [p.ref ? 'Ref. ' + p.ref : null, p.year, p.fullset, p.rating ? 'Zustand: ' + p.rating : null].filter(Boolean).join(' · ');
   return '<article class="product-card' + soldCls + '" data-id="' + esc(p.id) + '">' +
     '<div class="pc-media">' +
       '<span class="pc-status status status-' + esc(p.status) + '">' + STATUS[p.status] + '</span>' +
-      (reduziert ? '<span class="pc-sale">Reduziert' + (prozent >= 1 ? ' \u2212' + prozent + '\u202f%' : '') + '</span>' : '') +
+      (reduziert ? '<span class="pc-sale">Reduziert</span>' : '') +
       '<img class="img-a" src="' + esc(imgA) + '" alt="' + esc(p.brand + ' ' + p.name) + '" loading="lazy">' +
       '<img class="img-b" src="' + esc(imgB) + '" alt="" loading="lazy" aria-hidden="true">' +
     '</div>' +
