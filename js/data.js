@@ -3289,15 +3289,15 @@ window.PRODUCTS = [
   "note": null,
   "warranty": null,
   "images": [
-   "assets/products/p577/0.jpg",
-   "assets/products/p577/1.jpg",
-   "assets/products/p577/2.jpg",
-   "assets/products/p577/3.jpg",
-   "assets/products/p577/4.jpg",
-   "assets/products/p577/5.jpg",
-   "assets/products/p577/6.jpg",
-   "assets/products/p577/7.jpg",
-   "assets/products/p577/8.jpg"
+   "assets/products/p577/0.jpg?v=2",
+   "assets/products/p577/1.jpg?v=2",
+   "assets/products/p577/2.jpg?v=2",
+   "assets/products/p577/3.jpg?v=2",
+   "assets/products/p577/4.jpg?v=2",
+   "assets/products/p577/5.jpg?v=2",
+   "assets/products/p577/6.jpg?v=2",
+   "assets/products/p577/7.jpg?v=2",
+   "assets/products/p577/8.jpg?v=2"
   ],
   "shopifyId": "10274244886856"
  },
@@ -3619,6 +3619,7 @@ window.SHOPIFY = {
   "p1218": "10219858723144",
   "p223": "10219901256008",
   "p550": "10232659771720",
+  "p577": "10274244886856",
   "p601": "10312792637768",
   "p605": "10328467767624",
   "p630": "10356833681736"
