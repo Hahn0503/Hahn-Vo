@@ -28,6 +28,7 @@ var EINSTELLUNGEN = {
     'K-7': 10690,      // Rolex Datejust II 116333, Website 9.990 € (Hannes, 06.11.2026)
     'K-8': 8490,       // Zenith Chronomaster Sport Titan, Website 7.990 € (Hannes, 06.11.2026)
     'K-9': 6790,       // Omega Aqua Terra Worldtimer, Website 6.390 € (Hannes, 06.11.2026)
+    '647-26': 3790,    // IWC Mark XII IW324101, Website 3.490 € (Hannes, 09.11.2026)
   },
 
   /* Uhren ohne Bestand gar nicht erst ausliefern. Dadurch verschwindet eine
