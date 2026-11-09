@@ -51,7 +51,7 @@
   if (p.listPrice && p.listPrice > p.price && p.status !== 'sold') {
     var lp = document.getElementById('pdList');
     lp.hidden = false;
-    lp.innerHTML = '<s class="pd-was num">' + HV.fmtEUR(p.listPrice) + '</s><span class="pd-sale">Reduziert</span>';
+    lp.innerHTML = '<s class="pd-was num">' + HV.fmtEUR(p.listPrice) + '</s><span class="pd-sale">Reduziert' + (HV.rabattText ? HV.rabattText(p) : '') + '</span>';
   }
 
   /* status */

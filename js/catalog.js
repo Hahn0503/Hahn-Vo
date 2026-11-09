@@ -9,6 +9,14 @@
 
   HV.statusLabel = { available: 'Erhältlich', anfrage: 'Per Überweisung', reserved: 'Reserviert', sold: 'Verkauft' };
 
+  /* Rabatt in ganzen Prozent, kaufmännisch gerundet (7,3 % → 7, 7,5 % → 8).
+     Leer, wenn die Uhr nicht reduziert ist. */
+  HV.rabattText = function (p) {
+    if (!(p.status !== 'sold' && p.listPrice && p.listPrice > p.price)) return '';
+    var pr = Math.round((p.listPrice - p.price) / p.listPrice * 100);
+    return pr >= 1 ? ' \u2212' + pr + '\u202f%' : '';
+  };
+
   HV.renderCard = function (p) {
     var imgA = p.images[0] || '';
     var imgB = p.images[1] || imgA;
@@ -25,7 +33,7 @@
     return '<article class="product-card' + soldCls + '" data-id="' + p.id + '">' +
       '<div class="pc-media">' +
         '<span class="pc-status status status-' + p.status + '">' + HV.statusLabel[p.status] + '</span>' +
-        (reduziert ? '<span class="pc-sale">Reduziert</span>' : '') +
+        (reduziert ? '<span class="pc-sale">Reduziert' + HV.rabattText(p) + '</span>' : '') +
         '<img class="img-a" src="' + imgA + '" alt="' + p.brand + ' ' + p.name + '" loading="lazy">' +
         '<img class="img-b" src="' + imgB + '" alt="" loading="lazy" aria-hidden="true">' +
       '</div>' +
