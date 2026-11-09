@@ -11,7 +11,7 @@
 var shop = require('./_shop');
 
 /* Uhren, die nicht im Shop erscheinen sollen — interne Codes. */
-var AUSSCHLUSS = ['570-26', '639-26', '640-26'];
+var AUSSCHLUSS = ['570-26', '640-26'];
 
 /* Rückfall für das Metafeld uhr.hinweis. Nach dem Anlegen einer neuen
  * Metafeld-Definition dauert es je nach Region bis zu einer Stunde, bis die

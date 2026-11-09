@@ -4343,6 +4343,7 @@ window.SHOPIFY = {
  "domain": "tami1g-0j.myshopify.com",
  "storefrontAccessToken": "89c87251e5d1f73c1302b1674ba75b69",
  "products": {
+ "p639": "10397271982408",
   "p426": "10219651006792",
   "p450": "10219712381256",
   "p441": "10219712643400",
