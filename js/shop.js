@@ -37,12 +37,10 @@
     { id: 'b3', label: '6.000 – 10.000 €', min: 6000, max: 10000 },
     { id: 'b4', label: 'Über 10.000 €', min: 10000, max: Infinity },
   ];
-  /* „Reduziert" ist kein eigener Status, sondern Streichpreis über dem Preis
-     (gleiche Regel wie die Karte in catalog.js). Im Filter zählt es wie eine
-     weitere Status-Option (Oder-Verknüpfung). */
+  /* Reiter „Reduziert“: Streichpreis über dem Preis, nicht verkauft
+     (gleiche Regel wie die Karte in catalog.js). */
   function reduziert(p) { return p.status !== 'sold' && p.listPrice && p.listPrice > p.price; }
   var STATUS_OPTS = [
-    { id: 'reduziert', label: 'Reduziert' },
     { id: 'available', label: 'Erhältlich' },
     { id: 'anfrage', label: 'Per Überweisung' },
     { id: 'reserved', label: 'Reserviert' },
@@ -68,10 +66,10 @@
 
   /* ---------- filtering ---------- */
   function matches(p) {
-    if (state.cat !== 'alle' && p.category !== state.cat) return false;
+    if (state.cat === 'reduziert') { if (!reduziert(p)) return false; }
+    else if (state.cat !== 'alle' && p.category !== state.cat) return false;
     if (state.brands.length && state.brands.indexOf(p.brand) === -1) return false;
-    if (state.statuses.length && state.statuses.indexOf(p.status) === -1 &&
-        !(state.statuses.indexOf('reduziert') !== -1 && reduziert(p))) return false;
+    if (state.statuses.length && state.statuses.indexOf(p.status) === -1) return false;
     if (state.prices.length) {
       var ok = state.prices.some(function (id) {
         var b = PRICE_BUCKETS.find(function (x) { return x.id === id; });
@@ -155,7 +153,8 @@
       btn.classList.add('is-active');
       state.cat = btn.dataset.cat;
       document.getElementById('bandTitle').textContent =
-        state.cat === 'uhren' ? 'Uhren' : state.cat === 'zubehoer' ? 'Zubehör' : 'Shop';
+        state.cat === 'uhren' ? 'Uhren' : state.cat === 'zubehoer' ? 'Zubehör' :
+        state.cat === 'reduziert' ? 'Reduziert' : 'Shop';
       render();
     });
   });
