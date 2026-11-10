@@ -663,6 +663,47 @@
     "assets/products/p642/9.jpg?v=2"
    ],
    "shopifyId": "10412090753352"
+  },
+  {
+   "id": "p613",
+   "brand": "Rolex",
+   "name": "Submariner Date 126610LV 41 mm Jahr 2021",
+   "ref": "126610LV",
+   "price": 12490,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Gut",
+   "year": "2021",
+   "size": "41 mm",
+   "material": "Edelstahl",
+   "dial": "Schwarz",
+   "strap": "Edelstahl",
+   "movement": "Automatik",
+   "caliber": "Rolex 3235",
+   "glass": "Saphirglas",
+   "gender": "Herren",
+   "tax": "Differenzbesteuerung",
+   "sku": "HV-P613",
+   "code": "K-10",
+   "added": "2026-11-10T11:49:54Z",
+   "desc": "Hier präsentieren wir die Rolex Submariner Date, Ref. 126610LV, aus dem Jahr 2021 im Full Set mit originaler Rolex Box und originalen Rolex Papieren. 41 mm Edelstahlgehäuse, schwarzes Zifferblatt, Keramiklünette und Edelstahlband mit Faltschließe, angetrieben vom Automatikkaliber Rolex 3235.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nDie Uhr weist zwei Kratzer auf dem Glas sowie eine Stoßstelle am Gehäuse auf (siehe Bilder). Die Stoßstelle kann auf Wunsch durch eine professionelle Aufarbeitung beseitigt werden. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+   "note": null,
+   "warranty": null,
+   "images": [
+    "assets/products/p613/0.jpg",
+    "assets/products/p613/1.jpg",
+    "assets/products/p613/2.jpg",
+    "assets/products/p613/3.jpg",
+    "assets/products/p613/4.jpg",
+    "assets/products/p613/5.jpg",
+    "assets/products/p613/6.jpg",
+    "assets/products/p613/7.jpg",
+    "assets/products/p613/8.jpg",
+    "assets/products/p613/9.jpg"
+   ],
+   "shopifyId": "10435776577864"
   }
  ]
 }
