@@ -3145,46 +3145,6 @@ window.PRODUCTS = [
    "assets/products/p565/7.jpg"
   ],
   "shopifyId": "10304598737224"
- },
- {
-  "id": "p548",
-  "brand": "IWC",
-  "name": "Portugieser Chronograph Zifferblatt Silber Jahr 2022",
-  "ref": "IW371604",
-  "price": 5390,
-  "listPrice": null,
-  "status": "sold",
-  "category": "uhren",
-  "fullset": "Nur Box",
-  "rating": "Sehr gut",
-  "year": "2022",
-  "size": "41 mm",
-  "material": "Edelstahl",
-  "dial": "Silber",
-  "strap": "Leder",
-  "movement": "Automatik",
-  "caliber": null,
-  "glass": null,
-  "gender": "Herren",
-  "tax": "Regelbesteuerung",
-  "sku": null,
-  "code": "548-26",
-  "added": "2026-09-12T09:38:00Z",
-  "desc": "Hier präsentieren wir den IWC Portugieser Chronograph, Ref. IW371604, aus dem Jahr 2022 mit dem Manufakturwerk. Silbernes Zifferblatt mit blauen Zeigern und arabischen Ziffern, Edelstahlgehäuse mit 41 mm Durchmesser, schwarzes Lederband, Automatikwerk und Sichtboden. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nDie IWC-Garantie läuft noch bis April 2030; eine Garantiekarte liegt nicht bei. Geliefert wird die Uhr in der originalen IWC-Travel-Box. Zustand: sehr gut. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: 548-26",
-  "note": null,
-  "warranty": null,
-  "images": [
-   "assets/products/p548/0.jpg",
-   "assets/products/p548/1.jpg",
-   "assets/products/p548/2.jpg",
-   "assets/products/p548/3.jpg",
-   "assets/products/p548/4.jpg",
-   "assets/products/p548/5.jpg",
-   "assets/products/p548/6.jpg",
-   "assets/products/p548/7.jpg",
-   "assets/products/p548/8.jpg"
-  ],
-  "shopifyId": "10277498880328"
  }
 ];
 
@@ -3389,7 +3349,6 @@ window.SHOPIFY = {
   "p642": "10412090753352",
   "p613": "10435776577864",
   "p3771": "10219856789832",
-  "p565": "10304598737224",
-  "p548": "10277498880328"
+  "p565": "10304598737224"
  }
 };
