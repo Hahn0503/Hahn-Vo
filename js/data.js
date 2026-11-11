@@ -1059,41 +1059,6 @@ window.PRODUCTS = [
   "shopifyId": "10238171545928"
  },
  {
-  "id": "p556",
-  "brand": "Seiko",
-  "name": "King Seiko Hi-Beat 36000",
-  "ref": "4502-7001",
-  "price": 950,
-  "listPrice": null,
-  "status": "available",
-  "category": "uhren",
-  "fullset": "Nur Uhr",
-  "rating": null,
-  "year": null,
-  "size": "36 mm",
-  "material": "Edelstahl",
-  "dial": "Silber",
-  "strap": "Leder (Grau)",
-  "movement": "Handaufzug",
-  "caliber": null,
-  "glass": null,
-  "gender": "Herren",
-  "tax": "Regelbesteuerung",
-  "sku": null,
-  "code": "556-26",
-  "added": "2026-08-31T04:53:26Z",
-  "desc": "Hier präsentieren wir die King Seiko Hi-Beat Ref. 4502-7001 — ein Handaufzugswerk mit 36.000 Halbschwingungen pro Stunde, gefertigt um das Ende der 1960er- bis Anfang der 1970er-Jahre. Silbernes Zifferblatt, Edelstahlgehäuse mit dem Goldmedaillon im Boden, graues Lederband. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: 556-26",
-  "note": null,
-  "warranty": null,
-  "images": [
-   "assets/products/p556/0.jpg",
-   "assets/products/p556/1.jpg",
-   "assets/products/p556/2.jpg",
-   "assets/products/p556/3.jpg"
-  ],
-  "shopifyId": "10238171906376"
- },
- {
   "id": "p557",
   "brand": "Seiko",
   "name": "Harmony Vintage Handaufzug",
@@ -3145,6 +3110,41 @@ window.PRODUCTS = [
    "assets/products/p565/7.jpg"
   ],
   "shopifyId": "10304598737224"
+ },
+ {
+  "id": "p556",
+  "brand": "Seiko",
+  "name": "King Seiko Hi-Beat 36000",
+  "ref": "4502-7001",
+  "price": 950,
+  "listPrice": null,
+  "status": "sold",
+  "category": "uhren",
+  "fullset": "Nur Uhr",
+  "rating": null,
+  "year": null,
+  "size": "36 mm",
+  "material": "Edelstahl",
+  "dial": "Silber",
+  "strap": "Leder (Grau)",
+  "movement": "Handaufzug",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Regelbesteuerung",
+  "sku": null,
+  "code": "556-26",
+  "added": "2026-08-31T04:53:26Z",
+  "desc": "Hier präsentieren wir die King Seiko Hi-Beat Ref. 4502-7001 — ein Handaufzugswerk mit 36.000 Halbschwingungen pro Stunde, gefertigt um das Ende der 1960er- bis Anfang der 1970er-Jahre. Silbernes Zifferblatt, Edelstahlgehäuse mit dem Goldmedaillon im Boden, graues Lederband. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: 556-26",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p556/0.jpg",
+   "assets/products/p556/1.jpg",
+   "assets/products/p556/2.jpg",
+   "assets/products/p556/3.jpg"
+  ],
+  "shopifyId": "10238171906376"
  }
 ];
 
@@ -3297,7 +3297,6 @@ window.SHOPIFY = {
   "p8005": "10227039469896",
   "p8008": "10227041141064",
   "p553": "10238171545928",
-  "p556": "10238171906376",
   "p557": "10238172004680",
   "p551": "10260249870664",
   "p555": "10260264124744",
@@ -3349,6 +3348,7 @@ window.SHOPIFY = {
   "p642": "10412090753352",
   "p613": "10435776577864",
   "p3771": "10219856789832",
-  "p565": "10304598737224"
+  "p565": "10304598737224",
+  "p556": "10238171906376"
  }
 };
