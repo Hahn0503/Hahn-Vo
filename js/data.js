@@ -3030,6 +3030,47 @@ window.PRODUCTS = [
   "shopifyId": "10412090753352"
  },
  {
+  "id": "p613",
+  "brand": "Rolex",
+  "name": "Submariner Date 126610LV 41 mm Jahr 2021",
+  "ref": "126610LV",
+  "price": 12490,
+  "listPrice": null,
+  "status": "anfrage",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Gut",
+  "year": "2021",
+  "size": "41 mm",
+  "material": "Edelstahl",
+  "dial": "Schwarz",
+  "strap": "Edelstahl",
+  "movement": "Automatik",
+  "caliber": "Rolex 3235",
+  "glass": "Saphirglas",
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "K-10",
+  "added": "2026-11-10T11:49:54Z",
+  "desc": "Hier präsentieren wir die Rolex Submariner Date, Ref. 126610LV, aus dem Jahr 2021 im Full Set mit originaler Rolex Box und originalen Rolex Papieren. 41 mm Edelstahlgehäuse, schwarzes Zifferblatt, Keramiklünette und Edelstahlband mit Faltschließe, angetrieben vom Automatikkaliber Rolex 3235.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nDie Uhr weist zwei Kratzer auf dem Glas sowie eine Stoßstelle am Gehäuse auf (siehe Bilder). Die Stoßstelle kann auf Wunsch durch eine professionelle Aufarbeitung beseitigt werden. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p613/0.jpg",
+   "assets/products/p613/1.jpg",
+   "assets/products/p613/2.jpg",
+   "assets/products/p613/3.jpg",
+   "assets/products/p613/4.jpg",
+   "assets/products/p613/5.jpg",
+   "assets/products/p613/6.jpg",
+   "assets/products/p613/7.jpg",
+   "assets/products/p613/8.jpg",
+   "assets/products/p613/9.jpg"
+  ],
+  "shopifyId": "10435776577864"
+ },
+ {
   "id": "p3771",
   "brand": "IWC",
   "name": "Portofino Automatic 40 Zifferblatt silber",
@@ -3065,46 +3106,6 @@ window.PRODUCTS = [
    "assets/products/p3771/5.jpg"
   ],
   "shopifyId": "10219856789832"
- },
- {
-  "id": "p548",
-  "brand": "IWC",
-  "name": "Portugieser Chronograph Zifferblatt Silber Jahr 2022",
-  "ref": "IW371604",
-  "price": 5390,
-  "listPrice": null,
-  "status": "reserved",
-  "category": "uhren",
-  "fullset": "Nur Box",
-  "rating": "Sehr gut",
-  "year": "2022",
-  "size": "41 mm",
-  "material": "Edelstahl",
-  "dial": "Silber",
-  "strap": "Leder",
-  "movement": "Automatik",
-  "caliber": null,
-  "glass": null,
-  "gender": "Herren",
-  "tax": "Regelbesteuerung",
-  "sku": null,
-  "code": "548-26",
-  "added": "2026-09-12T09:38:00Z",
-  "desc": "Hier präsentieren wir den IWC Portugieser Chronograph, Ref. IW371604, aus dem Jahr 2022 mit dem Manufakturwerk. Silbernes Zifferblatt mit blauen Zeigern und arabischen Ziffern, Edelstahlgehäuse mit 41 mm Durchmesser, schwarzes Lederband, Automatikwerk und Sichtboden. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nDie IWC-Garantie läuft noch bis April 2030; eine Garantiekarte liegt nicht bei. Geliefert wird die Uhr in der originalen IWC-Travel-Box. Zustand: sehr gut. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: 548-26",
-  "note": null,
-  "warranty": null,
-  "images": [
-   "assets/products/p548/0.jpg",
-   "assets/products/p548/1.jpg",
-   "assets/products/p548/2.jpg",
-   "assets/products/p548/3.jpg",
-   "assets/products/p548/4.jpg",
-   "assets/products/p548/5.jpg",
-   "assets/products/p548/6.jpg",
-   "assets/products/p548/7.jpg",
-   "assets/products/p548/8.jpg"
-  ],
-  "shopifyId": "10277498880328"
  },
  {
   "id": "p565",
@@ -3144,6 +3145,46 @@ window.PRODUCTS = [
    "assets/products/p565/7.jpg"
   ],
   "shopifyId": "10304598737224"
+ },
+ {
+  "id": "p548",
+  "brand": "IWC",
+  "name": "Portugieser Chronograph Zifferblatt Silber Jahr 2022",
+  "ref": "IW371604",
+  "price": 5390,
+  "listPrice": null,
+  "status": "sold",
+  "category": "uhren",
+  "fullset": "Nur Box",
+  "rating": "Sehr gut",
+  "year": "2022",
+  "size": "41 mm",
+  "material": "Edelstahl",
+  "dial": "Silber",
+  "strap": "Leder",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Regelbesteuerung",
+  "sku": null,
+  "code": "548-26",
+  "added": "2026-09-12T09:38:00Z",
+  "desc": "Hier präsentieren wir den IWC Portugieser Chronograph, Ref. IW371604, aus dem Jahr 2022 mit dem Manufakturwerk. Silbernes Zifferblatt mit blauen Zeigern und arabischen Ziffern, Edelstahlgehäuse mit 41 mm Durchmesser, schwarzes Lederband, Automatikwerk und Sichtboden. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nDie IWC-Garantie läuft noch bis April 2030; eine Garantiekarte liegt nicht bei. Geliefert wird die Uhr in der originalen IWC-Travel-Box. Zustand: sehr gut. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: 548-26",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p548/0.jpg",
+   "assets/products/p548/1.jpg",
+   "assets/products/p548/2.jpg",
+   "assets/products/p548/3.jpg",
+   "assets/products/p548/4.jpg",
+   "assets/products/p548/5.jpg",
+   "assets/products/p548/6.jpg",
+   "assets/products/p548/7.jpg",
+   "assets/products/p548/8.jpg"
+  ],
+  "shopifyId": "10277498880328"
  }
 ];
 
@@ -3346,9 +3387,9 @@ window.SHOPIFY = {
   "p626": "10411438014792",
   "p627": "10411439292744",
   "p642": "10412090753352",
+  "p613": "10435776577864",
   "p3771": "10219856789832",
-  "p548": "10277498880328",
   "p565": "10304598737224",
-  "p613": "10435776577864"
+  "p548": "10277498880328"
  }
 };
