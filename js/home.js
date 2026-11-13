@@ -373,8 +373,7 @@
       armBar();
       schedule();
       var flagshipEl = document.getElementById('flagship');
-      flagshipEl.addEventListener('mouseenter', pauseRotation);
-      flagshipEl.addEventListener('mouseleave', resumeRotation);
+      /* kein Hover-Pause: Diashow läuft weiter, auch wenn die Maus auf Bild/Text steht */
       document.addEventListener('visibilitychange', function () {
         if (document.hidden) pauseRotation(); else resumeRotation();
       });
