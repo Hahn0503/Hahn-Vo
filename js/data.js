@@ -1096,42 +1096,6 @@ window.PRODUCTS = [
   "shopifyId": "10260249870664"
  },
  {
-  "id": "p555",
-  "brand": "Omega",
-  "name": "Seamaster Vintage Ref. 166.001 Automatik",
-  "ref": "166.001",
-  "price": 890,
-  "listPrice": null,
-  "status": "available",
-  "category": "uhren",
-  "fullset": "Nur Uhr",
-  "rating": "Gut",
-  "year": null,
-  "size": "34–35 mm",
-  "material": "Edelstahl",
-  "dial": "Silber",
-  "strap": "Leder (Braun)",
-  "movement": "Automatik",
-  "caliber": null,
-  "glass": null,
-  "gender": "Herren",
-  "tax": "Regelbesteuerung",
-  "sku": null,
-  "code": "555-26",
-  "added": "2026-09-03T13:58:20Z",
-  "desc": "Hier präsentieren wir die Omega Seamaster Ref. 166.001 aus den 1970er Jahren mit silbernem Zifferblatt. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nEdelstahlgehäuse, braunes Lederband, Automatikwerk. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: 555-26",
-  "note": null,
-  "warranty": null,
-  "images": [
-   "assets/products/p555/0.jpg",
-   "assets/products/p555/1.jpg",
-   "assets/products/p555/2.jpg",
-   "assets/products/p555/3.jpg",
-   "assets/products/p555/4.jpg"
-  ],
-  "shopifyId": "10260264124744"
- },
- {
   "id": "p571",
   "brand": "Omega",
   "name": "Seamaster Diver 300 Chronograph Zifferblatt Blau Jahr 2010",
@@ -3185,6 +3149,42 @@ window.PRODUCTS = [
    "assets/products/p556/3.jpg"
   ],
   "shopifyId": "10238171906376"
+ },
+ {
+  "id": "p555",
+  "brand": "Omega",
+  "name": "Seamaster Vintage Ref. 166.001 Automatik",
+  "ref": "166.001",
+  "price": 890,
+  "listPrice": null,
+  "status": "sold",
+  "category": "uhren",
+  "fullset": "Nur Uhr",
+  "rating": "Gut",
+  "year": null,
+  "size": "34–35 mm",
+  "material": "Edelstahl",
+  "dial": "Silber",
+  "strap": "Leder (Braun)",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Regelbesteuerung",
+  "sku": null,
+  "code": "555-26",
+  "added": "2026-09-03T13:58:20Z",
+  "desc": "Hier präsentieren wir die Omega Seamaster Ref. 166.001 aus den 1970er Jahren mit silbernem Zifferblatt. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nEdelstahlgehäuse, braunes Lederband, Automatikwerk. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: 555-26",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p555/0.jpg",
+   "assets/products/p555/1.jpg",
+   "assets/products/p555/2.jpg",
+   "assets/products/p555/3.jpg",
+   "assets/products/p555/4.jpg"
+  ],
+  "shopifyId": "10260264124744"
  }
 ];
 
@@ -3338,7 +3338,6 @@ window.SHOPIFY = {
   "p553": "10238171545928",
   "p557": "10238172004680",
   "p551": "10260249870664",
-  "p555": "10260264124744",
   "p571": "10273572749640",
   "p572": "10277508809032",
   "p575": "10277513331016",
@@ -3390,6 +3389,7 @@ window.SHOPIFY = {
   "p565": "10304598737224",
   "p647": "10425487950152",
   "p413": "10219713036616",
-  "p556": "10238171906376"
+  "p556": "10238171906376",
+  "p555": "10260264124744"
  }
 };
