@@ -2879,45 +2879,6 @@ window.PRODUCTS = [
   "shopifyId": "10411439292744"
  },
  {
-  "id": "p642",
-  "brand": "Rolex",
-  "name": "Datejust 41 mm Zifferblatt Blau Stahl/Weißgold Oyster",
-  "ref": "126334",
-  "price": 11250,
-  "listPrice": null,
-  "status": "anfrage",
-  "category": "uhren",
-  "fullset": "Full Set (Box & Papiere)",
-  "rating": "Sehr gut",
-  "year": null,
-  "size": "41 mm",
-  "material": "Edelstahl/Weißgold",
-  "dial": "Blau",
-  "strap": "Edelstahl",
-  "movement": "Automatik",
-  "caliber": "3235",
-  "glass": null,
-  "gender": "Herren",
-  "tax": "Differenzbesteuerung",
-  "sku": null,
-  "code": "642-26",
-  "added": "2026-11-06T15:07:40Z",
-  "desc": "Hier präsentieren wir die Rolex Datejust 41, Ref. 126334, im Full Set. Gehäuse aus Edelstahl mit kannelierter Lünette aus 18 Karat Weißgold, blaues Sonnenschliff-Zifferblatt mit Indexen und Oysterband aus Edelstahl.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n41 mm Durchmesser, Automatikwerk Kaliber 3235. Geliefert mit originaler Rolex Box, Garantiekarte und Anhängern. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
-  "note": null,
-  "warranty": null,
-  "images": [
-   "assets/products/p642/0.jpg",
-   "assets/products/p642/1.jpg",
-   "assets/products/p642/2.jpg",
-   "assets/products/p642/3.jpg",
-   "assets/products/p642/4.jpg",
-   "assets/products/p642/5.jpg",
-   "assets/products/p642/6.jpg",
-   "assets/products/p642/7.jpg"
-  ],
-  "shopifyId": "10412090753352"
- },
- {
   "id": "p613",
   "brand": "Rolex",
   "name": "Submariner Date 126610LV 41 mm Jahr 2021",
@@ -3218,6 +3179,45 @@ window.PRODUCTS = [
    "assets/products/p603/8.jpg"
   ],
   "shopifyId": "10328467177800"
+ },
+ {
+  "id": "p642",
+  "brand": "Rolex",
+  "name": "Datejust 41 mm Zifferblatt Blau Stahl/Weißgold Oyster",
+  "ref": "126334",
+  "price": 11250,
+  "listPrice": null,
+  "status": "sold",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Sehr gut",
+  "year": null,
+  "size": "41 mm",
+  "material": "Edelstahl/Weißgold",
+  "dial": "Blau",
+  "strap": "Edelstahl",
+  "movement": "Automatik",
+  "caliber": "3235",
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "642-26",
+  "added": "2026-11-06T15:07:40Z",
+  "desc": "Hier präsentieren wir die Rolex Datejust 41, Ref. 126334, im Full Set. Gehäuse aus Edelstahl mit kannelierter Lünette aus 18 Karat Weißgold, blaues Sonnenschliff-Zifferblatt mit Indexen und Oysterband aus Edelstahl.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n41 mm Durchmesser, Automatikwerk Kaliber 3235. Geliefert mit originaler Rolex Box, Garantiekarte und Anhängern. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p642/0.jpg",
+   "assets/products/p642/1.jpg",
+   "assets/products/p642/2.jpg",
+   "assets/products/p642/3.jpg",
+   "assets/products/p642/4.jpg",
+   "assets/products/p642/5.jpg",
+   "assets/products/p642/6.jpg",
+   "assets/products/p642/7.jpg"
+  ],
+  "shopifyId": "10412090753352"
  }
 ];
 
@@ -3416,7 +3416,6 @@ window.SHOPIFY = {
   "p639": "10397271982408",
   "p626": "10411438014792",
   "p627": "10411439292744",
-  "p642": "10412090753352",
   "p613": "10435776577864",
   "p3771": "10219856789832",
   "p565": "10304598737224",
@@ -3424,6 +3423,7 @@ window.SHOPIFY = {
   "p413": "10219713036616",
   "p556": "10238171906376",
   "p555": "10260264124744",
-  "p603": "10328467177800"
+  "p603": "10328467177800",
+  "p642": "10412090753352"
  }
 };
