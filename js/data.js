@@ -1417,46 +1417,6 @@ window.PRODUCTS = [
   "shopifyId": "10320730128712"
  },
  {
-  "id": "p603",
-  "brand": "Omega",
-  "name": "Speedmaster Reduced 39 mm Zifferblatt Schwarz",
-  "ref": "3539.50.00",
-  "price": 3590,
-  "listPrice": null,
-  "status": "available",
-  "category": "uhren",
-  "fullset": "Nur Box",
-  "rating": "Sehr gut",
-  "year": null,
-  "size": "39 mm",
-  "material": "Edelstahl",
-  "dial": "Schwarz",
-  "strap": "Edelstahl",
-  "movement": "Automatik",
-  "caliber": null,
-  "glass": null,
-  "gender": "Herren",
-  "tax": "Differenzbesteuerung",
-  "sku": null,
-  "code": "K-2",
-  "added": "2026-10-07T05:27:44Z",
-  "desc": "Hier präsentieren wir die Omega Speedmaster Reduced mit Automatikwerk, Ref. 3539.50.00. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n39 mm Edelstahlgehäuse, schwarzes Zifferblatt, Edelstahlband. Geliefert mit originalem Omega Reiseetui. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: K-2",
-  "note": null,
-  "warranty": null,
-  "images": [
-   "assets/products/p603/0.jpg",
-   "assets/products/p603/1.jpg",
-   "assets/products/p603/2.jpg",
-   "assets/products/p603/3.jpg",
-   "assets/products/p603/4.jpg",
-   "assets/products/p603/5.jpg",
-   "assets/products/p603/6.jpg",
-   "assets/products/p603/7.jpg",
-   "assets/products/p603/8.jpg"
-  ],
-  "shopifyId": "10328467177800"
- },
- {
   "id": "p607",
   "brand": "Chopard",
   "name": "Mille Miglia Classic Chronograph Raticosa 42 mm Zifferblatt Weiß Jahr 2022",
@@ -3218,6 +3178,46 @@ window.PRODUCTS = [
    "assets/products/p555/4.jpg"
   ],
   "shopifyId": "10260264124744"
+ },
+ {
+  "id": "p603",
+  "brand": "Omega",
+  "name": "Speedmaster Reduced 39 mm Zifferblatt Schwarz",
+  "ref": "3539.50.00",
+  "price": 3590,
+  "listPrice": null,
+  "status": "sold",
+  "category": "uhren",
+  "fullset": "Nur Box",
+  "rating": "Sehr gut",
+  "year": null,
+  "size": "39 mm",
+  "material": "Edelstahl",
+  "dial": "Schwarz",
+  "strap": "Edelstahl",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "K-2",
+  "added": "2026-10-07T05:27:44Z",
+  "desc": "Hier präsentieren wir die Omega Speedmaster Reduced mit Automatikwerk, Ref. 3539.50.00. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n39 mm Edelstahlgehäuse, schwarzes Zifferblatt, Edelstahlband. Geliefert mit originalem Omega Reiseetui. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: K-2",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p603/0.jpg",
+   "assets/products/p603/1.jpg",
+   "assets/products/p603/2.jpg",
+   "assets/products/p603/3.jpg",
+   "assets/products/p603/4.jpg",
+   "assets/products/p603/5.jpg",
+   "assets/products/p603/6.jpg",
+   "assets/products/p603/7.jpg",
+   "assets/products/p603/8.jpg"
+  ],
+  "shopifyId": "10328467177800"
  }
 ];
 
@@ -3379,7 +3379,6 @@ window.SHOPIFY = {
   "p5860": "10306872312136",
   "p588": "10306872443208",
   "p590": "10320730128712",
-  "p603": "10328467177800",
   "p607": "10335587598664",
   "p608": "10335596151112",
   "s9913288": "10340559913288",
@@ -3424,6 +3423,7 @@ window.SHOPIFY = {
   "p647": "10425487950152",
   "p413": "10219713036616",
   "p556": "10238171906376",
-  "p555": "10260264124744"
+  "p555": "10260264124744",
+  "p603": "10328467177800"
  }
 };
