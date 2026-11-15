@@ -773,6 +773,39 @@
     "assets/products/p650/6.jpg?v=7"
    ],
    "shopifyId": "10631525695816"
+  },
+  {
+   "id": "p651",
+   "brand": "Speake-Marin",
+   "name": "Ripples Original 40,3 mm Stahl",
+   "ref": "604015040",
+   "price": 10490,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Ungetragen",
+   "year": null,
+   "size": "40,3 mm",
+   "material": "Edelstahl",
+   "dial": "Anthrazit",
+   "strap": "Edelstahl",
+   "movement": "Automatik",
+   "caliber": null,
+   "glass": null,
+   "gender": "Herren",
+   "tax": "Differenzbesteuerung",
+   "sku": "HV-P651",
+   "code": "K-19",
+   "added": "2026-11-15T18:18:06Z",
+   "desc": "Hier präsentieren wir die Speake-Marin Ripples Original, Ref. 604015040 — anthrazitfarbenes Zifferblatt mit dem typischen Wellenmuster und schwarzer kleiner Sekunde, Gehäuse und Gliederarmband aus Edelstahl mit Faltschließe.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n40,3 mm Durchmesser, Automatikwerk. Die Uhr ist neu und ungetragen. Geliefert mit Box und Papieren. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+   "note": null,
+   "warranty": null,
+   "images": [
+    "assets/products/p651/0.jpg",
+    "assets/products/p651/1.jpg"
+   ],
+   "shopifyId": "10631554072904"
   }
  ]
 }
