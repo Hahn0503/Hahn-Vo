@@ -26,6 +26,7 @@ var MARKEN = [
   { name: 'Patek Philippe', alias: ['patek philippe'] },
   { name: 'TAG Heuer', alias: ['tag heuer'] },
   { name: 'Vacheron Constantin', alias: ['vacheron constantin'] },
+  { name: 'Speake-Marin', alias: ['speake-marin', 'speake marin'] },
   { name: 'Glashütte Original', alias: ['glashütte original', 'glashuette original', 'glashutte original'] },
   { name: 'Audemars Piguet', alias: ['audemars piguet'] },
   { name: 'Grand Seiko', alias: ['grand seiko'] },
