@@ -2283,6 +2283,38 @@ window.PRODUCTS = [
   "shopifyId": "10503995720008"
  },
  {
+  "id": "p652",
+  "brand": "Omega",
+  "name": "Seamaster Planet Ocean 37,5 mm Titan",
+  "ref": "232.92.38.20.03.001",
+  "price": 3590,
+  "listPrice": null,
+  "status": "available",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Sehr gut",
+  "year": null,
+  "size": "37,5 mm",
+  "material": "Titan",
+  "dial": "Blau",
+  "strap": "Kautschuk",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Unisex",
+  "tax": "Regelbesteuerung",
+  "sku": null,
+  "code": "K-21",
+  "added": "2026-11-15T18:25:03Z",
+  "desc": "Hier präsentieren wir die Omega Seamaster Planet Ocean, Ref. 232.92.38.20.03.001 — Gehäuse und Faltschließe aus Titan, blaues Zifferblatt mit blauer Lünette und blauem Kautschukband. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n37,5 mm Durchmesser, Automatikwerk. Die Uhr ist in einem sehr schönen, unpolierten Zustand, Kaufdatum Dezember 2015. Geliefert mit Box und Papieren. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: K-21",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p652/0.jpg"
+  ],
+  "shopifyId": "10631556399432"
+ },
+ {
   "id": "p462",
   "brand": "MB&F",
   "name": "Legacy Machine Split Escapement EVO Titan",
@@ -2991,6 +3023,39 @@ window.PRODUCTS = [
   "shopifyId": "10631525695816"
  },
  {
+  "id": "p651",
+  "brand": "Speake-Marin",
+  "name": "Ripples Original 40,3 mm Stahl",
+  "ref": "604015040",
+  "price": 10490,
+  "listPrice": null,
+  "status": "anfrage",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Ungetragen",
+  "year": null,
+  "size": "40,3 mm",
+  "material": "Edelstahl",
+  "dial": "Anthrazit",
+  "strap": "Edelstahl",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "K-19",
+  "added": "2026-11-15T18:18:06Z",
+  "desc": "Hier präsentieren wir die Speake-Marin Ripples Original, Ref. 604015040 — anthrazitfarbenes Zifferblatt mit dem typischen Wellenmuster und schwarzer kleiner Sekunde, Gehäuse und Gliederarmband aus Edelstahl mit Faltschließe.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n40,3 mm Durchmesser, Automatikwerk. Die Uhr ist neu und ungetragen. Geliefert mit Box und Papieren. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p651/0.jpg",
+   "assets/products/p651/1.jpg"
+  ],
+  "shopifyId": "10631554072904"
+ },
+ {
   "id": "p3771",
   "brand": "IWC",
   "name": "Portofino Automatic 40 Zifferblatt silber",
@@ -3472,6 +3537,7 @@ window.SHOPIFY = {
   "p629": "10411460985160",
   "p649": "10468696719688",
   "p630": "10503995720008",
+  "p652": "10631556399432",
   "p462": "10219711955272",
   "p5825": "10219857674568",
   "p393": "10219713331528",
@@ -3490,6 +3556,7 @@ window.SHOPIFY = {
   "p613": "10435776577864",
   "p597": "10630940721480",
   "p650": "10631525695816",
+  "p651": "10631554072904",
   "p3771": "10219856789832",
   "p565": "10304598737224",
   "p647": "10425487950152",
@@ -3497,7 +3564,6 @@ window.SHOPIFY = {
   "p556": "10238171906376",
   "p555": "10260264124744",
   "p603": "10328467177800",
-  "p642": "10412090753352",
-  "p651": "10631554072904"
+  "p642": "10412090753352"
  }
 };
