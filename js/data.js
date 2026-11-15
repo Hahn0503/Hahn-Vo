@@ -2302,7 +2302,7 @@ window.PRODUCTS = [
   "caliber": null,
   "glass": null,
   "gender": "Unisex",
-  "tax": "Regelbesteuerung",
+  "tax": "Differenzbesteuerung",
   "sku": null,
   "code": "K-21",
   "added": "2026-11-15T18:25:03Z",
