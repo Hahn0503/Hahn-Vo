@@ -2986,8 +2986,7 @@ window.PRODUCTS = [
    "assets/products/p650/3.jpg",
    "assets/products/p650/4.jpg",
    "assets/products/p650/5.jpg",
-   "assets/products/p650/6.jpg",
-   "assets/products/p650/7.jpg"
+   "assets/products/p650/6.jpg"
   ],
   "shopifyId": "10631525695816"
  },
