@@ -2953,6 +2953,45 @@ window.PRODUCTS = [
   "shopifyId": "10630940721480"
  },
  {
+  "id": "p650",
+  "brand": "Speake-Marin",
+  "name": "Ripples Blue Jeans Limited Edition 40,3 mm Stahl",
+  "ref": "604015480",
+  "price": 13490,
+  "listPrice": null,
+  "status": "anfrage",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Ungetragen",
+  "year": null,
+  "size": "40,3 mm",
+  "material": "Edelstahl",
+  "dial": "Blau",
+  "strap": "Edelstahl",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "K-17",
+  "added": "2026-11-15T17:29:52Z",
+  "desc": "Hier präsentieren wir die Speake-Marin Ripples Blue Jeans, limitiert auf 60 Exemplare, Ref. 604015480 — hellblaues Zifferblatt mit dem typischen Wellenmuster und dunkelblauer kleiner Sekunde, Gehäuse und Gliederband aus Edelstahl mit Faltschließe.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n40,3 mm Durchmesser, Automatikwerk. Die Uhr ist neu und ungetragen, Kaufdatum März 2024. Geliefert mit Box und Papieren. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": null,
+  "warranty": null,
+  "images": [
+   "assets/products/p650/0.jpg",
+   "assets/products/p650/1.jpg",
+   "assets/products/p650/2.jpg",
+   "assets/products/p650/3.jpg",
+   "assets/products/p650/4.jpg",
+   "assets/products/p650/5.jpg",
+   "assets/products/p650/6.jpg",
+   "assets/products/p650/7.jpg"
+  ],
+  "shopifyId": "10631525695816"
+ },
+ {
   "id": "p3771",
   "brand": "IWC",
   "name": "Portofino Automatic 40 Zifferblatt silber",
@@ -3451,6 +3490,7 @@ window.SHOPIFY = {
   "p627": "10411439292744",
   "p613": "10435776577864",
   "p597": "10630940721480",
+  "p650": "10631525695816",
   "p3771": "10219856789832",
   "p565": "10304598737224",
   "p647": "10425487950152",
@@ -3458,7 +3498,6 @@ window.SHOPIFY = {
   "p556": "10238171906376",
   "p555": "10260264124744",
   "p603": "10328467177800",
-  "p642": "10412090753352",
-  "p650": "10631525695816"
+  "p642": "10412090753352"
  }
 };
