@@ -702,6 +702,39 @@
     "assets/products/p613/9.jpg"
    ],
    "shopifyId": "10435776577864"
+  },
+  {
+   "id": "p597",
+   "brand": "Vacheron Constantin",
+   "name": "Malte Power Reserve Date 83060 Weißgold",
+   "ref": "83060/000G",
+   "price": 13350,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Sehr gut",
+   "year": "2008",
+   "size": "38 mm",
+   "material": "Weißgold",
+   "dial": "Silber",
+   "strap": "Leder",
+   "movement": "Handaufzug",
+   "caliber": null,
+   "glass": null,
+   "gender": "Herren",
+   "tax": "Regelbesteuerung",
+   "sku": "HV-P597",
+   "code": "597-26",
+   "added": "2026-11-15T10:58:49Z",
+   "desc": "Hier präsentieren wir die Vacheron Constantin Malte mit Gangreserve- und Datumsanzeige, Ref. 83060/000G, aus dem Jahr 2008 — Gehäuse in Weißgold, silbernes guillochiertes Zifferblatt mit kleiner Sekunde.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nDie Uhr wurde im November 2026 revidiert und erhält ein neues Band. Geliefert als Full Set mit Box, Ursprungs- und Garantiezertifikat sowie Genfer Ursprungszertifikat. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+   "note": "Revision im November 2026, mit 2 Jahren Garantie.\n\nDie Uhr wird mit einem neuen Band geliefert.",
+   "warranty": null,
+   "images": [
+    "assets/products/p597/0.jpg",
+    "assets/products/p597/1.jpg"
+   ],
+   "shopifyId": "10630940721480"
   }
  ]
 }
