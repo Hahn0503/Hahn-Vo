@@ -30,6 +30,10 @@ var EINSTELLUNGEN = {
     'K-9': 6790,       // Omega Aqua Terra Worldtimer, Website 6.390 € (Hannes, 06.11.2026)
     '647-26': 3790,    // IWC Mark XII IW324101, Website 3.490 € (Hannes, 09.11.2026)
     '628-26': 4290,    // Rolex Oyster Perpetual Date 15053, Website 3.990 € (Hannes, 13.11.2026)
+    'K-17': 14250,     // Speake-Marin Ripples Blue Jeans LE, Website 13.490 € (Hannes, 15.11.2026)
+    'K-19': 11350,     // Speake-Marin Ripples Original (grau), Website 10.490 € (Hannes, 15.11.2026)
+    'K-21': 3890,      // Omega Planet Ocean Titan, Website 3.590 € (Hannes, 15.11.2026)
+    'K-23': 3890,      // Omega Speedmaster Broad Arrow, Website 3.690 € (Hannes, 15.11.2026)
   },
 
   /* Uhren ohne Bestand gar nicht erst ausliefern. Dadurch verschwindet eine
