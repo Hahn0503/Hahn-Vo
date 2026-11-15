@@ -735,6 +735,46 @@
     "assets/products/p597/1.jpg"
    ],
    "shopifyId": "10630940721480"
+  },
+  {
+   "id": "p650",
+   "brand": "Speake-Marin",
+   "name": "Ripples Blue Jeans Limited Edition 40,3 mm Stahl",
+   "ref": "604015480",
+   "price": 13490,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Ungetragen",
+   "year": null,
+   "size": "40,3 mm",
+   "material": "Edelstahl",
+   "dial": "Blau",
+   "strap": "Edelstahl",
+   "movement": "Automatik",
+   "caliber": null,
+   "glass": null,
+   "gender": "Herren",
+   "tax": "Differenzbesteuerung",
+   "sku": "HV-P650",
+   "code": "K-17",
+   "added": "2026-11-15T17:29:52Z",
+   "desc": "Hier präsentieren wir die Speake-Marin Ripples Blue Jeans, limitiert auf 60 Exemplare, Ref. 604015480 — hellblaues Zifferblatt mit dem typischen Wellenmuster und dunkelblauer kleiner Sekunde, Gehäuse und Gliederband aus Edelstahl mit Faltschließe.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n40,3 mm Durchmesser, Automatikwerk. Die Uhr ist neu und ungetragen, Kaufdatum März 2024. Geliefert mit Box und Papieren. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+   "note": null,
+   "warranty": null,
+   "images": [
+    "assets/products/p650/0.jpg",
+    "assets/products/p650/1.jpg",
+    "assets/products/p650/2.jpg",
+    "assets/products/p650/3.jpg",
+    "assets/products/p650/4.jpg",
+    "assets/products/p650/5.jpg",
+    "assets/products/p650/6.jpg",
+    "assets/products/p650/7.jpg",
+    "assets/products/p650/8.jpg"
+   ],
+   "shopifyId": "10631525695816"
   }
  ]
 }

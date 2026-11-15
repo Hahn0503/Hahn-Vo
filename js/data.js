@@ -2920,6 +2920,39 @@ window.PRODUCTS = [
   "shopifyId": "10435776577864"
  },
  {
+  "id": "p597",
+  "brand": "Vacheron Constantin",
+  "name": "Malte Power Reserve Date 83060 Weißgold",
+  "ref": "83060/000G",
+  "price": 13350,
+  "listPrice": null,
+  "status": "anfrage",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Sehr gut",
+  "year": "2008",
+  "size": "38 mm",
+  "material": "Weißgold",
+  "dial": "Silber",
+  "strap": "Leder",
+  "movement": "Handaufzug",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Regelbesteuerung",
+  "sku": null,
+  "code": "597-26",
+  "added": "2026-11-15T10:58:49Z",
+  "desc": "Hier präsentieren wir die Vacheron Constantin Malte mit Gangreserve- und Datumsanzeige, Ref. 83060/000G, aus dem Jahr 2008 — Gehäuse in Weißgold, silbernes guillochiertes Zifferblatt mit kleiner Sekunde.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nDie Uhr wurde im November 2026 revidiert und erhält ein neues Band. Geliefert als Full Set mit Box, Ursprungs- und Garantiezertifikat sowie Genfer Ursprungszertifikat. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": "Revision im November 2026, mit 2 Jahren Garantie.\n\nDie Uhr wird mit einem neuen Band geliefert.",
+  "warranty": 24,
+  "images": [
+   "assets/products/p597/0.jpg",
+   "assets/products/p597/1.jpg"
+  ],
+  "shopifyId": "10630940721480"
+ },
+ {
   "id": "p3771",
   "brand": "IWC",
   "name": "Portofino Automatic 40 Zifferblatt silber",
@@ -3417,6 +3450,7 @@ window.SHOPIFY = {
   "p626": "10411438014792",
   "p627": "10411439292744",
   "p613": "10435776577864",
+  "p597": "10630940721480",
   "p3771": "10219856789832",
   "p565": "10304598737224",
   "p647": "10425487950152",
@@ -3425,6 +3459,6 @@ window.SHOPIFY = {
   "p555": "10260264124744",
   "p603": "10328467177800",
   "p642": "10412090753352",
-  "p597": "10630940721480"
+  "p650": "10631525695816"
  }
 };
