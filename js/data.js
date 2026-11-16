@@ -24,7 +24,7 @@ window.PRODUCTS = [
   "brand": "Tudor",
   "name": "Black Bay 36 Stahl/Gelbgold",
   "ref": "79503",
-  "price": 3390,
+  "price": 2990,
   "listPrice": null,
   "status": "available",
   "category": "uhren",
