@@ -35,6 +35,7 @@ var EINSTELLUNGEN = {
     'K-21': 3890,      // Omega Planet Ocean Titan, Website 3.590 € (Hannes, 15.11.2026)
     'K-23': 3890,      // Omega Speedmaster Broad Arrow, Website 3.690 € (Hannes, 15.11.2026)
     '597-26': 13990,   // Vacheron Constantin Malte 83060, Website 13.350 € (Hannes, 15.11.2026)
+    '655-26': 12190,   // Rolex Oyster Perpetual 36 Tiffany 126000, Website 11.450 € (Hannes, 17.11.2026)
   },
 
   /* Uhren ohne Bestand gar nicht erst ausliefern. Dadurch verschwindet eine
