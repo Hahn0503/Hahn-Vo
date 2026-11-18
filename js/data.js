@@ -2312,7 +2312,7 @@ window.PRODUCTS = [
  {
   "id": "p633",
   "brand": "Jaeger-LeCoultre",
-  "name": "Master Ultra Thin Moon 39 mm Stahl 176.8.64.S",
+  "name": "Master Ultra Thin Moon 39 mm Stahl 176.8.64.S Jahr 2018",
   "ref": "176.8.64.S",
   "price": 7150,
   "listPrice": null,
@@ -2320,7 +2320,7 @@ window.PRODUCTS = [
   "category": "uhren",
   "fullset": "Nur Papiere",
   "rating": "Sehr gut",
-  "year": null,
+  "year": "2018",
   "size": "39 mm",
   "material": "Edelstahl",
   "dial": "Silber",
