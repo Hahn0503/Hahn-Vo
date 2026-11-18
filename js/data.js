@@ -3169,7 +3169,14 @@ window.PRODUCTS = [
   "warranty": null,
   "images": [
    "assets/products/p651/0.jpg",
-   "assets/products/p651/1.jpg"
+   "assets/products/p651/1.jpg",
+   "assets/products/p651/2.jpg",
+   "assets/products/p651/3.jpg",
+   "assets/products/p651/4.jpg",
+   "assets/products/p651/5.jpg",
+   "assets/products/p651/6.jpg",
+   "assets/products/p651/7.jpg",
+   "assets/products/p651/8.jpg"
   ],
   "shopifyId": "10631554072904"
  },

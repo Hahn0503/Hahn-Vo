@@ -777,7 +777,7 @@
   {
    "id": "p651",
    "brand": "Speake-Marin",
-   "name": "Ripples Original 40,3 mm Stahl",
+   "name": "Ripples Original 40,3 mm Stahl Jahr 2026",
    "ref": "604015040",
    "price": 10490,
    "listPrice": null,
@@ -785,7 +785,7 @@
    "category": "uhren",
    "fullset": "Full Set (Box & Papiere)",
    "rating": "Ungetragen",
-   "year": null,
+   "year": "2026",
    "size": "40,3 mm",
    "material": "Edelstahl",
    "dial": "Anthrazit",
@@ -802,8 +802,15 @@
    "note": null,
    "warranty": null,
    "images": [
-    "assets/products/p651/0.jpg",
-    "assets/products/p651/1.jpg"
+    "assets/products/p651/0.jpg?v=1",
+    "assets/products/p651/1.jpg?v=1",
+    "assets/products/p651/2.jpg?v=1",
+    "assets/products/p651/3.jpg?v=1",
+    "assets/products/p651/4.jpg?v=1",
+    "assets/products/p651/5.jpg?v=1",
+    "assets/products/p651/6.jpg?v=1",
+    "assets/products/p651/7.jpg?v=1",
+    "assets/products/p651/8.jpg?v=1"
    ],
    "shopifyId": "10631554072904"
   },
