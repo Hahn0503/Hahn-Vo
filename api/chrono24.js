@@ -36,6 +36,10 @@ var EINSTELLUNGEN = {
     'K-23': 3890,      // Omega Speedmaster Broad Arrow, Website 3.690 € (Hannes, 15.11.2026)
     '597-26': 13990,   // Vacheron Constantin Malte 83060, Website 13.350 € (Hannes, 15.11.2026)
     '655-26': 12190,   // Rolex Oyster Perpetual 36 Tiffany 126000, Website 11.450 € (Hannes, 17.11.2026)
+    '632-26': 3690,    // Breitling Navitimer A23322, Website 3.490 € (Hannes, 18.11.2026)
+    '646-26': 5490,    // Panerai Luminor Marina PAM01393, Website 5.190 € (Hannes, 18.11.2026)
+    '651-26': 6250,    // Omega Speedmaster Schumacher 3559.32.00, Website 5.950 € (Hannes, 18.11.2026)
+    '633-26': 7450,    // JLC Master Ultra Thin Moon 176.8.64.S, Website 7.150 € (Hannes, 18.11.2026)
   },
 
   /* Uhren ohne Bestand gar nicht erst ausliefern. Dadurch verschwindet eine
