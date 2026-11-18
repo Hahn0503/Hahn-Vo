@@ -2318,7 +2318,7 @@ window.PRODUCTS = [
   "listPrice": null,
   "status": "available",
   "category": "uhren",
-  "fullset": "Nur Uhr",
+  "fullset": "Nur Papiere",
   "rating": "Sehr gut",
   "year": null,
   "size": "39 mm",
@@ -2333,7 +2333,7 @@ window.PRODUCTS = [
   "sku": null,
   "code": "633-26",
   "added": "2026-11-18T10:00:14Z",
-  "desc": "Hier präsentieren wir die Jaeger-LeCoultre Master Ultra Thin Moon in Edelstahl, Ref. 176.8.64.S — silbernes Zifferblatt mit Mondphase und Zeigerdatum sowie schlanken, facettierten Indexen. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n39 mm Edelstahlgehäuse mit Glasboden und Automatikwerk, am originalen Alligatorlederband mit JLC-Faltschließe. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: 633-26",
+  "desc": "Hier präsentieren wir die Jaeger-LeCoultre Master Ultra Thin Moon in Edelstahl, Ref. 176.8.64.S — silbernes Zifferblatt mit Mondphase und Zeigerdatum sowie schlanken, facettierten Indexen. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n39 mm Edelstahlgehäuse mit Glasboden und Automatikwerk, am originalen Alligatorlederband mit JLC-Faltschließe. Geliefert mit originaler Garantiekarte (Warranty Card). Der vollständige Lieferumfang ist auf den Bildern ersichtlich.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: 633-26",
   "note": null,
   "warranty": null,
   "images": [
