@@ -2032,7 +2032,7 @@ window.PRODUCTS = [
   "added": "2026-11-03T18:18:00Z",
   "desc": "Hier präsentieren wir den IWC Fliegerchronographen Top Gun Miramar, Ref. IW388002, aus dem Jahr 2012 — Keramikgehäuse, graues Zifferblatt mit beigefarbenen Leuchtziffern, Datumsanzeige sowie grünes Textilarmband. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nAutomatikwerk, im Oktober 2026 komplett revidiert. Geliefert als Full Set mit Box und Papieren, dazu 2 Jahre Garantie. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: 598-26",
   "note": "Im November 2026 wurde eine komplette Revision durchgeführt.\n\nSie erhalten 2 Jahre Garantie auf diese Uhr.",
-  "warranty": null,
+  "warranty": 24,
   "images": [
    "assets/products/p598/0.jpg",
    "assets/products/p598/1.jpg",
