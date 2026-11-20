@@ -2139,7 +2139,7 @@ window.PRODUCTS = [
   "brand": "Omega",
   "name": "Seamaster Aqua Terra Worldtimer 43 mm Zifferblatt Blau Jahr 2022",
   "ref": "220.10.43.22.03.001",
-  "price": 6390,
+  "price": 5990,
   "listPrice": null,
   "status": "available",
   "category": "uhren",
