@@ -768,6 +768,38 @@
     "assets/products/p659/6.jpg"
    ],
    "shopifyId": "10895867150664"
+  },
+  {
+   "id": "p654",
+   "brand": "Rolex",
+   "name": "Datejust 41 mm 126300 Zifferblatt Wimbledon Jahr 2018",
+   "ref": "126300",
+   "price": 8890,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Sehr gut",
+   "year": "2018",
+   "size": "41 mm",
+   "material": "Edelstahl",
+   "dial": "Schiefergrau (Wimbledon)",
+   "strap": "Edelstahl (Oyster)",
+   "movement": "Automatik",
+   "caliber": null,
+   "glass": null,
+   "gender": "Herren",
+   "tax": "Differenzbesteuerung",
+   "sku": "HV-P654",
+   "code": "654-26",
+   "added": "2026-11-23T15:06:17Z",
+   "desc": "Hier präsentieren wir die Rolex Datejust 41, Ref. 126300, aus dem Jahr 2018 im Full Set. Gehäuse aus Edelstahl mit glatter Lünette und Oysterband aus Edelstahl.\n\nDas schiefergraue Sonnenschliff-Zifferblatt („Wimbledon“) trägt grüne römische Ziffern und eine Datumsanzeige mit Zykloplupe bei 3 Uhr. 41 mm Durchmesser, Automatikwerk. Geliefert mit originaler Rolex Box und Papieren.",
+   "note": null,
+   "warranty": null,
+   "images": [
+    "assets/products/p654/0.jpg"
+   ],
+   "shopifyId": "10896734814536"
   }
  ]
 }
