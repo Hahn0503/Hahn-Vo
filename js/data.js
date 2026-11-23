@@ -3375,6 +3375,44 @@ window.PRODUCTS = [
   "shopifyId": "10435776577864"
  },
  {
+  "id": "p659",
+  "brand": "IWC",
+  "name": "Portugieser Ewiger Kalender 44 mm Rotgold Zifferblatt Silber Jahr 2018",
+  "ref": "IW503302",
+  "price": 21990,
+  "listPrice": null,
+  "status": "reserved",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Sehr gut",
+  "year": "2018",
+  "size": "44 mm",
+  "material": "Rotgold",
+  "dial": "Silber",
+  "strap": "Alligatorleder (Braun)",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "659-26",
+  "added": "2026-11-23T11:12:23Z",
+  "desc": "Hier präsentieren wir den IWC Portugieser Ewiger Kalender, Ref. IW503302, aus dem Jahr 2018 im Full Set. Gehäuse aus 18 Karat Rotgold mit 44 mm Durchmesser, silbernes Zifferblatt mit Mondphase, vierstelliger Jahresanzeige und Gangreserveanzeige, braunes Alligatorlederband mit Dornschließe.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nAngetrieben vom IWC-Automatikwerk mit sieben Tagen Gangreserve, sichtbar durch den Glasboden. Geliefert mit originaler IWC Box, IWC Garantiekarte, Booklets, den Wempe-Unterlagen und einem zusätzlichen braunen Alligatorlederband. Im Oktober 2026 erhielt die Uhr einen Service bei Wempe bzw. IWC für 2.090 € mit 2 Jahren Garantie. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": "Die Uhr erhielt im Oktober 2026 einen Service bei Wempe bzw. IWC im Wert von 2.090 €, mit 2 Jahren Garantie auf den Service.",
+  "warranty": null,
+  "images": [
+   "assets/products/p659/0.jpg",
+   "assets/products/p659/1.jpg",
+   "assets/products/p659/2.jpg",
+   "assets/products/p659/3.jpg",
+   "assets/products/p659/4.jpg",
+   "assets/products/p659/5.jpg",
+   "assets/products/p659/6.jpg"
+  ],
+  "shopifyId": "10895867150664"
+ },
+ {
   "id": "p413",
   "brand": "Tudor",
   "name": "Black Bay Heritage 41, rote Lünette",
@@ -3848,13 +3886,13 @@ window.SHOPIFY = {
   "p581": "10313216819528",
   "p606": "10335503974728",
   "p613": "10435776577864",
+  "p659": "10895867150664",
   "p413": "10219713036616",
   "p4267": "10219858297160",
   "p556": "10238171906376",
   "p555": "10260264124744",
   "p603": "10328467177800",
   "s1454664": "10375261454664",
-  "p642": "10412090753352",
-  "p659": "10895867150664"
+  "p642": "10412090753352"
  }
 };
