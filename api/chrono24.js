@@ -41,6 +41,7 @@ var EINSTELLUNGEN = {
     '651-26': 6250,    // Omega Speedmaster Schumacher 3559.32.00, Website 5.950 € (Hannes, 18.11.2026)
     '633-26': 7450,    // JLC Master Ultra Thin Moon 176.8.64.S, Website 7.150 € (Hannes, 18.11.2026)
     '654-26': 9350,    // Rolex Datejust 41 126300 Wimbledon, Website 8.890 € (Hannes, 24.11.2026)
+    '656-26': 1750,    // Longines HydroConquest 39 mm L3.779.4.96.6, Website 1.590 € (Hannes, 24.11.2026)
   },
 
   /* Uhren ohne Bestand gar nicht erst ausliefern. Dadurch verschwindet eine
