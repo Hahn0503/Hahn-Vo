@@ -2355,7 +2355,7 @@ window.PRODUCTS = [
   "brand": "Longines",
   "name": "HydroConquest 39 mm L3.779.4.96.6 Blau Keramik Jahr 2026",
   "ref": "L3.779.4.96.6",
-  "price": 1590,
+  "price": 1550,
   "listPrice": null,
   "status": "available",
   "category": "uhren",
