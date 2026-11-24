@@ -3006,7 +3006,8 @@ window.PRODUCTS = [
   "note": null,
   "warranty": null,
   "images": [
-   "assets/products/p654/0.jpg"
+   "assets/products/p654/0.jpg",
+   "assets/products/p654/1.jpg"
   ],
   "shopifyId": "10896734814536"
  },
