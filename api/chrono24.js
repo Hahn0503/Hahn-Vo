@@ -40,6 +40,7 @@ var EINSTELLUNGEN = {
     '646-26': 5490,    // Panerai Luminor Marina PAM01393, Website 5.190 € (Hannes, 18.11.2026)
     '651-26': 6250,    // Omega Speedmaster Schumacher 3559.32.00, Website 5.950 € (Hannes, 18.11.2026)
     '633-26': 7450,    // JLC Master Ultra Thin Moon 176.8.64.S, Website 7.150 € (Hannes, 18.11.2026)
+    '654-26': 9350,    // Rolex Datejust 41 126300 Wimbledon, Website 8.890 € (Hannes, 24.11.2026)
   },
 
   /* Uhren ohne Bestand gar nicht erst ausliefern. Dadurch verschwindet eine
