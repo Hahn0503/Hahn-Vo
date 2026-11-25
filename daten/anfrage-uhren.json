@@ -807,6 +807,43 @@
     "assets/products/p654/7.jpg?v=9"
    ],
    "shopifyId": "10896734814536"
+  },
+  {
+   "id": "p662",
+   "brand": "Jaeger-LeCoultre",
+   "name": "Master Control Perpetual Calendar 37 mm Q149842A Stahl Jahr 2004",
+   "ref": "Q149842A",
+   "price": 12590,
+   "listPrice": null,
+   "status": "anfrage",
+   "category": "uhren",
+   "fullset": "Full Set (Box & Papiere)",
+   "rating": "Sehr gut",
+   "year": "2004",
+   "size": "37 mm",
+   "material": "Edelstahl",
+   "dial": "Silber",
+   "strap": "Leder",
+   "movement": "Automatik",
+   "caliber": null,
+   "glass": null,
+   "gender": "Herren",
+   "tax": "Differenzbesteuerung",
+   "sku": "HV-P662",
+   "code": "662-26",
+   "added": "2026-11-25T21:07:53Z",
+   "desc": "Hier präsentieren wir die Jaeger-LeCoultre Master Control Perpetual Calendar, Ref. Q149842A (Gehäuse 140.8.80.S), aus dem Jahr 2004 — ein Ewiger Kalender in Edelstahl mit silbernem Zifferblatt, Anzeige von Datum, Wochentag, Monat und Jahr sowie Mondphase.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nAutomatikwerk mit 50 Steinen, Prüfung „Master Control 1000 Hours“, sichtbar durch den Glasboden. Schwarzes Lederband mit originaler Jaeger-LeCoultre-Faltschließe. Service bei Wempe im Jahr 2020. Geliefert als Full Set mit Box, Umkarton und Certificat de Garantie. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+   "note": "Service bei Wempe im Jahr 2020.",
+   "warranty": null,
+   "images": [
+    "assets/products/p662/0.jpg",
+    "assets/products/p662/1.jpg",
+    "assets/products/p662/2.jpg",
+    "assets/products/p662/3.jpg",
+    "assets/products/p662/4.jpg",
+    "assets/products/p662/5.jpg"
+   ],
+   "shopifyId": "10918597001544"
   }
  ]
 }
