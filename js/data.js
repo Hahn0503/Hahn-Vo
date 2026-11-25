@@ -2352,6 +2352,43 @@ window.PRODUCTS = [
   "shopifyId": "10918596280648"
  },
  {
+  "id": "p663",
+  "brand": "Breitling",
+  "name": "Navitimer 01 43 mm AB012012 Stahl Jahr 2018",
+  "ref": "AB012012/BB01",
+  "price": 4650,
+  "listPrice": null,
+  "status": "available",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Sehr gut",
+  "year": "2018",
+  "size": "43 mm",
+  "material": "Edelstahl",
+  "dial": "Schwarz",
+  "strap": "Leder",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Regelbesteuerung",
+  "sku": null,
+  "code": "663-26",
+  "added": "2026-11-25T21:15:27Z",
+  "desc": "Hier präsentieren wir den Breitling Navitimer 01 in 43 mm, Ref. AB012012/BB01, aus dem Jahr 2018 — der Chronometer-Chronograph in Edelstahl mit schwarzem Zifferblatt, silbernen Hilfszifferblättern und der typischen Rechenschieber-Lünette. Unsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nGetragen wird die Uhr an einem schwarzen Kalbslederband mit Breitling-Faltschließe. Zusätzlich liegt ein neues Breitling-Alligatorlederband mit Faltschließe im Wert von 800 € bei. Geliefert als Full Set mit Box, Etui, Garantiekarte von 2018 und Anleitungen. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.\n\nBei Zahlung per Überweisung bitte als Verwendungszweck angeben: 663-26",
+  "note": "Dazu gehört ein neues Breitling-Alligatorlederband mit Faltschließe im Wert von 800 €.",
+  "warranty": null,
+  "images": [
+   "assets/products/p663/0.jpg",
+   "assets/products/p663/1.jpg",
+   "assets/products/p663/2.jpg",
+   "assets/products/p663/3.jpg",
+   "assets/products/p663/4.jpg",
+   "assets/products/p663/5.jpg"
+  ],
+  "shopifyId": "10918598672712"
+ },
+ {
   "id": "p462",
   "brand": "MB&F",
   "name": "Legacy Machine Split Escapement EVO Titan",
@@ -3017,6 +3054,43 @@ window.PRODUCTS = [
    "assets/products/p654/7.jpg"
   ],
   "shopifyId": "10896734814536"
+ },
+ {
+  "id": "p662",
+  "brand": "Jaeger-LeCoultre",
+  "name": "Master Control Perpetual Calendar 37 mm Q149842A Stahl Jahr 2004",
+  "ref": "Q149842A",
+  "price": 12590,
+  "listPrice": null,
+  "status": "anfrage",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Sehr gut",
+  "year": "2004",
+  "size": "37 mm",
+  "material": "Edelstahl",
+  "dial": "Silber",
+  "strap": "Leder",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Herren",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "662-26",
+  "added": "2026-11-25T21:07:53Z",
+  "desc": "Hier präsentieren wir die Jaeger-LeCoultre Master Control Perpetual Calendar, Ref. Q149842A (Gehäuse 140.8.80.S), aus dem Jahr 2004 — ein Ewiger Kalender in Edelstahl mit silbernem Zifferblatt, Anzeige von Datum, Wochentag, Monat und Jahr sowie Mondphase.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\nAutomatikwerk mit 50 Steinen, Prüfung „Master Control 1000 Hours“, sichtbar durch den Glasboden. Schwarzes Lederband mit originaler Jaeger-LeCoultre-Faltschließe. Service bei Wempe im Jahr 2020. Geliefert als Full Set mit Box, Umkarton und Certificat de Garantie. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": "Service bei Wempe im Jahr 2020.",
+  "warranty": null,
+  "images": [
+   "assets/products/p662/0.jpg",
+   "assets/products/p662/1.jpg",
+   "assets/products/p662/2.jpg",
+   "assets/products/p662/3.jpg",
+   "assets/products/p662/4.jpg",
+   "assets/products/p662/5.jpg"
+  ],
+  "shopifyId": "10918597001544"
  },
  {
   "id": "p656",
@@ -3700,6 +3774,7 @@ window.SHOPIFY = {
   "p632": "10715517878600",
   "p537": "10913080475976",
   "p661": "10918596280648",
+  "p663": "10918598672712",
   "p462": "10219711955272",
   "p5825": "10219857674568",
   "p458": "10219712151880",
@@ -3717,6 +3792,7 @@ window.SHOPIFY = {
   "p651": "10631554072904",
   "p655": "10699968545096",
   "p654": "10896734814536",
+  "p662": "10918597001544",
   "p656": "10713379078472",
   "p393": "10219713331528",
   "p659": "10895867150664",
@@ -3729,7 +3805,6 @@ window.SHOPIFY = {
   "s1454664": "10375261454664",
   "p648": "10764678005064",
   "p657": "10905106448712",
-  "p642": "10412090753352",
-  "p662": "10918597001544"
+  "p642": "10412090753352"
  }
 };
