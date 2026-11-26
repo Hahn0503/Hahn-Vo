@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Instagram-Storys für Hahn & Vo: neu eingetroffen / reserviert / verkauft.
+"""Instagram-Storys für Hahn & Vo: neu eingetroffen / reserviert / verkauft / reduziert.
 
 Läuft NICHT lokal, sondern in der Composio-Werkbank (Instagram-Connector).
 Die Werkbank lädt diese Datei bei jedem Lauf frisch von
@@ -46,12 +46,15 @@ TEXT = {
     "neu": ("NEU EINGETROFFEN", None),   # unten keine Wiederholung (Hannes, 23.10.2026)
     "reserviert": ("RESERVIERT", "Reserviert"),
     "verkauft": ("VERKAUFT", "Verkauft"),
+    # Zusatz 26.11.2026: Preissenkung mit Streichpreis; unten wie bei „neu" nur Preis
+    "reduziert": ("REDUZIERT", None),
 }
 
 ABZEICHEN = {            # (Grundfarbe, Schriftfarbe) — gedämpft, passend zum Navy
     "neu": ((214, 230, 244), NAVY_OBEN),
     "reserviert": ((214, 178, 104), NAVY_UNTEN),
     "verkauft": ((168, 58, 64), WEISS),
+    "reduziert": ((132, 176, 150), NAVY_UNTEN),   # gedämpftes Salbeigrün
 }
 
 
@@ -232,6 +235,22 @@ def render(uhr, art):
     if art == "neu" and uhr.get("price"):
         y += 4
         text_mittig(d, y, ("%s €" % format(int(uhr["price"]), ",")).replace(",", "."), schrift("marcellus", 44), WEISS)
+        y += 64
+    if art == "reduziert" and uhr.get("price"):
+        # alter Preis klein und durchgestrichen, neuer Preis wie bei „neu"
+        euro = lambda v: ("%s €" % format(int(v), ",")).replace(",", ".")
+        y += 4
+        alt = uhr.get("listPrice")
+        if alt and int(alt) > int(uhr["price"]):
+            f_alt = schrift("marcellus", 34)
+            t_alt = euro(alt)
+            b = d.textbbox((0, 0), t_alt, font=f_alt)
+            text_mittig(d, y, t_alt, f_alt, GRAU)
+            x_l = (W - (b[2] - b[0])) / 2 - 6
+            mitte = y + (b[1] + b[3]) / 2
+            d.line([(x_l, mitte), (x_l + (b[2] - b[0]) + 12, mitte)], fill=GRAU, width=3)
+            y += 52
+        text_mittig(d, y, euro(uhr["price"]), schrift("marcellus", 44), WEISS)
         y += 64
 
     # Abschluss
