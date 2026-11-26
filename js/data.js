@@ -3016,46 +3016,6 @@ window.PRODUCTS = [
   "shopifyId": "10631554072904"
  },
  {
-  "id": "p655",
-  "brand": "Rolex",
-  "name": "Oyster Perpetual 36 mm 126000 Zifferblatt Tiffany-Blau Jahr 2025",
-  "ref": "126000",
-  "price": 11450,
-  "listPrice": null,
-  "status": "anfrage",
-  "category": "uhren",
-  "fullset": "Full Set (Box & Papiere)",
-  "rating": "Ungetragen",
-  "year": "2025",
-  "size": "36 mm",
-  "material": "Edelstahl",
-  "dial": "Türkis (Tiffany)",
-  "strap": "Edelstahl (Oyster)",
-  "movement": "Automatik",
-  "caliber": null,
-  "glass": null,
-  "gender": "Unisex",
-  "tax": "Differenzbesteuerung",
-  "sku": null,
-  "code": "655-26",
-  "added": "2026-11-17T20:12:38Z",
-  "desc": "Hier präsentieren wir die Rolex Oyster Perpetual 36 in Edelstahl, Ref. 126000, aus dem Jahr 2025 — mit dem begehrten türkisfarbenen Zifferblatt, oft „Tiffany“ genannt. Die Uhr ist ungetragen.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n36 mm Durchmesser, Oysterband aus Edelstahl, Automatikwerk. Geliefert als Full Set mit Box und Rolex-Garantiekarte von 2025. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
-  "note": "Ungetragen.",
-  "warranty": null,
-  "images": [
-   "assets/products/p655/0.jpg",
-   "assets/products/p655/1.jpg",
-   "assets/products/p655/2.jpg",
-   "assets/products/p655/3.jpg",
-   "assets/products/p655/4.jpg",
-   "assets/products/p655/5.jpg",
-   "assets/products/p655/6.jpg",
-   "assets/products/p655/7.jpg",
-   "assets/products/p655/8.jpg"
-  ],
-  "shopifyId": "10699968545096"
- },
- {
   "id": "p654",
   "brand": "Rolex",
   "name": "Datejust 41 mm 126300 Zifferblatt Wimbledon Jahr 2018",
@@ -3628,6 +3588,46 @@ window.PRODUCTS = [
    "assets/products/p642/7.jpg"
   ],
   "shopifyId": "10412090753352"
+ },
+ {
+  "id": "p655",
+  "brand": "Rolex",
+  "name": "Oyster Perpetual 36 mm 126000 Zifferblatt Tiffany-Blau Jahr 2025",
+  "ref": "126000",
+  "price": 11450,
+  "listPrice": null,
+  "status": "sold",
+  "category": "uhren",
+  "fullset": "Full Set (Box & Papiere)",
+  "rating": "Ungetragen",
+  "year": "2025",
+  "size": "36 mm",
+  "material": "Edelstahl",
+  "dial": "Türkis (Tiffany)",
+  "strap": "Edelstahl (Oyster)",
+  "movement": "Automatik",
+  "caliber": null,
+  "glass": null,
+  "gender": "Unisex",
+  "tax": "Differenzbesteuerung",
+  "sku": null,
+  "code": "655-26",
+  "added": "2026-11-17T20:12:38Z",
+  "desc": "Hier präsentieren wir die Rolex Oyster Perpetual 36 in Edelstahl, Ref. 126000, aus dem Jahr 2025 — mit dem begehrten türkisfarbenen Zifferblatt, oft „Tiffany“ genannt. Die Uhr ist ungetragen.\n\nUnsere Bilder sind unbearbeitet und zeigen jedes Detail – mehr, als das bloße Auge wahrnimmt.\n\n36 mm Durchmesser, Oysterband aus Edelstahl, Automatikwerk. Geliefert als Full Set mit Box und Rolex-Garantiekarte von 2025. Der vollständige Lieferumfang ist auf den Bildern ersichtlich.",
+  "note": "Ungetragen.",
+  "warranty": null,
+  "images": [
+   "assets/products/p655/0.jpg",
+   "assets/products/p655/1.jpg",
+   "assets/products/p655/2.jpg",
+   "assets/products/p655/3.jpg",
+   "assets/products/p655/4.jpg",
+   "assets/products/p655/5.jpg",
+   "assets/products/p655/6.jpg",
+   "assets/products/p655/7.jpg",
+   "assets/products/p655/8.jpg"
+  ],
+  "shopifyId": "10699968545096"
  }
 ];
 
@@ -3830,7 +3830,6 @@ window.SHOPIFY = {
   "p597": "10630940721480",
   "p650": "10631525695816",
   "p651": "10631554072904",
-  "p655": "10699968545096",
   "p654": "10896734814536",
   "p662": "10918597001544",
   "p656": "10713379078472",
@@ -3845,6 +3844,7 @@ window.SHOPIFY = {
   "s1454664": "10375261454664",
   "p648": "10764678005064",
   "p657": "10905106448712",
-  "p642": "10412090753352"
+  "p642": "10412090753352",
+  "p655": "10699968545096"
  }
 };
